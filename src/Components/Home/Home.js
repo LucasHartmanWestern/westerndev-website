@@ -1,5 +1,4 @@
 import React from 'react'
-import Tech from '../../images/tech.png'
 
 // images and styling tbd
 export default function Home() {
@@ -35,7 +34,7 @@ export default function Home() {
         </div>
 
         <div className="pic">
-          pic goes here
+          <img src='images/tech.png'></img>
         </div>
       </div>
     </div>
