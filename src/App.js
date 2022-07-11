@@ -1,11 +1,9 @@
-
+import React from 'react';
 import './App.css';
-
+import Home from './components/Home/Home';
 function App() {
   return (
-    <div >
-        Welcome to Western Dev Society
-    </div>
+    <Home />
   );
 }
 
