@@ -1,9 +1,10 @@
 import React from 'react'
+import './Home.css'
 
 // images and styling tbd
 export default function Home() {
   return (
-    <div className='body'>
+    <div className='home-container'>
       <div className="content">
         <div className="info">
           <div className="title">
