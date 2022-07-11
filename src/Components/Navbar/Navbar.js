@@ -11,14 +11,14 @@ function Navbar() {
         </div>
         <div className="links-container">
          <ul>
-        <li>
+         <li>
+            <a href="/Portfolio">portfolio</a>
+        </li>
+         <li>
+            <a href="/About">about us</a>
+        </li>
+         <li>
             <a href="/Contact">contact us</a>
-        </li>
-         <li>
-            <a href="/Contact">portfolio</a>
-        </li>
-         <li>
-            <a href="/Contact">about us</a>
         </li>
         </ul>
         </div>
