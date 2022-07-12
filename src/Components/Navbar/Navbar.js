@@ -1,42 +1,30 @@
 import React from 'react'
 import './Navbar.css'
-import {Link, useMatch, useResolvedPath } from "react-router-dom"
+import {Link} from "react-router-dom"
 
 function Navbar() {
   
   return (
     <div className='navbar-container'>
         <div className='logo'>
-            <Link href='/'>
+            <Link to='/'>
             <img src='images/logo.png'></img>
             </Link>
         </div>
         <div className="links-container">
          <ul>
         <li>
-            <a href="/Contact">contact us</a>
+            <Link to="/Contact">contact us</Link>
         </li>
          <li>
-            <a href="/Contact">portfolio</a>
+            <Link to="/Portfolio">portfolio</Link>
         </li>
          <li>
-            <a href="/Contact">about us</a>
+            <Link to="/Aboutus">about us</Link>
         </li>
         </ul>
         </div>
     </div>
-  )
-}
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
-
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
   )
 }
 
