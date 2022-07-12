@@ -1,11 +1,14 @@
 import React from 'react'
 import './Portfolio.css'
+import Fade from 'react-reveal/Fade'
 
 function Portfolio() {
   return (
-    <div>
-      <h1>coming soon...</h1>
+    <Fade>
+    <div className='coming-soon'>
+      coming soon...
     </div>
+    </Fade>
   )
 }
 
