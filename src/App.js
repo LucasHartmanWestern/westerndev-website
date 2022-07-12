@@ -1,9 +1,25 @@
 import React from 'react';
 import './App.css';
-import Home from './Components/Home/Home';
+import Home from './Pages/Home/Home';
+import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
+import Navbar from './Components/Navbar/Navbar';
+import Contact from './Pages/Contact/Contact';
+import Portfolio from './Pages/Portfolio/Portfolio';
+
 function App() {
   return (
-    <Home />
+    <div>
+      <Router>
+      <div className="App-container">
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/Contact" element={<Contact></Contact>} />
+          <Route path="/Portfolio" element={<Portfolio/>} />
+        </Routes>
+      </div>
+    </Router>
+  </div>
   );
 }
 

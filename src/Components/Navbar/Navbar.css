@@ -1,0 +1,32 @@
+img{
+    width:50px;
+    padding-left:100px;
+}
+
+li{
+    list-style: none;
+}
+ul{
+    display:flex;
+    gap:2rem;
+    margin-right:150px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:gray;
+    transition: 0.3s;
+}
+
+.navbar-container{
+    padding-top:100px;
+    display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: space-between;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
