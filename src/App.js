@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home';
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
 import Contact from './Pages/Contact/Contact';
+import Portfolio from './Pages/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Contact" element={<Contact></Contact>} />
+          <Route path="/Portfolio" element={<Portfolio/>} />
         </Routes>
       </div>
     </Router>
