@@ -13,14 +13,14 @@ function Navbar() {
         </div>
         <div className="links-container">
          <ul>
-         <li>
-            <Link to="/Portfolio">portfolio</Link>
+        <li>
+            <a href="/Contact">contact us</a>
         </li>
          <li>
-            <CustomLink to="/About">about us</CustomLink>
+            <a href="/Contact">portfolio</a>
         </li>
          <li>
-            <CustomLink to="/Contact">contact us</CustomLink>
+            <a href="/Contact">about us</a>
         </li>
         </ul>
         </div>
