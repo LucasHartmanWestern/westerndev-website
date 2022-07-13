@@ -1,6 +1,11 @@
 img{
-    width:50px;
+    width:75px;
     padding-left:100px;
+    transition: 0.3s;
+}
+
+img:hover{
+    opacity: 50%;
 }
 
 li{
