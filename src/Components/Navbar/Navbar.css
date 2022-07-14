@@ -34,4 +34,21 @@ a:hover{
     font-weight: bold;
     letter-spacing: 0.03em;
     text-decoration: none;
+    align-items:center;
+}
+
+@media screen and (max-width: 835px) {
+    img{
+        padding-left:30%;
+    }
+    ul{
+        font-size: 12px;
+        gap:0.5rem;
+        margin-right: 0;
+    }
+    .navbar-container{
+        padding-top: 10%;
+        padding-right: 5%;
+    }
+
 }

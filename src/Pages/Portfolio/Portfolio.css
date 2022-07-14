@@ -6,3 +6,10 @@
     font-family: 'Red Hat Display', sans-serif;
     font-size:65px;
 }
+
+@media screen and (max-width: 835px) {
+    .coming-soon{
+        margin-top: 40%;
+        font-size: 50px;
+    }
+}

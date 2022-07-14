@@ -5,12 +5,11 @@
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
- 
+  padding:5% 7%;
 }
 
 .Contact-1 {
   font-size: 60px;
-  
 }
 
 .Contact-Title {
@@ -18,11 +17,13 @@
  outline: 2px solid gray;
  padding-top: 5%;
  padding-bottom: 5%;
- 
+ font-weight:900;
 }
 
 .Contact-Description {
   outline: 2px solid gray;
+  font-weight: 500;
+  padding-right:5%;
 }
 
 .Contact-2 {
@@ -54,6 +55,46 @@
 .Contact-insta {
   padding-left: 2%;
   padding-right: 4%;
+}
+
+@media screen and (max-width:1300px){
+  .Contact-Container {
+      flex-wrap: wrap;
+      display: flex;
+    }
+    .Contact-Socials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:1rem;
+    }
+     .Contact-2 {
+       align-self: center;
+        padding-left: 0;
+     }
+}
+
+@media screen and (max-width: 800px) {
+  .Contact-Container{
+    margin-top:10%;
+  }
+  .Contact-2{
+    padding-top: 10%;
+    font-size: 15px;
+    align-self: center;
+  }
+
+  .Contact-insta{
+    padding:0;
+  }
+
+  .Contact-Title{
+    font-size: 40px;
+  }
+
+  .Contact-Description{
+    font-size: 25px;
+  }
 }
 
 /* .Contact-logo {
