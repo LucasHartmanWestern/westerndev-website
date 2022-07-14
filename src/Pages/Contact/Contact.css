@@ -1,39 +1,92 @@
-.Contact {
-  text-align: center;
+.Contact-Container {
+  text-align: left;
   font-family: 'Red Hat Display', sans-serif;
+  color: #fafafa;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+ 
 }
 
-.Contact-logo {
+.Contact-1 {
+  font-size: 60px;
+  
+}
+
+.Contact-Title {
+ display: inline-block;
+ outline: 2px solid gray;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ 
+}
+
+.Contact-Description {
+  outline: 2px solid gray;
+}
+
+.Contact-2 {
+  font-size: 25px;
+  padding-left: 15%;
+  padding-top: 3%;
+}
+
+.Contact-Stater {
+  outline: 2px solid gray;
+}
+
+.Contact-Email {
+  outline: 2px solid gray;
+}
+
+.Contact-check {
+  outline: 2px solid gray;
+  padding-top: 2%;
+}
+
+.Contact-Socials {
+  outline: 2px solid gray;
+  display: inline-flex;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.Contact-insta {
+  padding-left: 2%;
+  padding-right: 4%;
+}
+
+/* .Contact-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .Contact-logo {
     animation: Contact-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.Contact-header {
+/* .Contact-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(100px + 2vmin);
   color: white;
-}
+} */
 
-.Contact-link {
+/*  .Contact-link {
   color: #61dafb;
-}
+} */
 
-@keyframes Contact-logo-spin {
+/*  @keyframes Contact-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
