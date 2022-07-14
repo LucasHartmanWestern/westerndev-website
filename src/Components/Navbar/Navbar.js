@@ -14,7 +14,8 @@ function Navbar() {
         <div className="links-container">
          <ul>
         <li>
-            <Link to="/Contact">contact us</Link>
+            <Link to="/Contact"
+            onClick={() => this.changeColor("##B89EC5")}>contact us</Link>
         </li>
          <li>
             <Link to="/Portfolio">portfolio</Link>

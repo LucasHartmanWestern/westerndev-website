@@ -4,6 +4,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaEnvelope} from 'react-icons/fa';
+import Fade from 'react-reveal/Fade'
 
 function Contact() {
 
@@ -11,18 +12,19 @@ function Contact() {
 
   return (
     <div className="Contact-Container">
+      <Fade>
       <div className="Contact-1">
         <div className="Contact-Title">
           Let's Chat!
         </div>
 
         <div className="Contact-Description">
-            Want to learn more? <br />
-            Want us to build you 
+            want to learn more?
+            want us to build you 
             a beautiful website?
         </div>
-
       </div>  
+      </Fade>
 
       <div className="Contact-2">
         <div className="Contact-Stater">   
