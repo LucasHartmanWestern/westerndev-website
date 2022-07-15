@@ -1,7 +1,7 @@
 ## Downloading Dependencies:
 `npm install `\
 `npm install react-icons --save` \
-`npm instsall react-reveal --save --force`
+`npm install react-reveal --save --force`
 
 ## To Run Locally
 
