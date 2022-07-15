@@ -3,6 +3,7 @@ import './Home.css'
 
 // images and styling tbd
 export default function Home() {
+  document.body.style = 'background: #F5F4F4;';
   return (
     <div className='home-container'>
       <div className="content">
