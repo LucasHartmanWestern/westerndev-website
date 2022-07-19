@@ -1,3 +1,83 @@
-.memberCard{
-  
+.aboutus {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5% 7%;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+}
+.about-info{
+    display: flex;
+    border-radius: 15px;
+    font-size: 18px;
+    color:rgb(51, 50, 50);
+    align-self: center;
+    padding:7% 0% 15% 0%;
+    width:100%;
+    justify-content: space-between;
+}
+
+.about-left{
+    padding:50px;
+    width: 500px;
+    height:250px;
+    background-color: #F0F0F1;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 2px;
+    padding: 60px 70px;
+}
+
+.about-right {
+    padding: 60px 70px;
+    width: 500px;
+    height: 250px;
+    background-color: #F0F0F1;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 2px;
+}
+
+.memberCard {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.headline{
+    align-self: center;
+    font-size: 45px;
+    letter-spacing: 0.03rem;
+    font-weight: 700;
+    width: 650px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#393939;
+    border-bottom: 1px solid grey;
+}
+
+.title {
+    font-weight: 700;
+    font-size:45px;
+    align-self: center;
+}
+
+.team-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    color: #393939;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding:5% 7%;
+    color: #393939;
 }
