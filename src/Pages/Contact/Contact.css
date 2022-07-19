@@ -18,6 +18,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
  font-weight:900;
+ min-width: 400px;
 }
 
 .Contact-Description {
@@ -90,6 +91,7 @@
 
   .Contact-Title{
     font-size: 40px;
+    min-width: 300px;
   }
 
   .Contact-Description{
