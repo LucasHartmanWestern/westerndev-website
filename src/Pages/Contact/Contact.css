@@ -15,8 +15,8 @@
 .Contact-Title {
  display: inline-block;
  outline: 2px solid gray;
- padding-top: 5%;
- padding-bottom: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
  font-weight:900;
 }
 
