@@ -14,7 +14,7 @@ export default function Home() {
             <span style={{color:'#303030'}}>Society</span>
           </div>
           <div className="text">
-            Building community, one life of code at a time.
+            Building community, one line of code at a time.
           </div>
         </div>
 

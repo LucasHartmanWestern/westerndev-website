@@ -36,7 +36,7 @@ const cards = data.map(item=>{
       </div>
 
       <div className='team-container'>
-          <h1 className="title" >Meet the Team!</h1>
+          <h1 className="aboutus-title" >Meet the Team!</h1>
         <div className="card-container">
           {cards}
         </div>
