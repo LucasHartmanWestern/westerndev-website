@@ -1,3 +1,76 @@
 .home-container{
     font-family: 'Red Hat Display', sans-serif;
 }
+
+.title{ 
+    position: absolute;
+    width: 1018px;
+    height: 413px;
+    left: 226px;
+    top: calc(50% - 413px/2 - 103.5px + 50px);
+
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 125px;
+    line-height: 110px;
+    /* or 88% */
+
+    /*display: flex;*/
+    align-items: flex-end;
+    letter-spacing: 0.03em;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+.title_1{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 125px;
+    line-height: 110px;
+}
+.text{
+    position: absolute;
+    width: 763px;
+    height: 123px;
+    left: 226px;
+    top: 606px;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    /* or 150% */
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #000000;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+
+.pic{
+    position: absolute;
+    width: 706px;
+    height: 383px;
+    right: 222px;
+    top: 301px;
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    z-index: 4;
+}
+
+@media screen and (max-width: 835px) {
+
+}
