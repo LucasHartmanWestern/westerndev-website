@@ -1,7 +1,7 @@
 .Contact-Container {
   text-align: left;
   font-family: 'Red Hat Display', sans-serif;
-  color: #fafafa;
+  color: rgb(51, 50, 50);
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
@@ -14,15 +14,13 @@
 
 .Contact-Title {
  display: inline-block;
- outline: 2px solid gray;
-  padding-top: 50px;
-  padding-bottom: 50px;
+ padding-top: 50px;
+ padding-bottom: 50px;
  font-weight:900;
  min-width: 400px;
 }
 
 .Contact-Description {
-  outline: 2px solid gray;
   font-weight: 500;
   padding-right:5%;
 }
@@ -33,21 +31,11 @@
   padding-top: 3%;
 }
 
-.Contact-Stater {
-  outline: 2px solid gray;
-}
-
-.Contact-Email {
-  outline: 2px solid gray;
-}
-
 .Contact-check {
-  outline: 2px solid gray;
   padding-top: 2%;
 }
 
 .Contact-Socials {
-  outline: 2px solid gray;
   display: inline-flex;
   text-align: center;
   padding-top: 10%;
