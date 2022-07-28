@@ -21,8 +21,8 @@ export default function Home() {
         <div className="pic">
           <img src='images/tech.png' style={{width:706,height:383}}></img>
         </div>
-      
       </div>
+      
     </div>
 
   )
