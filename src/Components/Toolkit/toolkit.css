@@ -1,0 +1,31 @@
+.team-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    color: #393939;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 80%
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 7%;
+    gap: 3rem;
+    margin: auto;
+}
+
+
+.toolkit-title {
+    font-weight: 700;
+    font-size:45px;
+    align-self: center;
+}
+
+.toolkitCard {
+    margin: auto;
+}
+
+

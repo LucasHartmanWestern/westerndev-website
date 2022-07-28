@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade'
 
 function Contact() {
 
-  document.body.style = 'background: #B89EC5;';
+  document.body.style = 'background: #D9DDF5;';
 
   return (
     <div className="Contact-Container">
@@ -20,13 +20,14 @@ function Contact() {
         </div>
 
         <div className="Contact-Description">
-            want to learn more?
-            want us to build you
+            Want to learn more?
+            Want us to build you 
             a beautiful website?
         </div>
       </div>
       </Fade>
 
+      <Fade>
       <div className="Contact-2">
         <div className="Contact-Stater">
         <div className="Contact-Email">   <FaEnvelope/> &gt;write us at asdfghjk@placeholder.com <br /></div>
@@ -39,6 +40,7 @@ function Contact() {
           <div className="Contact-facebook">  <a href="https://www.facebook.com/westerndevsociety/" target="_blank"><FaFacebookSquare /></a> <br/> @westerndevsociety </div>
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

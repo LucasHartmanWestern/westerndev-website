@@ -3,7 +3,7 @@ import './Home.css'
 
 // images and styling tbd
 export default function Home() {
-  document.body.style = 'background: #F5F4F4;';
+  document.body.style = 'background: #D9DDF5;';
   return (
     <div className='home-container'>
       <div className="content">
@@ -14,7 +14,7 @@ export default function Home() {
             <span style={{color:'#303030'}}>Society</span>
           </div>
           <div className="text">
-            Building community, one line of code at a time.
+            Building a community, one line of code at a time.
           </div>
         </div>
 
@@ -51,7 +51,9 @@ export default function Home() {
           representatives from your company, and/or through other collaboration formats. This is great for recruitment purposes!
           </p>
         </div>
+
       </div>
+      
     </div>
 
   )
