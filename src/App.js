@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Contact from './Pages/Contact/Contact';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import Aboutus from './Pages/Aboutus/Aboutus';
+import Toolkit from './Components/Toolkit/toolkit';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/Toolkit" element={<Toolkit/>} />
           <Route path="/Contact" element={<Contact></Contact>} />
           <Route path="/Portfolio" element={<Portfolio/>} />
           <Route path="/Aboutus" element={<Aboutus />} />
