@@ -1,8 +1,17 @@
+:root{
+  --black: rgba(0,0,0,1);
+  --alto: rgba(217,217,217,1);
+  --white: rgba(255,255,255,1);
+
+  --font-size-m: 8px;
+  --font-size-l: 10px;
+  --font-size-xl: 20px;
+}
 .home-container{
     font-family: 'Red Hat Display', sans-serif;
 }
 
-.title{ 
+.title{
     position: absolute;
     width: 1018px;
     height: 413px;
@@ -70,6 +79,113 @@
     flex-grow: 0;
     z-index: 4;
 }
+
+.hidden, .hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.sponsorships{
+  align-items: center;
+  background-color: #f5f4f4;
+  display: flex;
+  margin: 50% auto;
+  flex-direction: column;
+  height: 1000px;
+  overflow: hidden;
+  width: 1000px;
+  padding-bottom: 0;
+
+}
+
+.elipse-container{
+  align-items: flex-start;
+  display: flex;
+  margin-top: 40px;
+  min-width: 258px;
+}
+
+.elipse{
+  background-color: var(--alto);
+  border-radius: 18px/19px;
+  height: 38px;
+  margin-left: 75px;
+  width: 36px;
+}
+.elipse-1 {
+  background-color: var(--alto);
+  border-radius: 18px/19px;
+  height: 38px;
+  width: 36px;
+}
+
+.partners-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1px;
+  margin-top: 14px;
+  min-height: 14px;
+  width: 400px;
+}
+
+.our-partners{
+  color: #9b49b8;
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 21px;
+  width: 137px;
+}
+
+.subtext{
+  color: var(--black);
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-top: 6px;
+  min-height: 15px;
+  text-align: center;
+  width: 310px;
+}
+
+.footer{
+  align-items: flex-start;
+  background-color: #a68da5;
+  display: flex;
+  height: 165px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  min-width: 400px;
+  padding: 14px 14px;
+}
+
+.description{
+  color: var(--white);
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 15px;
+  min-height: 95px;
+  width: 244px;
+}
+
+.heading{
+  align-self: center;
+  color: var(--white);
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 34px;
+  min-height: 64px;
+  text-align: center;
+  width: 110px;
+}
+
 
 @media screen and (max-width: 835px) {
 
