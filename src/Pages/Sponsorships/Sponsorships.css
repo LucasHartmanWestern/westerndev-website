@@ -1,0 +1,178 @@
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --alto: rgba(217, 217, 217, 1);
+
+  --font-size-m: 12px;
+  --font-size-l: 16px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 36px;
+  --font-size-xxxxl: 64px;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:400");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sponsorships {
+  align-items: center;
+  background-color: #d9ddf5;
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  padding: 104px 357.0px;
+  width: 1416px;
+  margin: 100px;
+
+}
+
+.title--ye {
+  color: var(--black);
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-xxxxl);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 54.0px;
+  min-height: 62px;
+  width: 476px;
+  position: absolute;
+  top: 300px;
+}
+
+.paragraph {
+  color: var(--black);
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 19.0px;
+  margin-top: 37px;
+  min-height: 141px;
+  text-align: center;
+  width: 649px;
+}
+
+.divider {
+  display: flex;
+  align-self: flex-end;
+  height: 4px;
+  margin-top: 38px;
+  width: 681px;
+}
+
+.title-2 {
+  color: #9b49b8;
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 10.0px;
+  margin-top: 32px;
+  min-height: 72px;
+  width: 216px;
+}
+
+.paragraph-2 {
+  color: var(--black);
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 10.0px;
+  min-height: 15px;
+  text-align: center;
+  width: 394px;
+}
+
+.company-container {
+  align-items: flex-end;
+  display: flex;
+  height: 52px;
+  margin-top: 82px;
+  min-width: 306px;
+}
+
+.company3 {
+  background-color: var(--alto);
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+}
+
+.company2 {
+  align-self: flex-start;
+  display: flex;
+  background-color: var(--alto);
+  border-radius: 25px;
+  height: 50px;
+  margin-left: 89px;
+  width: 50px;
+}
+
+.company1 {
+  background-color: var(--alto);
+  border-radius: 25px;
+  height: 50px;
+  margin-left: 67px;
+  width: 50px;
+}
+
+.flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 192px;
+  margin-left: 38.0px;
+  margin-top: 49px;
+  min-width: 614px;
+}
+
+.seeking-partnership-with-us {
+  align-self: flex-end;
+  display: flex;
+  color: #8c00a3;
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-xxxl);
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 144px;
+  text-align: center;
+  width: 213px;
+}
+
+.paragraphs-3 {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 61px;
+  min-height: 93px;
+  width: 340px;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}

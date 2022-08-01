@@ -1,4 +1,5 @@
 .aboutus {
+
     font-family: 'Red Hat Display', sans-serif;
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
     padding: 5% 7%;
 }
 .about-container{
+  margin-top: 530px;
     display: flex;
     flex-direction: column;
 }
