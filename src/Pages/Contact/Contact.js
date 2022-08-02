@@ -35,7 +35,7 @@ function Contact() {
         </div>
 
         <div className="Contact-Socials">
-          <div className="Contact-linkedin">  <a href="https://www.linkedin.com/company/western-dev-society/?originalSubdomain=ca" target="_blank"><FaLinkedin /></a> <br/> Western Developer's Society</div>
+          <div className="Contact-linkedin">  <a href="https://www.linkedin.com/company/western-dev-society/?originalSubdomain=ca" target="_blank"><FaLinkedin /></a> <br/> WDS</div>
           <div className="Contact-insta">  <a href="https://www.instagram.com/westerndevsociety/" target="_blank"><FaInstagram /></a>  <br/> @westerndevsociety </div>
           <div className="Contact-facebook">  <a href="https://www.facebook.com/westerndevsociety/" target="_blank"><FaFacebookSquare /></a> <br/> @westerndevsociety </div>
         </div>

@@ -33,6 +33,7 @@
 
 .Contact-check {
   padding-top: 2%;
+  padding-left: 6%;
 }
 
 .Contact-Socials {
@@ -42,7 +43,7 @@
 }
 
 .Contact-insta {
-  padding-left: 2%;
+  padding-left: 4%;
   padding-right: 4%;
 }
 
@@ -74,7 +75,7 @@
   }
 
   .Contact-insta{
-    padding:0;
+    padding: 0;
   }
 
   .Contact-Title{
