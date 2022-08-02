@@ -1,3 +1,4 @@
+
 :root{
   --black: rgba(0,0,0,1);
   --alto: rgba(217,217,217,1);
@@ -7,27 +8,33 @@
   --font-size-l: 10px;
   --font-size-xl: 20px;
 }
+.toolkit-container {
+  padding-top: 15%;
+}
 .home-container{
     font-family: 'Red Hat Display', sans-serif;
+    padding:0% 100px 15% 100px;
+     color: rgb(51, 50, 50);
+}
+
+.home-info{
+  padding-top:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title{
-    position: absolute;
-    width: 1018px;
-    height: 413px;
-    left: 226px;
-    top: calc(50% - 413px/2 - 103.5px + 50px);
-
-
+    top: 301px; /* calc(50% - 413px/2 - 103.5px + 50px);this is too complicated*/
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 900;
     font-size: 125px;
     line-height: 110px;
+    padding-left:80px;
     /* or 88% */
 
     /*display: flex;*/
-    align-items: flex-end;
     letter-spacing: 0.03em;
 
     flex: none;
@@ -35,30 +42,16 @@
     flex-grow: 0;
     z-index: 0;
 }
-.title_1{
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 125px;
-    line-height: 110px;
-}
-.text{
-    position: absolute;
-    width: 763px;
-    height: 123px;
-    left: 226px;
-    top: 606px;
 
+.text{
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 60px;
+    padding-left: 115px;
+    padding-top: 50px;
     /* or 150% */
-
-    display: flex;
-    align-items: flex-end;
-
     color: #000000;
 
     flex: none;
@@ -68,10 +61,9 @@
 }
 
 .pic{
-    position: absolute;
     width: 706px;
     height: 383px;
-    right: 222px;
+    right: 100px;
     top: 301px;
 
     flex: none;
@@ -85,6 +77,7 @@
   visibility: hidden;
 }
 
+/* why is this here */
 .sponsorships{
   align-items: center;
   background-color: #f5f4f4;

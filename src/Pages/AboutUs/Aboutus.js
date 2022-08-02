@@ -21,6 +21,17 @@ const cards = data.map(item=>{
     <div className="aboutus">
       <div className='about-container'>
         <div className='headline'>Building community, one line of &lt;/code&gt; at a time.</div>
+        {/**
+         * <div className='headline'><Typewriter
+            onInit={(typewriter) => {
+              typewriter
+              .typeString("Building community, one line of </code> at a time.")
+              .start();
+            }
+
+            }
+          /> </div>
+         */}
         <div className='about-info'>
           <Slide left>
           <div className='about-left'>

@@ -1,6 +1,10 @@
 img{
     width:75px;
-    padding-left:100px;
+    margin-left:200px;
+}
+
+.logo{
+    margin-left:100px;
 }
 
 .logo:hover{
@@ -14,7 +18,7 @@ li{
 ul{
     display:flex;
     gap:2rem;
-    margin-right:150px;
+    margin-right:300px;
 }
 
 a{
@@ -24,6 +28,10 @@ a{
 a:hover{
     color:gray;
     transition: 0.3s;
+}
+
+.links-container{
+    margin-right:100px;
 }
 
 .navbar-container{
