@@ -1,5 +1,4 @@
 .aboutus {
-
     font-family: 'Red Hat Display', sans-serif;
     display: flex;
     flex-direction: column;
@@ -8,32 +7,33 @@
     margin-right: 5%;
     padding: 5% 7%;
 }
-.about-container{
-  margin-top: 530px;
+
+.about-container {
     display: flex;
     flex-direction: column;
 }
-.about-info{
+
+.about-info {
     display: flex;
     border-radius: 15px;
     font-size: 18px;
-    color:rgb(51, 50, 50);
+    color: rgb(51, 50, 50);
     align-self: center;
-    padding:7% 0% 15% 0%;
-    width:100%;
+    padding: 7% 0% 15% 0%;
+    width: 100%;
     justify-content: space-between;
 }
 
-.about-left{
+.about-left {
     width: 35%;
-    height:250px;
+    height: 250px;
     background-color: #fbfbfb;
     text-align: center;
     line-height: 2.5rem;
     border-radius: 2px;
     padding: 60px 70px;
     box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.2)
+        0 6px 20px 0 rgba(0, 0, 0, 0.2)
 }
 
 .about-right {
@@ -45,14 +45,14 @@
     line-height: 2.5rem;
     border-radius: 2px;
     box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.2)
+        0 6px 20px 0 rgba(0, 0, 0, 0.2)
 }
 
 .memberCard {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-.headline{
+.headline {
     align-self: center;
     font-size: 45px;
     letter-spacing: 0.03rem;
@@ -61,17 +61,17 @@
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    color:#393939;
+    color: #393939;
     border-bottom: 1px solid grey;
 }
 
 .aboutus-title {
     font-weight: 700;
-    font-size:45px;
+    font-size: 45px;
     align-self: center;
 }
 
-.team-container{
+.team-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -79,40 +79,41 @@
     color: #393939;
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    padding:5% 7%;
+    padding: 5% 7%;
     color: #393939;
 }
 
 @media screen and (max-width:1360px) {
-   .about-info{
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap:100px;
-    font-size: 14px;
-   }
+    .about-info {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 100px;
+        font-size: 14px;
+    }
 
-   .about-left {
-       line-height: 1.5rem;
-       height: auto;
-       min-width: 150px;
+    .about-left {
+        line-height: 1.5rem;
+        height: auto;
+        min-width: 150px;
         padding: 7% 15%;
-   }
-   .about-right{
-    margin-top:10%;
-    line-height: 1.5rem;
-    height:auto;
-    padding: 7% 15%;
-    min-width: 150px;
-   }
+    }
+
+    .about-right {
+        margin-top: 10%;
+        line-height: 1.5rem;
+        height: auto;
+        padding: 7% 15%;
+        min-width: 150px;
+    }
 }
 
 @media screen and (max-width:830px) {
-    .headline{
+    .headline {
         font-size: 30px;
-        width:80%;
+        width: 80%;
     }
 }
