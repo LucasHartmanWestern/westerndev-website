@@ -25,7 +25,9 @@ export default function Home() {
             <span style={{color:'#60468C'}}>Developers</span> <br />
             <span style={{color:'#303030'}}>Society</span>
           </div>
-
+          <div className="text">
+            Building a community, one line of code at a time.
+          </div>
         </div>
 
         <div className="pic">
@@ -65,9 +67,7 @@ export default function Home() {
         </div>
 
       </div>
-
-
-
+      
     </div>
 
   )

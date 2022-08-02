@@ -7,7 +7,7 @@ import Contact from './Pages/Contact/Contact';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import Aboutus from './Pages/Home/Aboutus';
 import Sponorships from './/Pages/Sponsorships/Sponsorships.js';
-
+import Toolkit from './Components/Toolkit/toolkit';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/Toolkit" element={<Toolkit/>} />
           <Route path="/Contact" element={<Contact></Contact>} />
           <Route path="/Portfolio" element={<Portfolio/>} />
           <Route path="/Sponorships" element={<Sponorships />} />
