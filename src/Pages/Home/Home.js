@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         </div>
           <div className="text">
-            Building a community, one line of code at a time.
+            Building community, one line of code at a time.
           </div>
 
       </div>

@@ -40,7 +40,6 @@
 
 .sponsorships {
   align-items: center;
-  background-color: #d9ddf5;
   display: flex;
   flex-direction: column;
   height: 1024px;
@@ -51,7 +50,7 @@
 }
 
 .title--ye {
-  color: rgb(51, 50, 50);
+  color: #60468C;
   font-family: 'Red Hat Display';
   font-size: var(--font-size-xxxxl);
   font-weight: 400;
@@ -65,9 +64,9 @@
 }
 
 .paragraph {
-  color: var(--black);
+  color: rgb(67, 67, 67);
   font-family: 'Red Hat Display';
-  font-size: var(--font-size-xl);
+  font-size: x-large;
   font-weight: 400;
   letter-spacing: 0;
   margin-left: 19.0px;
@@ -85,10 +84,10 @@
 }
 
 .title-2 {
-  color: #9b49b8;
+  color: #60468C;
   font-family: 'Red Hat Display';
   font-size: 40px;
-  font-weight: 500px;
+  font-weight: 500;
   letter-spacing: 0;
   margin-left: 10.0px;
   margin-top: 32px;
@@ -96,10 +95,10 @@
 }
 
 .paragraph-2 {
-  color: var(--black);
+  color: rgb(67, 67, 67);
   font-family: 'Red Hat Display';
-  font-size: 18px;
-  line-height: 1.2rem;
+  font-size: large;
+  line-height: 1.9rem;
   font-weight: 400;
   letter-spacing: 0;
   margin-left: 10.0px;
@@ -152,19 +151,19 @@
 .seeking-partnership-with-us {
   align-self: flex-end;
   display: flex;
-  color: #8c00a3;
+  color: #60468C;
   font-family: 'Red Hat Display';
-  font-size:  30px;
-  font-weight: 500px;
+  font-size:  xx-large;
+  font-weight: 600;
   letter-spacing: 0;
   min-height: 144px;
   text-align: center;
 }
 
 .paragraphs-3 {
-  color: var(--black);
+  color: rgb(67, 67, 67);
   font-family: var(--font-family-inter);
-  font-size: 20px;
+  font-size: x-large;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.9rem;

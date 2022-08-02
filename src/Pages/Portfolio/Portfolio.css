@@ -5,6 +5,7 @@
     font-weight:bolder;
     font-family: 'Red Hat Display', sans-serif;
     font-size:65px;
+    color: #9D62CC;
 }
 
 @media screen and (max-width: 835px) {

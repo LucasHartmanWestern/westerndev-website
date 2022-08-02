@@ -1,14 +1,18 @@
 import React from 'react'
 import './Sponsorships.css'
+import Fade from "react-reveal/Fade"
 
 export default function Sponsorships() {
-
+//document.body.style = 'background: #D9DDF5;';
   return (
     <div className="container-center-horizontal">
+      
       <div className="sponsorships screen" >
+        <Fade>
         <h1 className="title--ye" >
           Sponsorships
         </h1>
+        </Fade>
         <div className="paragraph" ><p>
           Our partners empower us to host a myriad of workshops, competitions and events for the western community. Interested in partnering with us? Contact us at westerndevsociety@gmail.com to find out how you can partner with one of western's fastest growing clubs!
           </p>

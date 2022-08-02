@@ -61,7 +61,7 @@
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: #393939;
+    color: #60468C;
     border-bottom: 1px solid grey;
 }
 
@@ -69,6 +69,7 @@
     font-weight: 700;
     font-size: 45px;
     align-self: center;
+    color: #60468C;
 }
 
 .team-container {
@@ -77,6 +78,8 @@
     flex-wrap: wrap;
     align-self: center;
     color: #393939;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-container {
@@ -85,6 +88,8 @@
     gap: 5rem;
     padding: 5% 7%;
     color: #393939;
+    font-size: large;
+    justify-content: center;
 }
 
 @media screen and (max-width:1360px) {

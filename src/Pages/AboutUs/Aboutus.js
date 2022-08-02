@@ -7,8 +7,7 @@ import Slide from 'react-reveal/Slide'
 
 export default function Aboutus(){
   
-  //Set color of bg on each page
-  document.body.style = 'background: #D9DDF5;';
+  //document.body.style = 'background: #D9DDF5;';
 
 const cards = data.map(item=>{
   return (<Membercards
@@ -35,12 +34,16 @@ const cards = data.map(item=>{
         <div className='about-info'>
           <Slide left>
           <div className='about-left'>
-          Our mission is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          By creating memorable shared experiences, members will be more likely to create lasting relationships. Another key factor in creating lasting relationships will be engagement continuing outside of club activities. Initiatives such as discord engagement, study sessions, and networking events will help achieve this. 
           </div>
           </Slide>
           <Slide right>
           <div className='about-right'>
           Our services:
+            <ul>&gt;  web design </ul>
+            <ul> &gt; web development </ul>
+            <ul> &gt; web hosting set up </ul>
+            
           </div>
           </Slide>
        </div>
