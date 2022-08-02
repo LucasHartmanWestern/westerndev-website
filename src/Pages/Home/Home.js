@@ -1,9 +1,21 @@
 import React from 'react'
 import './Home.css'
+import Membercards from "./Membercards"
+import data from './data'
+import './Aboutus.css'
+import Slide from 'react-reveal/Slide'
+import Typewriter from 'typewriter-effect';
 
 // images and styling tbd
 export default function Home() {
-  document.body.style = 'background: #D9DDF5;';
+  document.body.style = 'background: #F5F4F4;';
+  const cards = data.map(item=>{
+    return (<Membercards
+      key={item.id}
+      item={item}
+    />)
+  })
+
   return (
     <div className='home-container'>
       <div className="content">
@@ -22,34 +34,36 @@ export default function Home() {
           <img src='images/tech.png' style={{width:706,height:383}}></img>
         </div>
 
-      </div>
+        <div className='about-container'>
 
-      <div className="sponsorships">
-        <div className="partners-container">
-            <div className="our-partners">Our Partners</div>
-            <p className="subtext">Through our projects, we've had the honour of
-            collaborating with a wide range of incredible businesses and institutions. Here are a few of them:</p>
+          <div className='headline'><Typewriter
+            onInit={(typewriter) => {
+              typewriter
+              .typeString("Building community, one line of </code> at a time.")
+              .start();
+            }
 
+            }
+          /> </div>
+          <div className='about-info'>
+            <Slide left>
+            <div className='about-left'>
+            Western Developer Society is a student run community for developers at Western University that empowers students to become better developers through competitions, tutorials and real practice.
+            </div>
+            </Slide>
+            <Slide right>
+            <div className='about-right'>
+            We offer workshops to teach students technical and non technical skills, competitions to provide students the opportunity to showcase their skills, and community projects for our developer teams to get real world experience.
+            </div>
+            </Slide>
+         </div>
         </div>
-        <div className="elipse-container">
-        <div className="elipse-1"></div>
-        <div className="elipse"></div>
-        <div className="elipse"></div>
-        </div>
 
-        <div className="footer">
-          <div className="heading">Seeking Partnership with us?</div>
-          <p className="description">
-          Western dev society plans on holding both in person and online events
-          for the upcoming 2022-2023 school year. Running live events for the WDS and
-          Western communities comes at a very high cost. Therefore, WDS highly appreaciates and welcomes any financial or in-kind sponsorships
-          <br /><br />
-          There are many benefits that come with collaborating with our association!
-          Partnering with WDS means that we will share and promote your organization's marketing
-          material to the Western Engineering & Computer Science and greater Western community.
-          You'll also have opportunities to directly engage with the student population through sending
-          representatives from your company, and/or through other collaboration formats. This is great for recruitment purposes!
-          </p>
+        <div className='team-container'>
+            <h1 className="aboutus-title" >Meet the Team!</h1>
+          <div className="card-container">
+            {cards}
+          </div>
         </div>
 
       </div>
