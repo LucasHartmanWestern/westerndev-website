@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <Fade>
     <div className='coming-soon'>
-      coming soon...
+      Coming soon...
     </div>
     </Fade>
   )
