@@ -2,10 +2,6 @@
     font-family: 'Red Hat Display', sans-serif;
     display: flex;
     flex-direction: column;
-    padding: 50px 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 5% 7%;
 }
 
 .about-container {
@@ -13,43 +9,33 @@
     flex-direction: column;
 }
 
-.about-info {
-    display: flex;
-    border-radius: 15px;
-    font-size: 18px;
-    color: rgb(51, 50, 50);
-    align-self: center;
-    padding: 7% 0% 15% 0%;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.about-left {
-    width: 35%;
-    height: 250px;
-    background-color: #fbfbfb;
-    text-align: center;
-    line-height: 2.5rem;
-    border-radius: 2px;
-    padding: 60px 70px;
-    box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.2)
-}
-
-.about-right {
-    padding: 60px 70px;
-    width: 35%;
-    height: 250px;
-    background-color: #fbfbfb;
-    text-align: center;
-    line-height: 2.5rem;
-    border-radius: 2px;
-    box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.2)
-}
-
 .memberCard {
     font-family: 'Red Hat Display', sans-serif;
+}
+
+.about-top-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #60468C;
+    padding:250px 350px 200px 350px;
+}
+
+.aboutus-title {
+    color: rgb(255, 253, 244);
+    padding-top: 50px;
+    font-weight: 900;
+    min-width: 400px;
+    font-size: 80px;
+    padding-bottom: 50px;
+}
+
+.aboutus-description {
+    font-weight: 500;
+    padding-right: 5%;
+    font-size: 30px;
+    width:60%;
+    line-height:3rem;
+    color: rgb(255, 253, 244)
 }
 
 .headline {
@@ -65,7 +51,7 @@
     border-bottom: 1px solid grey;
 }
 
-.aboutus-title {
+.team-title {
     font-weight: 700;
     font-size: 45px;
     align-self: center;
@@ -80,6 +66,8 @@
     color: #393939;
     justify-content: center;
     align-items: center;
+    padding-top:100px;
+    padding-bottom:200px;
 }
 
 .card-container {

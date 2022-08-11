@@ -71,8 +71,8 @@ function Contact() {
           </div>
         </Fade>
       </div>
-      <h3 className="Contact-form-title">&gt; or write to us here directly!</h3>
       <div className="Contact-form-container">
+      <h3 className="Contact-form-title">&gt; or write to us here directly!</h3>
         <div className="Contact-form">
           <form
             onSubmit={(e) => {

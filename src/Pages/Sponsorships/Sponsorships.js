@@ -3,10 +3,8 @@ import './Sponsorships.css'
 import Fade from "react-reveal/Fade"
 
 export default function Sponsorships() {
-//document.body.style = 'background: #D9DDF5;';
   return (
     <div className="container-center-horizontal">
-      
       <div className="sponsorships screen" >
         <Fade>
         <h1 className="title--ye" >

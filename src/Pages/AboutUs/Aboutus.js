@@ -2,7 +2,7 @@ import React from 'react'
 import Membercards from "./Membercards"
 import data from './data'
 import './Aboutus.css'
-import Slide from 'react-reveal/Slide'
+import Fade from 'react-reveal/Fade'
 
 
 export default function Aboutus(){
@@ -18,39 +18,17 @@ const cards = data.map(item=>{
 
   return (
     <div className="aboutus">
-      <div className='about-container'>
-        <div className='headline'>Building community, one line of &lt;/code&gt; at a time.</div>
-        {/**
-         * <div className='headline'><Typewriter
-            onInit={(typewriter) => {
-              typewriter
-              .typeString("Building community, one line of </code> at a time.")
-              .start();
-            }
-
-            }
-          /> </div>
-         */}
-        <div className='about-info'>
-          <Slide left>
-          <div className='about-left'>
-          By creating memorable shared experiences, members will be more likely to create lasting relationships. Another key factor in creating lasting relationships will be engagement continuing outside of club activities. Initiatives such as discord engagement, study sessions, and networking events will help achieve this. 
-          </div>
-          </Slide>
-          <Slide right>
-          <div className='about-right'>
-          Our services:
-            <ul>&gt;  web design </ul>
-            <ul> &gt; web development </ul>
-            <ul> &gt; web hosting set up </ul>
-            
-          </div>
-          </Slide>
-       </div>
+      
+      <div className='about-top-container'>
+        <Fade>
+          <div className="aboutus-title">About Us</div>
+            <div className="aboutus-description">
+              At Western Developers Society, we want to give students real life development experience. Join us today!
+            </div>
+        </Fade>
       </div>
-
       <div className='team-container'>
-          <h1 className="aboutus-title" >Meet the Team!</h1>
+          <h1 className="team-title" >Meet the Team!</h1>
         <div className="card-container">
           {cards}
         </div>

@@ -35,7 +35,7 @@ a:hover{
 }
 
 .navbar-container{
-    padding-top:100px;
+    padding-top:50px;
     display: flex;
     font-family: 'Red Hat Display', sans-serif;
     justify-content: space-between;
@@ -43,6 +43,10 @@ a:hover{
     letter-spacing: 0.03em;
     text-decoration: none;
     align-items:center;
+    position: fixed;
+    background-color: rgb(255, 253, 244);
+    width: 100%;
+    z-index: 1;
 }
 
 @media screen and (max-width: 835px) {

@@ -11,46 +11,63 @@
 .toolkit-container {
   padding-top: 15%;
 }
+
 .home-container{
     font-family: 'Red Hat Display', sans-serif;
-    padding:0% 100px 15% 100px;
-     color: rgb(51, 50, 50);
+    color: rgb(51, 50, 50);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 300px 0px;
 }
 
 .home-info{
-  padding-top:200px;
+  padding:0px 350px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .title{
-    top: 301px; /* calc(50% - 413px/2 - 103.5px + 50px);this is too complicated*/
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 900;
-    font-size: 125px;
-    line-height: 110px;
-    padding-left:80px;
+    font-size: 100px;
+    line-height: 6rem;
     /* or 88% */
 
     /*display: flex;*/
     letter-spacing: 0.03em;
-
     flex: none;
     order: 0;
     flex-grow: 0;
     z-index: 0;
 }
 
+.line1{
+  transition: 0.3s ease;
+}
+.line1:hover {
+  font-size: 105px;
+}
+.line2 {
+  transition: 0.3s ease;
+}
+.line2:hover {
+  font-size: 105px;
+}
+.line3 {
+  transition: 0.3s ease;
+}
+.line3:hover {
+  font-size: 105px;
+}
+
 .text{
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 60px;
-    padding-left: 115px;
-    padding-top: 50px;
+    padding-left: 350px;
     /* or 150% */
     color: #000000;
 
@@ -61,15 +78,15 @@
 }
 
 .pic{
-    width: 706px;
-    height: 383px;
-    right: 100px;
     top: 301px;
 
     flex: none;
     order: 4;
     flex-grow: 0;
     z-index: 4;
+}
+.pic img{
+  width:600px;
 }
 
 .hidden, .hidden * {
@@ -179,6 +196,52 @@
   width: 110px;
 }
 
+.about-info {
+  border-radius: 15px;
+  font-size: 18px;
+  color: rgb(51, 50, 50);
+  align-self: center;
+  width: 100%;
+  padding: 10% 100px 15% 100px;
+  margin-top:12%;
+  background-color: rgb(241, 241, 241);
+}
+.about-title{
+  font-size: 24px;
+  padding-left:170px;
+  margin-bottom:5%;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-left {
+  width: 30%;
+  height: 300px;
+  background-color: #fbfbfb;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 4px;
+  padding: 60px 70px;
+  box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.2)
+}
+
+.about-right {
+  padding: 60px 70px;
+  width: 30%;
+  height: 300px;
+  background-color: #fbfbfb;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 4px;
+  box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.2)
+}
 
 @media screen and (max-width: 835px) {
 

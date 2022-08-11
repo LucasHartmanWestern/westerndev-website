@@ -3,19 +3,15 @@
   flex-direction: column;
   text-align: left;
   font-family: "Red Hat Display", sans-serif;
-  margin-left: 5%;
-  margin-right: 5%;
   display: flex;
-  padding: 5% 7% 5% 7%;
 }
 
-.Contact-Container>div {
-  padding: 2.5% 0%;
-}
 
 .Contact-info {
   display: flex;
   color: rgb(51, 50, 50);
+
+  padding: 250px 350px;
 }
 
 .Contact-1 {
@@ -35,11 +31,13 @@
 .Contact-Description {
   font-weight: 500;
   padding-right: 5%;
+  font-size:40px;
+  line-height: 3rem;
 }
 
 .Contact-2 {
   font-size: 25px;
-  padding-left: 15%;
+  padding-left: 5%;
   padding-top: 3%;
   min-width: 35%;
   display: flex;
@@ -61,21 +59,23 @@
   justify-items: center;
 }
 
-.Contact-Socials>div {
-  display: flex;
-  padding: 2.5% 0%;
-}
 
 .Contact-form-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding:0px 350px 200px 350px;
+  background-color: #60468C;
+  color: rgb(255, 253, 244);
 }
 
 .Contact-form-title {
   font-size: x-large;
   margin-top: 10%;
-  color: #9D62CC;
+  align-self: flex-start;
+  padding-bottom:50px;
+
 }
 
 .Contact-form {
@@ -88,10 +88,11 @@
 input,
 textarea {
   padding: 0.5rem;
-  border-radius: 2px;
+  border-radius: 3px;
   border-width: 0px;
   min-height:40px;
   margin-top:10px;
+  border: 1px solid rgb(214, 214, 214);
 }
 
 .input-container {
