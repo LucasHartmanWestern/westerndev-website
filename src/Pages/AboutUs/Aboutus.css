@@ -80,6 +80,52 @@
     justify-content: center;
 }
 
+.join-title{
+  font-weight: 700;
+  font-size: 45px;
+  align-self: center;
+  color: #60468C;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+.subtitle{
+  font-weight: 500;
+  font-size: 28px;
+  align-self: center;
+  color: #60468C;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.general, .director{
+  align-self: center;
+  text-align: center;
+  margin-left: 180px;
+  margin-right: 180px;
+  font-family: 'Red Hat Display';
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.joinus{
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-top: 30px;
+  font-family: 'Red Hat Display';
+  text-align: center;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.list{
+  font-size: 18px;
+}
+
+
+
+
 @media screen and (max-width:1360px) {
     .about-info {
         flex-wrap: wrap;
