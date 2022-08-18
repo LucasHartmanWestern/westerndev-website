@@ -37,9 +37,9 @@ export default function Home() {
             <Slide right>
             <div className='about-right'>
             Our services:
-              <ul>&gt;  web design </ul>
-              <ul> &gt; web development </ul>
-              <ul> &gt; web hosting set up </ul>
+              <ul>&gt;  Web design: we can style and design websites via CSS  </ul>
+              <ul> &gt; Web development: we can build websites using HTML5 via the React framework </ul>
+              <ul> &gt; Web hosting set up: we can host websites on Github and via other providers  </ul>
             </div>
           </Slide>
           </div>
