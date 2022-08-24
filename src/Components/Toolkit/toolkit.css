@@ -6,7 +6,8 @@
     align-self: center;
     color: #393939;
     font-family: 'Red Hat Display', sans-serif;
-    width: 80%
+    width: 80%;
+
 }
 
 .card-container{
@@ -25,6 +26,7 @@
 
 .toolkitCard {
     margin: auto;
+    font-size: 12px;
 }
 
 

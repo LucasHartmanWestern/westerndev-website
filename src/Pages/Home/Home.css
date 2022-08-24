@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 
 :root{
   --black: rgba(0,0,0,1);
@@ -59,6 +62,16 @@
 }
 .line3:hover {
   font-size: 105px;
+}
+
+.card-sub-title {
+  font-weight: 700;
+  font-size:22px;
+}
+
+.bottom-line{
+  font-weight: 700;
+  font-size:45px;
 }
 
 .text{
@@ -208,6 +221,7 @@
 }
 .about-title{
   font-size: 24px;
+  font-weight: 500;
   padding-left:170px;
   margin-bottom:5%;
 }

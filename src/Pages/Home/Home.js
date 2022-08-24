@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import { Slide,Fade } from 'react-reveal';
 import tech from './tech.png'
+import Toolkit from '../../Components/Toolkit/toolkit';
 
 // images and styling tbd
 export default function Home() {
@@ -27,7 +28,12 @@ export default function Home() {
         </Fade>
         
         <div className='about-info'>
-          <div className='about-title'>&gt; We are a collective of students, applying our skills to support our community</div>
+
+          <div className='about-title'>
+            &gt; What is the Western Developers Society?
+            <br></br>
+            &gt; We are a collective of students, applying our skills to support our community
+            </div>
           <div className='card-container'>
             <Slide left>
             <div className='about-left'>
@@ -36,19 +42,18 @@ export default function Home() {
             </Slide>
             <Slide right>
             <div className='about-right'>
-            Our services:
+            <span className='card-sub-title'>OUR SERVICES:</span>
               <ul>&gt;  Web design: we can style and design websites via CSS  </ul>
               <ul> &gt; Web development: we can build websites using HTML5 via the React framework </ul>
               <ul> &gt; Web hosting set up: we can host websites on Github and via other providers  </ul>
             </div>
           </Slide>
           </div>
-       </div>
-      {/**<div className='toolkit-container'>
-      <Toolkit></Toolkit>
+          <div className='toolkit-container'>
+        <Toolkit></Toolkit>
       </div>
-      THIS WILL BE USED WHEN CONTENT IS FILLED */}
-      
+        <span className='bottom-line'>Western Dev Society 2022</span>
+       </div>
     </div>
 
   )
