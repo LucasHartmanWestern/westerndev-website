@@ -33,15 +33,14 @@ const cards = data.map(item=>{
         <div className="subtitle">General Member</div>
         <div className="general">Anyone at western is welcome to join our community as a general member by attending our events such as hackathons, networking events, workshops etc.
         Drop by any of our social media outlets to learn more about us, keep up-to-date with our upcoming events, or to chat with our members!</div>
-        <div className="subtitle">Director</div>
-        <div className="director">To join as a director, there is an application process that will be open in the fall. We're currently looking for:<br />
-          <div className="list">
-          <br />Developers<br />
-          Community Leads and 2 Tech Leads<br />
-          Designers<br />
-          Directors to work under VP's (Marketing, internal, external, careers and finance)</div>
+        <div className="subtitle">Executive</div>
+        <div className="director">We'll be opening applications later in September for all Western students interested in joining our executive team.
+Directors will be hired for internal & external events, marketing, careers, and finance. In our Development portfolio we'll be hiring one community lead and 2 tech leads.<br />
         </div>
-        <div className="joinus">Join the Western Developers Society to have access to a tremendous community of likeminded students and tools to get you involved in technology!</div>
+        <div className="subtitle">Development Teams</div>
+        <div className="devs">Applications for 4 month development teams will open in September and January for students interested in building real world applications for WDS, other Western Clubs and local London community groups. We'll be hiring Team Leads, Developers, and Designers!</div>
+        <div className="joinus">Some perks of being a WDS member include tangible career growth opportunities, access to mentornship program, discounted of waived event ticket fee, exclusive educationals and workshops and much more!
+ </div>
       </div>
       </div>
       <div className='team-container'>
