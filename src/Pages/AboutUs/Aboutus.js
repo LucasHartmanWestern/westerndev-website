@@ -1,14 +1,10 @@
 import React from "react"
-import Membercards from "./Membercards"
-import data from "./data"
+import Member from "./Membercards"
+import { EXEC_MEMBERS } from "./MembersData"
 import "./Aboutus.css"
 import Fade from "react-reveal/Fade"
 
 export default function Aboutus() {
-  const cards = data.map((item) => {
-    return <Membercards key={item.id} item={item} />
-  })
-
   return (
     <div className="aboutus">
       <div className="about-top-container">
@@ -22,7 +18,11 @@ export default function Aboutus() {
       </div>
       <div className="team-container">
         <h1 className="team-title">Meet the Team!</h1>
-        <div className="card-container">{cards}</div>
+        <div className="card-container">
+          {EXEC_MEMBERS.map((item, idx) => (
+            <Member key={idx + item.name} data={item} />
+          ))}
+        </div>
       </div>
     </div>
   )
