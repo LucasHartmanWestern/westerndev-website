@@ -87,24 +87,11 @@ const EXEC_MEMBERS = [
     name: "Tara Lee",
     role: "VP Development",
     image: TaraImg,
+    socials: {
+      github: "https://github.com/tarazoelee",
+      email: "mailto:tlee379@uwo.ca",
+    },
   },
-  // {
-  //   name: "Henry Chen",
-  //   role: "Developer",
-  //   socials: {
-  //     linkedin: "https://www.linkedin.com/in/henry-chen-433b15189/",
-  //     email: "mailto:hchen869@uwo.a",
-  //   },
-  // },
-  // {
-  //   name: "Maaz Siddiqi",
-  //   role: "Developer",
-  //   socials: {
-  //     linkedin: "https://www.linkedin.com/in/maaz-siddiqi",
-  //     github: "https://github.com/MaazSiddiqi",
-  //     email: "mailto:msidd54@uwo.ca",
-  //   },
-  // },
 ]
 
 const DEV_MEMBERS = [
