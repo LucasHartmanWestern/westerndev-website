@@ -81,12 +81,12 @@
 }
 
 .join-title{
-  font-weight: 700;
-  font-size: 45px;
+  font-weight: 900;
+  font-size: 55px;
   align-self: center;
   color: #60468C;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   margin-top: 40px;
 }
 
@@ -99,14 +99,23 @@
   margin-bottom: 10px;
 }
 
-.general, .director, .devs{
+.general{
   align-self: center;
   text-align: center;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 25%;
+  margin-right: 25%;
   font-family: 'Red Hat Display';
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  max-width: 750px;
+}
+
+.director, .devs{
+  font-family: 'Red Hat Display';
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  margin-left: 70px;
 }
 
 .joinus{
@@ -118,6 +127,23 @@
   font-size: 26px;
   margin-top: 50px;
 }
+
+.exec-dev{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-items: center;
+}
+.exec{
+
+}
+.dev{
+
+}
+
+
 
 .list{
   font-size: 18px;
