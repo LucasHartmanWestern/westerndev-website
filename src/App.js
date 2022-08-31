@@ -8,25 +8,27 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import Aboutus from './Pages/AboutUs/Aboutus';
 import Sponorships from './/Pages/Sponsorships/Sponsorships.js';
 import Toolkit from './Components/Toolkit/toolkit';
+import Events from './Pages/Events/Events';
 
 
 function App() {
   return (
     <div>
       <Router>
-      <div className="App-container">
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/Toolkit" element={<Toolkit/>} />
-          <Route path="/Contact" element={<Contact></Contact>} />
-          <Route path="/Portfolio" element={<Portfolio/>} />
-          <Route path="/AboutUs" element={<Aboutus/>} />
-          <Route path="/Sponorships" element={<Sponorships />} />
-        </Routes>
-      </div>
-    </Router>
-  </div>
+        <div className="App-container">
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/Toolkit" element={<Toolkit/>} />
+            <Route path="/Contact" element={<Contact></Contact>} />
+            <Route path="/Portfolio" element={<Portfolio/>} />
+            <Route path="/AboutUs" element={<Aboutus/>} />
+            <Route path="/Sponorships" element={<Sponorships />} />
+            <Route path="/Events" element={<Events />} />
+          </Routes>
+        </div>
+      </Router>
+    </div>
   );
 }
 
