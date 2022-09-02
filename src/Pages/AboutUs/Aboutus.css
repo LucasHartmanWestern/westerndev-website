@@ -1,84 +1,233 @@
 .aboutus {
-    font-family: 'Red Hat Display', sans-serif;
-    display: flex;
-    flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.memberCard {
-    font-family: 'Red Hat Display', sans-serif;
-}
-
-.about-top-container{
-    display: flex;
-    flex-direction: column;
-    background-color: #60468C;
-    padding:250px 350px 200px 350px;
+.about-top-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #60468c;
+  padding: 250px 350px 200px 350px;
 }
 
 .aboutus-title {
-    color: rgb(255, 253, 244);
-    padding-top: 50px;
-    font-weight: 900;
-    min-width: 400px;
-    font-size: 80px;
-    padding-bottom: 50px;
+  color: rgb(255, 253, 244);
+  padding-top: 50px;
+  font-weight: 900;
+  min-width: 400px;
+  font-size: 80px;
+  padding-bottom: 50px;
 }
 
 .aboutus-description {
-    font-weight: 500;
-    padding-right: 5%;
-    font-size: 30px;
-    width:60%;
-    line-height:3rem;
-    color: rgb(255, 253, 244)
+  font-weight: 500;
+  padding-right: 5%;
+  font-size: 30px;
+  width: 60%;
+  line-height: 3rem;
+  color: rgb(255, 253, 244);
 }
 
 .headline {
-    align-self: center;
-    font-size: 45px;
-    letter-spacing: 0.03rem;
-    font-weight: 700;
-    width: 650px;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: #60468C;
-    border-bottom: 1px solid grey;
+  align-self: center;
+  font-size: 45px;
+  letter-spacing: 0.03rem;
+  font-weight: 700;
+  width: 650px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #60468c;
+  border-bottom: 1px solid grey;
 }
 
 .team-title {
-    font-weight: 700;
-    font-size: 45px;
-    align-self: center;
-    color: #60468C;
+  font-weight: 700;
+  font-size: 45px;
+  align-self: center;
+  color: #60468c;
+  margin-bottom: 3rem;
 }
 
 .team-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-self: center;
-    color: #393939;
-    justify-content: center;
-    align-items: center;
-    padding-top:100px;
-    padding-bottom:200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: center;
+  color: #393939;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-    padding: 5% 7%;
-    color: #393939;
-    font-size: large;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  color: #393939;
+  font-size: large;
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
 }
+
+.memberCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.profile-pic {
+  width: max-content;
+  height: max-content;
+  scale: 2;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.member-description {
+  display: grid;
+  place-items: center;
+}
+
+.member-description > h1 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding-bottom: 0.35rem;
+}
+
+.member-description > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.member-socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.member-social {
+  padding: 0.2rem 0.25rem;
+  min-width: fit-content;
+  opacity: 40%;
+  scale: 85%;
+}
+
+.member-social:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1360px) {
+  .about-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 100px;
+    font-size: 14px;
+  }
+
+  .about-left {
+    line-height: 1.5rem;
+    height: auto;
+    min-width: 150px;
+    padding: 7% 15%;
+  }
+
+  .about-right {
+    margin-top: 10%;
+    line-height: 1.5rem;
+    height: auto;
+    padding: 7% 15%;
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .headline {
+    font-size: 30px;
+    width: 80%;
+  }
+}
+
+.join-title{
+  font-weight: 900;
+  font-size: 55px;
+  align-self: center;
+  color: #60468C;
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 40px;
+}
+
+.subtitle{
+  font-weight: 500;
+  font-size: 28px;
+  align-self: center;
+  color: #60468C;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.general{
+  align-self: center;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: 'Red Hat Display';
+  font-size: 20px;
+  margin-bottom: 35px;
+  max-width: 750px;
+}
+
+.director, .devs{
+  font-family: 'Red Hat Display';
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  margin-left: 70px;
+}
+
+.joinus{
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-top: 30px;
+  font-family: 'Red Hat Display';
+  text-align: center;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.exec-dev{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-items: center;
+}
+.exec{
+
+}
+.dev{
+
+}
+
+
+
+.list{
+  font-size: 18px;
+}
+
+
+
 
 @media screen and (max-width:1360px) {
     .about-info {

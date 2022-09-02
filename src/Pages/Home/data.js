@@ -59,6 +59,7 @@ id: 10,
 name: "Radin Hakimjavadi",
 role: "Co-VP Marketing"
 },
+
 {
   id: 11,
   name: "Henry Chen",
@@ -88,5 +89,6 @@ role: "Co-VP Marketing"
   name: "Yuvraj Virdi",
   role: "Developer"
 },
+
 
 ]

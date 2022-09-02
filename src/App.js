@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './App.css';
 import Home from './Pages/Home/Home';
@@ -16,6 +17,7 @@ function App() {
     <div>
       <Router>
         <div className="App-container">
+
           <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>} />
@@ -25,6 +27,7 @@ function App() {
             <Route path="/AboutUs" element={<Aboutus/>} />
             <Route path="/Sponorships" element={<Sponorships />} />
             <Route path="/Events" element={<Events />} />
+
           </Routes>
         </div>
       </Router>
@@ -32,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
