@@ -1,22 +1,21 @@
-import "./Contact.css"
-import { FaLinkedin } from "react-icons/fa"
-import { FaInstagram } from "react-icons/fa"
-import { FaFacebookSquare } from "react-icons/fa"
-import { FaEnvelope } from "react-icons/fa"
+import React, { useCallback, useState } from "react"
+import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
 import Fade from "react-reveal/Fade"
-import { useState } from "react"
+import "./Contact.css"
 function Contact() {
-  //document.body.style = "background: #D9DDF5;"
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
   const [body, setBody] = useState("")
-  const [invalid, setInvalid] = useState(false)
-  const sendEmail = () => {
+  // const [invalid, setInvalid] = useState(false)
+
+  const sendEmail = useCallback(() => {
     console.log(firstName, lastName, email, subject, body)
-  }
-  const promptInvalid = () => {}
+  }, [body, email, firstName, lastName, subject])
+
+  const promptInvalid = useCallback(() => {}, [])
+
   return (
     <div className="Contact-Container">
       <div className="Contact-info">
@@ -30,12 +29,6 @@ function Contact() {
         </Fade>
         <Fade>
           <div className="Contact-2">
-            {/* <div className="Contact-Stater">
-              <div className="Contact-Email">
-                {" "}
-                <FaEnvelope /> &gt;write us at asdfghjk@placeholder.com <br />
-              </div>
-            </div> */}
             <div className="Contact-check"> &gt; check out our socials! </div>
             <div className="Contact-Socials">
               <div className="Contact-linkedin">
@@ -45,7 +38,7 @@ function Contact() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaLinkedin /> Western Developer's Society
+                  <FaLinkedin /> <p>Western Developer's Society</p>
                 </a>
               </div>
               <div className="Contact-insta">
@@ -54,7 +47,7 @@ function Contact() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaInstagram /> @westerndevsociety
+                  <FaInstagram /> <p>@westerndevsociety</p>
                 </a>
               </div>
               <div className="Contact-facebook">
@@ -64,7 +57,7 @@ function Contact() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaFacebookSquare /> @westerndevsociety
+                  <FaFacebookSquare /> <p>@westerndevsociety</p>
                 </a>
               </div>
             </div>
@@ -72,7 +65,9 @@ function Contact() {
         </Fade>
       </div>
       <div className="Contact-form-container">
-      <h3 className="Contact-form-title">&gt; or write to us here directly!</h3>
+        <h3 className="Contact-form-title">
+          &gt; or write to us here directly!
+        </h3>
         <div className="Contact-form">
           <form
             onSubmit={(e) => {
