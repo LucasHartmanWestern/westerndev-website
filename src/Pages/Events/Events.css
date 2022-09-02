@@ -1,0 +1,51 @@
+.events{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding-top:200px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.events-header {
+    font-size: 65px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.events-carousel {
+}
+
+.event-name {
+    font-size: 40px;
+    color: #9D62CC;
+    font-weight: bolder;
+}
+
+.event-desc {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.event-time {
+    margin: 5px;
+    font-weight: 600;
+}
+
+.event-link {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #9D62CC;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 835px) {
+    .events{
+        margin-top: 40%;
+        font-size: 50px;
+    }
+}
