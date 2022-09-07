@@ -1,29 +1,37 @@
+import React from './1.png';
+import Html from './6.png';
+import Css from './5.png';
+import Javascript from './2.png';
+import Figma from './4.png';
+import Github from './3.png';
 export default [
   
   {
     id: 1,
-    path: 'images/react.png',
+    path: React,
   },
   {
     id: 2,
-    path: 'images/react.png',
+    path: Html,
   },
   {
     id: 3,
-    path: 'images/react.png',
+    path: Css,
   },
   {
     id: 4,
-    path: 'images/react.png',
+    path: Javascript,
   },
   {
     id: 5,
-    path: 'images/react.png',
+    path: Figma,
   },
+
   {
     id: 6,
-    path: 'images/react.png',
+    path: Github,
   },
+
   
   ]
   

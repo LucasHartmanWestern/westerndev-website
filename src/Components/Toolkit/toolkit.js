@@ -1,6 +1,6 @@
 import React from 'react';
 import './toolkit.css';
-import data from './data'
+import data from './data';
 import ToolkitCard from './toolkitCard';
 
 

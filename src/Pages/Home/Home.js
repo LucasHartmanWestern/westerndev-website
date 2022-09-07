@@ -2,6 +2,8 @@ import React from 'react'
 import './Home.css'
 import { Slide,Fade } from 'react-reveal';
 import tech from './tech.png'
+import Toolkit from '../../Components/Toolkit/toolkit';
+import Typewriter from 'typewriter-effect';
 
 // images and styling tbd
 export default function Home() {
@@ -27,28 +29,57 @@ export default function Home() {
         </Fade>
         
         <div className='about-info'>
-          <div className='about-title'>&gt; We are a collective of students, applying our skills to support our community</div>
+
+          <div className='about-title'>
+            <span className='card-title-question'> 
+            What is the Western Developers Society?
+            </span>
+            <br></br>
+            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are a community of developers, designers, consultants, and engineers').callFunction(() => {
+              console.log('String typed out!');}).start();}}
+            /> </span>
+            <br></br>
+            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are Westerns Fastest Growing Tech Club').callFunction(() => {
+              console.log('String typed out!');}).start();}}
+            /> </span>
+            <br></br>
+            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are club for all students interested in technology').callFunction(() => {
+              console.log('String typed out!');}).start();}}
+            /> </span>
+            <br></br>
+            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are a collective of students, applying our skills to support our community').callFunction(() => {
+              console.log('String typed out!');}).start();}}
+            /> </span>
+          </div>
           <div className='card-container'>
             <Slide left>
             <div className='about-left'>
-            By creating memorable shared experiences, members will be more likely to create lasting relationships. Another key factor in creating lasting relationships will be engagement continuing outside of club activities. Initiatives such as discord engagement, study sessions, and networking events will help achieve this. 
+            <span className='card-sub-title'>Community First</span>
+            <br></br>
+            Western Developers Society is a club for UWO students who are interested in software development and technology. 
+            WDS is the place for students to discuss new technologies, share knowledge, and work on projects together. 
+            We also host workshops, speakers, and competitions throughout the year to help members learn new skills and keep up with the latest trends in software development. 
+            Whether you're a beginner or a seasoned pro, there's a place for you in the club. Join us and help us build the future!
             </div>
             </Slide>
             <Slide right>
             <div className='about-right'>
-            Our services:
-              <ul>&gt;  web design </ul>
-              <ul> &gt; web development </ul>
-              <ul> &gt; web hosting set up </ul>
+            <span className='card-sub-title'>Our Services</span>
+            <br></br>
+            Our development teams provide a comprehensive software development process that covers all aspects of the software development life cycle. 
+            This includes requirements gathering, design, development, testing, and deployment. 
+            From gathering and design, all the way to deployment we work closely with our clients to ensure that their needs are met and that the final product is of the highest quality.
             </div>
           </Slide>
           </div>
+
+          <div className='toolkit-container'>
+            <Toolkit></Toolkit>
+          </div>
        </div>
-      {/**<div className='toolkit-container'>
-      <Toolkit></Toolkit>
-      </div>
-      THIS WILL BE USED WHEN CONTENT IS FILLED */}
-      
+       <div className='copyright'>
+       <small>&copy; 2022 Western Developers Society. Created with ReactJS</small>
+       </div>
     </div>
 
   )
