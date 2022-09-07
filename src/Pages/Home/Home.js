@@ -31,26 +31,26 @@ export default function Home() {
         <div className='about-info'>
 
           <div className='about-title'>
-          <span className='card-title-question'> 
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter.typeString('What is the Western Developers Society?')
-                .callFunction(() => {
-                console.log('String typed out!');
-                })
-              .start();
-              }}
-            /> 
+            <span className='card-title-question'> 
+            What is the Western Developers Society?
             </span>
             <br></br>
-            <span className='card-bullet-points'>&gt; We are a community of developers, designers, consultants, and engineers</span>
+            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are a community of developers, designers, consultants, and engineers').callFunction(() => {
+              console.log('String typed out!');}).start();}}
+            /> </span>
             <br></br>
-            <span className='card-bullet-points'>&gt; We are Western's Fastest Growing Tech Club</span>
+            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are Westerns Fastest Growing Tech Club').callFunction(() => {
+              console.log('String typed out!');}).start();}}
+            /> </span>
             <br></br>
-            <span className='card-bullet-points'>&gt; We are club for <span className='bold-text'>all</span> students interested in technology</span>
+            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are club for all students interested in technology').callFunction(() => {
+              console.log('String typed out!');}).start();}}
+            /> </span>
             <br></br>
-            <span className='card-bullet-points'>&gt; We are a collective of students, applying our skills to support our community</span>
-            </div>
+            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are a collective of students, applying our skills to support our community').callFunction(() => {
+              console.log('String typed out!');}).start();}}
+            /> </span>
+          </div>
           <div className='card-container'>
             <Slide left>
             <div className='about-left'>
@@ -72,10 +72,10 @@ export default function Home() {
             </div>
           </Slide>
           </div>
+
           <div className='toolkit-container'>
-        <Toolkit></Toolkit>
-      </div>
-        <span className='bottom-line'>Western Dev Society 2022</span>
+            <Toolkit></Toolkit>
+          </div>
        </div>
        <div className='copyright'>
        <small>&copy; 2022 Western Developers Society. Created with ReactJS</small>
