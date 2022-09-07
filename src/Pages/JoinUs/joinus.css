@@ -1,13 +1,8 @@
-.spons-container{
+.join-container{
     font-family: "Red Hat Display", sans-serif;
-      display: flex;
-      flex-direction: column;
-      padding-bottom:10%;
-}
-
-.joinus-container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:5%;
 }
 
 .join-top-container {
@@ -67,26 +62,25 @@
   font-family: 'Red Hat Display';
   font-size: 20px;
   margin-bottom: 35px;
-  max-width: 750px;
+  max-width: 30%;
 }
 
 .director,
 .devs {
   font-family: 'Red Hat Display';
   font-size: 20px;
-  width: 70%;
   text-align: center;
   margin-left: 70px;
+  max-width: 70%;
 }
 
-.joinus {
+.joinus-descript {
   margin-left: 180px;
   margin-right: 180px;
-  margin-top: 30px;
+  margin-top: 5%;
   font-family: 'Red Hat Display';
   text-align: center;
   font-size: 26px;
-  margin-top: 50px;
   line-height: 2.0rem;
 }
 

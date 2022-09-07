@@ -7,7 +7,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Contact from './Pages/Contact/Contact';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import Aboutus from './Pages/AboutUs/Aboutus';
-import JoinUs from './Pages/Sponsorships/joinus';
+import JoinUs from './Pages/JoinUs/joinus';
 import Toolkit from './Components/Toolkit/toolkit';
 import Events from './Pages/Events/Events';
 
