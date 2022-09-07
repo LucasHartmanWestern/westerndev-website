@@ -4,13 +4,11 @@ import Member from "./Membercards"
 import { EXEC_MEMBERS } from "./MembersData"
 import "./Aboutus.css"
 import Fade from "react-reveal/Fade"
-import data from './data'
-
 
 export default function Aboutus() {
   return (
     <div className="aboutus">
-      <div className='about-top-container'>
+  <div className='about-top-container'>
         <Fade>
           <div className="aboutus-title">About Us</div>
           <div className="aboutus-description">
@@ -21,37 +19,62 @@ export default function Aboutus() {
       </div>
       <div className="team-container">
         <h1 className="team-title">Meet the Team!</h1>
-      <Fade>
-      <div className="join-container">
-        <div className="join-title">How to Join</div>
-        <div className="content-container">
-        <div className="subtitle">General Member</div>
-        <div className="general">Anyone at western is welcome to join our community as a general member by attending our events such as hackathons, networking events, workshops etc.
-        Drop by any of our social media outlets to learn more about us, keep up-to-date with our upcoming events, or to chat with our members!</div>
-
-      <div className="exec-dev">
-        <div className="exec">
-        <div className="subtitle">Executive</div>
-        <div className="director">We'll be opening applications later in September for all Western students interested in joining our executive team.
-Directors will be hired for internal & external events, marketing, careers, and finance. In our Development portfolio we'll be hiring one community lead and 2 tech leads.<br />
-        </div></div>
-        <div className="dev">
-        <div className="subtitle">Development Teams</div>
-        <div className="devs">Applications for 4 month development teams will open in September and January for students interested in building real world applications for WDS, other Western Clubs and local London community groups. We'll be hiring Team Leads, Developers, and Designers!</div>
-        </div>
-        </div>
-        <div className="joinus">Some perks of being a WDS member include tangible career growth opportunities, access to mentornship program, discounted of waived event ticket fee, exclusive educationals and workshops and much more!
-
-      </div>
-      </div>
-      </div>
-      </Fade>
+      
         <div className="card-container">
           {EXEC_MEMBERS.map((item, idx) => (
             <Member key={idx + item.name} data={item} />
           ))}
         </div>
       </div>
+    
+    <div className="sponsorships-container">
+      <div className="sponsorships screen" >
+        <Fade>
+        <div className="title--ye" >
+          Sponsorships
+        </div>
+        </Fade>
+        <div className="paragraph" ><p>
+          Our partners empower us to host a myriad of workshops, competitions and events for the western community. Interested in partnering with us? Contact us at westerndevsociety@gmail.com to find out how you can partner with one of western's fastest growing clubs!
+          </p>
+        </div>
+        <img
+          className="divider"
+
+          src="https://anima-uploads.s3.amazonaws.com/projects/62e7f23d5a7d66bdd412e081/releases/62e7f24a41fdb6de5bf9db78/img/divider@1x.svg"
+        />
+
+        <div className="title-2" >
+
+          <h3>Our Partners</h3>
+        </div>
+        <p className="paragraph-2" >
+          Through our projects, we've had the honour of collaborating with a wide range of incredible businesses and institutions. Here are a few of them:
+        </p>
+        <div className="company-container" >
+          <div className="company3" ></div>
+          <div className="company2" ></div>
+          <div className="company1" ></div>
+        </div>
+        <div className="flex-row" >
+          <div className="seeking-partnership-with-us" >
+            <h3>Seeking partnership with us?</h3>
+          </div>
+          <p className="paragraphs-3" >
+          Western dev society plans on holding both in person and online events for the upcoming 2022-2023 school year.
+          Running live events for the WDS and Western communities comes at a very high cost. Therefore, WDS highly
+          appreaciates and welcomes any financial or in-kind sponsorships
+          <br />
+          <br />
+          There are many benefits that come with collaborating with our association! Partnering with WDS means that we
+          will share and promote your organization&#x27;s marketing material to the Western Engineering &amp; Computer
+          Science and greater Western community. You&#x27;ll also have opportunities to directly engage with the student
+          population through sending representatives from your company, and/or through other collaboration formats. This
+          is great for recruitment purposes!
+          </p>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }
