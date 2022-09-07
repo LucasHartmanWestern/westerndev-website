@@ -1,0 +1,109 @@
+.spons-container{
+    font-family: "Red Hat Display", sans-serif;
+      display: flex;
+      flex-direction: column;
+      padding-bottom:10%;
+}
+
+.joinus-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.join-top-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #846ab1;
+  padding: 250px 350px 200px 350px;
+}
+
+.joinus-description {
+  font-weight: 500;
+  padding-right: 5%;
+  font-size: 30px;
+  width: 60%;
+  line-height: 3rem;
+  color: rgb(255, 253, 244);
+}
+
+.joinus-title {
+  color: rgb(255, 253, 244);
+  padding-top: 50px;
+  font-weight: 900;
+  min-width: 400px;
+  font-size: 80px;
+  padding-bottom: 50px;
+}
+
+.join-title {
+  font-weight: 900;
+  font-size: 55px;
+  align-self: center;
+  color: #60468C;
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 100px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 28px;
+  align-self: center;
+  color: #60468C;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gen-member {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1%;
+}
+
+.general {
+  align-self: center;
+  text-align: center;
+  font-family: 'Red Hat Display';
+  font-size: 20px;
+  margin-bottom: 35px;
+  max-width: 750px;
+}
+
+.director,
+.devs {
+  font-family: 'Red Hat Display';
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  margin-left: 70px;
+}
+
+.joinus {
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-top: 30px;
+  font-family: 'Red Hat Display';
+  text-align: center;
+  font-size: 26px;
+  margin-top: 50px;
+  line-height: 2.0rem;
+}
+
+.exec-dev {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-items: center;
+}
+
+.join-container {
+  line-height: 1.5rem;
+}
+
+
+.list {
+  font-size: 18px;
+}

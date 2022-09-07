@@ -64,7 +64,6 @@
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .card-container {
@@ -157,77 +156,167 @@
   }
 }
 
-.join-title{
-  font-weight: 900;
-  font-size: 55px;
-  align-self: center;
-  color: #60468C;
-  text-align: center;
-  margin-bottom: 35px;
-  margin-top: 40px;
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --alto: rgba(217, 217, 217, 1);
+
+  --font-size-m: 12px;
+  --font-size-l: 16px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 36px;
+  --font-size-xxxxl: 64px;
 }
 
-.subtitle{
-  font-weight: 500;
-  font-size: 28px;
-  align-self: center;
-  color: #60468C;
-  text-align: center;
-  margin-bottom: 10px;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:400");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
 }
 
-.general{
-  align-self: center;
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
-  font-family: 'Red Hat Display';
-  font-size: 20px;
-  margin-bottom: 35px;
-  max-width: 750px;
-}
-
-.director, .devs{
-  font-family: 'Red Hat Display';
-  font-size: 20px;
-  width: 70%;
-  text-align: center;
-  margin-left: 70px;
-}
-
-.joinus{
-  margin-left: 180px;
-  margin-right: 180px;
-  margin-top: 30px;
-  font-family: 'Red Hat Display';
-  text-align: center;
-  font-size: 26px;
-  margin-top: 50px;
-}
-
-.exec-dev{
+.sponsorships-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-left: 20%;
-  margin-right: 20%;
+  justify-content: center;
+  pointer-events: none;
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 0% 50px 0% 50px;
+}
+
+.sponsorships {
   align-items: center;
-}
-.exec{
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  padding: 104px 357.0px;
+  width: 1416px;
+  margin: 100px;
 
 }
-.dev{
 
+.title--ye {
+  color: #60468C;
+  font-family: 'Red Hat Display';
+  font-size: var(--font-size-xxxxl);
+  font-weight: 400;
+  font-weight: 700;
 }
 
-
-
-.list{
-  font-size: 18px;
+.paragraph {
+  color: rgb(67, 67, 67);
+  font-family: 'Red Hat Display';
+  font-size: x-large;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 19.0px;
+  min-height: 141px;
+  text-align: center;
+  line-height: 1.8rem;
 }
 
+.divider {
+  display: flex;
+  align-self: flex-end;
+  height: 4px;
+  margin-top: 38px;
+  width: 681px;
+}
 
+.title-2 {
+  color: #60468C;
+  font-family: 'Red Hat Display';
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-left: 10.0px;
+  margin-top: 32px;
+  min-height: 72px;
+}
 
+.paragraph-2 {
+  color: rgb(67, 67, 67);
+  font-family: 'Red Hat Display';
+  font-size: large;
+  line-height: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 10.0px;
+  min-height: 15px;
+  text-align: center;
+}
+
+.company-container {
+  align-items: flex-end;
+  display: flex;
+  height: 52px;
+  margin-top: 82px;
+  min-width: 306px;
+}
+
+.company3 {
+  background-color: var(--alto);
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+}
+
+.company2 {
+  align-self: flex-start;
+  display: flex;
+  background-color: var(--alto);
+  border-radius: 25px;
+  height: 50px;
+  margin-left: 89px;
+  width: 50px;
+}
+
+.company1 {
+  background-color: var(--alto);
+  border-radius: 25px;
+  height: 50px;
+  margin-left: 67px;
+  width: 50px;
+}
+
+.flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 192px;
+  margin-left: 38.0px;
+  margin-top: 49px;
+  min-width: 614px;
+}
+
+.seeking-partnership-with-us {
+  align-self: flex-end;
+  display: flex;
+  color: #60468C;
+  font-family: 'Red Hat Display';
+  font-size: xx-large;
+  font-weight: 600;
+  letter-spacing: 0;
+  min-height: 144px;
+  text-align: center;
+}
+
+.paragraphs-3 {
+  color: rgb(67, 67, 67);
+  font-family: var(--font-family-inter);
+  font-size: x-large;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  margin-left: 61px;
+  min-height: 93px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
 
 @media screen and (max-width:1360px) {
     .about-info {
