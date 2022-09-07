@@ -1,8 +1,8 @@
 .join-container{
-    font-family: "Red Hat Display", sans-serif;
-    display: flex;
-    flex-direction: column;
-    padding-bottom:5%;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-bottom:5%;
 }
 
 .join-top-container {

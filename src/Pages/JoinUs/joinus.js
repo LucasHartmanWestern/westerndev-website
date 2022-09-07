@@ -9,7 +9,7 @@ export default function JoinUs() {
         <Fade>
           <div className="joinus-title">Join Us</div>
           <div className="joinus-description">
-            Do you want to make a difference in your community? Are you ready to join a community of inspired students?
+            WDS is proud to host a variety of fun and informative events for everyone!
           </div>
         </Fade>
       </div>
