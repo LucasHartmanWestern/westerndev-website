@@ -47,30 +47,3 @@ ul {
 li {
   list-style: none;
 }
-
-/*
-a:hover{
-    color:gray;
-    transition: 0.3s;
-}
-
-.links-container{
-    margin-right:100px;
-}
-
-@media screen and (max-width: 835px) {
-    img{
-        padding-left:30%;
-    }
-    ul{
-        font-size: 12px;
-        gap:0.5rem;
-        margin-right: 0;
-    }
-    .navbar-container{
-        padding-top: 10%;
-        padding-right: 5%;
-    }
-
-}
-*/

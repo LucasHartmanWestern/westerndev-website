@@ -1,4 +1,160 @@
-:root {
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(51, 50, 50);
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-container {
+  padding: 0rem 10vw;
+}
+
+.home-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 100px;
+  text-align: left;
+  letter-spacing: 0.03em;
+
+  cursor: default;
+}
+
+.line1,
+.line2,
+.line3 {
+  transition: 0.3s ease;
+}
+
+.line1:hover,
+.line2:hover,
+.line3:hover {
+  font-size: 105px;
+}
+
+.pic > img {
+  width: 600px;
+}
+
+.text {
+  position: absolute;
+  padding: 1rem 0rem;
+
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: #000000;
+
+  transition: 0.3s ease;
+  cursor: default;
+}
+
+.text:hover {
+  color: #60468c;
+  font-size: 1.75rem;
+}
+
+.about {
+  width: 100%;
+  padding: 2rem 10%;
+
+  font-size: 18px;
+  color: rgb(51, 50, 50);
+  background-color: rgb(241, 241, 241);
+}
+
+.what-is {
+  padding: 4rem 0rem;
+
+  font-size: 1.4rem;
+}
+
+.what-is-title {
+  padding: 1.6rem 0rem;
+
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #60468c;
+}
+
+.what-is-body {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.what-is-point {
+  display: flex;
+  align-items: center;
+}
+
+.what-is-point > * {
+  padding: 0rem 0.4rem;
+}
+
+.details-container {
+  padding: 2rem 0rem;
+
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+.details-container > div {
+  width: 37%;
+  padding: 3rem;
+
+  background-color: #f9fafb;
+  border-radius: 15px;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  transition: 0.3s ease;
+}
+
+.details-container > div:hover {
+  scale: 1.02;
+}
+
+.details-container > div > h3 {
+  padding: 1rem 0rem 1.4rem 0rem;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #9d62cc;
+}
+
+.details-container > div > p {
+  font-size: 1.35rem;
+  font-weight: 300;
+}
+
+/* .about-left {
+  height: 600px;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 4px;
+  padding: 60px 70px;
+  box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.2);
+} */
+
+/* :root {
   --black: rgba(0, 0, 0, 1);
   --alto: rgba(217, 217, 217, 1);
   --white: rgba(255, 255, 255, 1);
@@ -11,74 +167,9 @@
   padding-top: 15%;
 }
 
-.home-container {
-  font-family: "Red Hat Display", sans-serif;
-  color: rgb(51, 50, 50);
-  display: flex;
-  flex-wrap: wrap;
-  padding: 300px 0px;
-}
-
-.home-info {
-  padding: 60px 170px;
-  display: flex;
-  align-items: center;
-}
-
-.title {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 100px;
-  line-height: 6rem;
-  /* or 88% */
-
-  /*display: flex;*/
-  letter-spacing: 0.03em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  z-index: 0;
-}
-
-.line1 {
-  transition: 0.3s ease;
-}
-.line1:hover {
-  font-size: 105px;
-}
-.line2 {
-  transition: 0.3s ease;
-}
-.line2:hover {
-  font-size: 105px;
-}
-.line3 {
-  transition: 0.3s ease;
-}
-.line3:hover {
-  font-size: 105px;
-}
-
 .card-sub-title {
   font-weight: 700;
   font-size: 22px;
-}
-
-.text {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 60px;
-  padding-left: 170px;
-  /* or 150% */
-  color: #000000;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  z-index: 2;
 }
 
 .pic {
@@ -99,7 +190,6 @@
   visibility: hidden;
 }
 
-/* why is this here */
 .sponsorships {
   align-items: center;
   display: flex;
@@ -199,22 +289,6 @@
   width: 110px;
 }
 
-.about-info {
-  border-radius: 15px;
-  font-size: 18px;
-  color: rgb(51, 50, 50);
-  align-self: center;
-  width: 100%;
-  padding: 10% 100px 15% 100px;
-  margin-top: 12%;
-  background-color: rgb(241, 241, 241);
-}
-
-.about-title {
-  font-size: 24px;
-  padding: 120px 70px;
-  margin-bottom: 5%;
-}
 
 .card-title-question {
   font-weight: 600;
@@ -237,18 +311,6 @@
   justify-content: space-between;
 }
 
-.about-left {
-  width: 30%;
-  height: 600px;
-  background-color: #fbfbfb;
-  text-align: center;
-  line-height: 2.5rem;
-  border-radius: 4px;
-  padding: 60px 70px;
-  box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
 .about-right {
   padding: 60px 70px;
   width: 30%;
@@ -268,4 +330,4 @@
 }
 
 @media screen and (max-width: 835px) {
-}
+} */
