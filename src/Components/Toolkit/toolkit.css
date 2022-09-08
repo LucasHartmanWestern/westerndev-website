@@ -1,4 +1,47 @@
-.team-container{
+.toolkit {
+  display: grid;
+  place-content: center;
+
+  color: rgb(173, 173, 173);
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.toolkit > h4 {
+  padding: 0rem 0rem 0.7rem 0rem;
+
+  place-self: center;
+
+  font-weight: 800;
+}
+
+.toolkit:hover {
+  color: black;
+  filter: grayscale(0%);
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools > img {
+  scale: 40%;
+
+  opacity: 70%;
+  transform: translateX(-25%) translateY(-25%);
+
+  transition: 0.3s ease;
+}
+
+.tools > img:hover {
+  opacity: 100%;
+  scale: 41%;
+}
+
+/* .team-container{
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -30,4 +73,4 @@
 }
 
 
-
+ */

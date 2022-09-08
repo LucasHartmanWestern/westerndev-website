@@ -144,45 +144,19 @@
   font-weight: 300;
 }
 
-/* .about-left {
-  height: 600px;
-  text-align: center;
-  line-height: 2.5rem;
-  border-radius: 4px;
-  padding: 60px 70px;
-  box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.2);
-} */
+.footer {
+  width: 100%;
+  padding: 2rem 0rem;
 
-/* :root {
-  --black: rgba(0, 0, 0, 1);
-  --alto: rgba(217, 217, 217, 1);
-  --white: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  --font-size-m: 8px;
-  --font-size-l: 10px;
-  --font-size-xl: 20px;
-}
-.toolkit-container {
-  padding-top: 15%;
+  color: rgb(51, 50, 50);
 }
 
-.card-sub-title {
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.pic {
-  top: 301px;
-
-  flex: none;
-  order: 4;
-  flex-grow: 0;
-  z-index: 4;
-}
-.pic img {
-  width: 600px;
-}
+/*
 
 .hidden,
 .hidden * {

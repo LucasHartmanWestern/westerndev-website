@@ -1,24 +1,16 @@
-import React from 'react';
-import './toolkit.css';
-import data from './data';
-import ToolkitCard from './toolkitCard';
-
+import React from "react"
+import TOOLS from "./data"
+import "./toolkit.css"
 
 export default function Toolkit() {
-    
-    const cards = data.map(item=>{
-        return (<ToolkitCard
-        key={item.id}
-        item={item}
-        />)
-    })
-
-    return (
-      <div className='team-container'>
-        <h1 className="toolkit-title" >Our Tech Stack</h1>
-        <div className="card-container">
-          {cards}
-        </div>
+  return (
+    <div className="toolkit">
+      <h4>Built with</h4>
+      <div className="tools">
+        {TOOLS.map((tool) => (
+          <img src={tool} alt="" />
+        ))}
       </div>
-    )
+    </div>
+  )
 }
