@@ -1,17 +1,30 @@
 .events{
-    text-align: center;
-    letter-spacing: 0.2rem;
-    padding-top:200px;
     font-family: 'Red Hat Display', sans-serif;
 }
 
-.events-header {
-    font-size: 65px;
-    margin-bottom: 20px;
-    font-weight: bolder;
+.events-top-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #846ab1;
+    padding: 250px 350px 200px 350px;
 }
 
-.events-carousel {
+.events-description {
+    font-weight: 500;
+    padding-right: 5%;
+    font-size: 30px;
+    width: 60%;
+    line-height: 3rem;
+    color: rgb(255, 253, 244);
+}
+
+.events-title {
+    color: rgb(255, 253, 244);
+    padding-top: 50px;
+    font-weight: 900;
+    min-width: 400px;
+    font-size: 80px;
+    padding-bottom: 50px;
 }
 
 .event-name {

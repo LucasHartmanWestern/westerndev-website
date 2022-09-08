@@ -4,12 +4,12 @@ import Fade from "react-reveal/Fade"
 
 export default function JoinUs() {
   return (
-    <div className="spons-container">
+    <div className="join-container">
       <div className='join-top-container'>
         <Fade>
           <div className="joinus-title">Join Us</div>
           <div className="joinus-description">
-            Do you want to make a difference in your community? Are you ready to join a community of inspired students?
+            WDS is proud to host a variety of fun and informative events for everyone!
           </div>
         </Fade>
       </div>
@@ -33,7 +33,7 @@ Directors will be hired for internal & external events, marketing, careers, and 
         <div className="devs">Applications for 4 month development teams will open in September and January for students interested in building real world applications for WDS, other Western Clubs and local London community groups. We'll be hiring Team Leads, Developers, and Designers!</div>
         </div>
         </div>
-        <div className="joinus">Some perks of being a WDS member include tangible career growth opportunities, access to mentornship program, discounted of waived event ticket fee, exclusive educationals and workshops and much more!
+        <div className="joinus-descript">Some perks of being a WDS member include tangible career growth opportunities, access to mentornship program, discounted of waived event ticket fee, exclusive educationals and workshops and much more!
 
         </div>
       </div>
