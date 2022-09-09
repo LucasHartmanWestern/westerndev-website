@@ -2,6 +2,7 @@ import React from 'react'
 import './Events.css'
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
+import Fade from "react-reveal/Fade"
 
 function Events() {
   // add events here
@@ -64,8 +65,13 @@ function Events() {
 
   return (
     <div className='events'>
-      <div className='events-header'>
-        WDS Events!
+      <div className='events-top-container'>
+        <Fade>
+          <div className="events-title">Events</div>
+          <div className="events-description">
+            Do you want to make a difference in your community? Are you ready to join a community of inspired students?
+          </div>
+        </Fade>
       </div>
       <div className='events-carousel'>
         <Carousel>

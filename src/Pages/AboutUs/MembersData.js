@@ -7,6 +7,10 @@ import LukeImg from "./pfps/Luke.png"
 import RadinImg from "./pfps/Radin.png"
 import RajahImg from "./pfps/Rajah.png"
 import TaraImg from "./pfps/Tara.png"
+import HenryImg from "./pfps/Henry.png"
+import MaazImg from "./pfps/Maaz.png"
+import SwathiImg from "./pfps/Swathi.png"
+import UzairImg from "./pfps/Uzair.png"
 
 // NOTE: Imported images must be 250px by 250px
 
@@ -84,6 +88,15 @@ const EXEC_MEMBERS = [
     },
   },
   {
+    name: "Swathi Thushiyandan",
+    role: "Developer",
+    image: SwathiImg,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/swathi-thushiyandan",
+      email: "mailto:sthushi2@uwo.ca",
+    },
+  },
+  {
     name: "Tara Lee",
     role: "VP Development",
     image: TaraImg,
@@ -98,6 +111,7 @@ const DEV_MEMBERS = [
   {
     name: "Henry Chen",
     role: "Developer",
+    image: HenryImg,
     socials: {
       linkedin: "https://www.linkedin.com/in/henry-chen-433b15189/",
       email: "mailto:hchen869@uwo.a",
@@ -106,6 +120,7 @@ const DEV_MEMBERS = [
   {
     name: "Maaz Siddiqi",
     role: "Developer",
+    image: MaazImg,
     socials: {
       linkedin: "https://www.linkedin.com/in/maaz-siddiqi",
       github: "https://github.com/MaazSiddiqi",
@@ -115,18 +130,11 @@ const DEV_MEMBERS = [
   {
     name: "Uzair Salim",
     role: "Developer",
+    image: UzairImg,
     socials: {
       linkedin: "https://www.linkedin.com/in/uzair-salim-515b50230/",
       email: "mailto:usalim2@uwo.ca",
       github: "https://github.com/uzairsalim02",
-    },
-  },
-  {
-    name: "Swathi Thushiyandan",
-    role: "Developer",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/swathi-thushiyandan",
-      email: "mailto:sthushi2@uwo.ca",
     },
   },
 ]

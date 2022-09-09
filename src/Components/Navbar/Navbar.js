@@ -18,10 +18,7 @@ function Navbar() {
             <Link to="/Contact">contact us</Link>
         </li>
          <li>
-            <Link to="/Portfolio">portfolio</Link>
-        </li>
-         <li>
-            <Link to="/Sponorships">sponsorships</Link>
+            <Link to="/JoinUs">join us</Link>
         </li>
         <li>
             <Link to="/AboutUs">about us</Link>
@@ -29,6 +26,9 @@ function Navbar() {
          <li>
             <Link to="/Events">events</Link>
         </li>
+        {/**<li>
+            <Link to="/Portfolio">portfolio</Link>
+        </li> */}
         </ul>
         </div>
     </div>
