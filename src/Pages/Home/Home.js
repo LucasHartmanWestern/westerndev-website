@@ -18,7 +18,7 @@ export default function Home() {
             <span className='line2' style={{color:'#60468C'}}>Developers</span> <br />
             <span className='line3' style={{color:'#303030'}}>Society</span>
           </div>
-            <div className="pic">
+        <div className="pic">
               <img src={tech}></img>
             </div>
         </div>
@@ -35,21 +35,27 @@ export default function Home() {
             What is the Western Developers Society?
             </span>
             <br></br>
-            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are a community of developers, designers, consultants, and engineers').callFunction(() => {
-              console.log('String typed out!');}).start();}}
-            /> </span>
-            <br></br>
-            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are Westerns Fastest Growing Tech Club').callFunction(() => {
-              console.log('String typed out!');}).start();}}
-            /> </span>
-            <br></br>
-            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are club for all students interested in technology').callFunction(() => {
-              console.log('String typed out!');}).start();}}
-            /> </span>
-            <br></br>
-            <span className='card-bullet-points'> <Typewriter onInit={(typewriter) => { typewriter.typeString('>We are a collective of students, applying our skills to support our community').callFunction(() => {
-              console.log('String typed out!');}).start();}}
-            /> </span>
+          <span className='card-bullet-points'> 
+          <Typewriter
+            options={{
+              loop: true,
+              delay: 8,
+            }}
+            onInit={(typewriter) => {
+              typewriter.typeString('>We are a community of developers, designers, consultants, and engineers')
+              .pauseFor(2500)
+              .deleteAll(2)
+              typewriter.typeString('>We are Westerns Fastest Growing Tech Club')
+              .pauseFor(2500)
+              .deleteAll(2)
+              typewriter.typeString('>We are club for all students interested in technology')
+              .pauseFor(2500)
+              .deleteAll(2)
+              typewriter.typeString('>We are a collective of students, applying our skills to support our community')
+              .start();
+            }}
+          />
+            </span>
           </div>
           <div className='card-container'>
             <Slide left>

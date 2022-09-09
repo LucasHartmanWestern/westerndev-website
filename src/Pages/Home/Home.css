@@ -7,20 +7,19 @@
   --font-size-l: 10px;
   --font-size-xl: 20px;
 }
-.toolkit-container {
-  padding-top: 15%;
-}
+
 
 .home-container{
     font-family: 'Red Hat Display', sans-serif;
     color: rgb(51, 50, 50);
     display: flex;
     flex-wrap: wrap;
-    padding: 300px 0px;
+    padding: 15% 0%;
+    padding-bottom: 0%;
 }
 
 .home-info{
-  padding:60px 170px;
+  padding:5% 14%;
   display: flex;
   align-items: center;
 }
@@ -41,6 +40,9 @@
     z-index: 0;
 }
 
+.top-container {
+  padding-bottom: 0%;
+}
 .line1{
   transition: 0.3s ease;
 }
@@ -71,7 +73,7 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 60px;
-    padding-left: 170px;
+    padding-left: 14%;
     /* or 150% */
     color: #000000;
 
@@ -83,7 +85,6 @@
 
 .pic{
     top: 301px;
-
     flex: none;
     order: 4;
     flex-grow: 0;
@@ -98,122 +99,20 @@
   visibility: hidden;
 }
 
-/* why is this here */
-.sponsorships{
-  align-items: center;
-  background-color: #f5f4f4;
-  display: flex;
-  margin: 50% auto;
-  flex-direction: column;
-  height: 1000px;
-  overflow: hidden;
-  width: 1000px;
-  padding-bottom: 0;
-
-}
-
-.elipse-container{
-  align-items: flex-start;
-  display: flex;
-  margin-top: 40px;
-  min-width: 258px;
-}
-
-.elipse{
-  background-color: var(--alto);
-  border-radius: 18px/19px;
-  height: 38px;
-  margin-left: 75px;
-  width: 36px;
-}
-.elipse-1 {
-  background-color: var(--alto);
-  border-radius: 18px/19px;
-  height: 38px;
-  width: 36px;
-}
-
-.partners-container{
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-right: 1px;
-  margin-top: 14px;
-  min-height: 14px;
-  width: 400px;
-}
-
-.our-partners{
-  color: #9b49b8;
-  font-family: 'Red Hat Display';
-  font-size: var(--font-size-xl);
-  font-weight: 400;
-  letter-spacing: 0;
-  min-height: 21px;
-  width: 137px;
-}
-
-.subtext{
-  color: var(--black);
-  font-family: 'Red Hat Display';
-  font-size: var(--font-size-l);
-  font-weight: 400;
-  letter-spacing: 0;
-  margin-top: 6px;
-  min-height: 15px;
-  text-align: center;
-  width: 310px;
-}
-
-.footer{
-  align-items: flex-start;
-  background-color: #a68da5;
-  display: flex;
-  height: 165px;
-  justify-content: flex-end;
-  margin-top: 20px;
-  min-width: 400px;
-  padding: 14px 14px;
-}
-
-.description{
-  color: var(--white);
-  font-family: 'Red Hat Display';
-  font-size: var(--font-size-m);
-  font-weight: 400;
-  letter-spacing: 0;
-  margin-left: 15px;
-  min-height: 95px;
-  width: 244px;
-}
-
-.heading{
-  align-self: center;
-  color: var(--white);
-  font-family: 'Red Hat Display';
-  font-size: var(--font-size-xl);
-  font-weight: 400;
-  letter-spacing: 0;
-  margin-bottom: 34px;
-  min-height: 64px;
-  text-align: center;
-  width: 110px;
-}
-
 .about-info {
   border-radius: 15px;
   font-size: 18px;
   color: rgb(51, 50, 50);
   align-self: center;
   width: 100%;
-  padding: 10% 100px 15% 100px;
+  padding: 5% 0% 1% 6%;
   margin-top:12%;
   background-color: rgb(241, 241, 241);
 }
 
 .about-title{
   font-size: 24px;
-  padding: 120px 70px;
+  padding: 0% 3%;
   margin-bottom:5%;
 }
 
@@ -245,13 +144,13 @@
   text-align: center;
   line-height: 2.5rem;
   border-radius: 4px;
-  padding: 60px 70px;
+  padding: 3% 4%;
   box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.2)
 }
 
 .about-right {
-  padding: 60px 70px;
+  padding: 3% 4%;
   width: 30%;
   height: 600px;
   background-color: #fbfbfb;
@@ -265,9 +164,54 @@
 .copyright {
   align-items: center;
   text-align: center;
-  padding: 60px 70px;
+  padding: 3% 4%;
 }
 
-@media screen and (max-width: 835px) {
-
+@media screen and (max-width:1340px){
+  .top-container {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: normal;
+  }
+  .home-info{
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: normal;
+  } 
+  .title{
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: normal;
+  } 
 }
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+  .top-container {
+    padding-top: 0%;
+  }
+}
+
+@media screen and (min-width:437px) and (max-width:540px) {
+  .top-container {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width:436px) and (min-width:360px) {
+  .top-container {
+    padding-top: 15%;
+  }
+}
+
+@media screen and (max-width:359px) {
+  .top-container {
+    padding-top: 30%;
+  }
+}
+
