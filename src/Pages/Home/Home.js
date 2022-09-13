@@ -51,7 +51,7 @@ export default function Home() {
             <ul className="what-is-body">
               {WHAT_IS_WDS_POINTS.map((point) => (
                 <li className="what-is-point">
-                  <span>></span>
+                  <span></span>
                   <span>
                     <Typewriter
                       onInit={(typewriter) => {
