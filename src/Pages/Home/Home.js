@@ -55,6 +55,8 @@ export default function Home() {
               .pauseFor(2500)
               .deleteAll(2)
               .start();
+
+  
             }}
           />
             </span>
