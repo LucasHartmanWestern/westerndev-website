@@ -206,12 +206,13 @@
   margin: 100px;
 }
 
-.title--ye {
+.partnerships {
   color: #60468c;
   font-family: "Red Hat Display";
   font-size: var(--font-size-xxxxl);
   font-weight: 400;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .paragraph {
@@ -257,37 +258,14 @@
   text-align: center;
 }
 
-.company-container {
-  align-items: flex-end;
+.company-container{
   display: flex;
-  height: 52px;
-  margin-top: 82px;
-  min-width: 306px;
+  flex-direction: row;
+  margin-top: 30px;
 }
 
-.company3 {
-  background-color: var(--alto);
-  border-radius: 25px;
-  height: 50px;
-  width: 50px;
-}
-
-.company2 {
-  align-self: flex-start;
-  display: flex;
-  background-color: var(--alto);
-  border-radius: 25px;
-  height: 50px;
-  margin-left: 89px;
-  width: 50px;
-}
-
-.company1 {
-  background-color: var(--alto);
-  border-radius: 25px;
-  height: 50px;
-  margin-left: 67px;
-  width: 50px;
+.company1 > img, .company2 > img{
+  min-width: 250px;
 }
 
 .flex-row {
@@ -300,24 +278,28 @@
 }
 
 .seeking-partnership-with-us {
-  align-self: flex-end;
+  align-self: flex-start;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
   color: #60468c;
   font-family: "Red Hat Display";
-  font-size: xx-large;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-size: var(--font-size-xxxl);
+  font-weight: 800;
+  letter-spacing: 1px;
   min-height: 144px;
   text-align: center;
+
 }
 
 .paragraphs-3 {
   color: rgb(67, 67, 67);
   font-family: var(--font-family-inter);
-  font-size: x-large;
+  font-size: large;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.9rem;
+  line-height: 1.5rem;
   margin-left: 61px;
   min-height: 93px;
 }

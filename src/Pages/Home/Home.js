@@ -67,6 +67,7 @@ export default function Home() {
             </ul>
           </Fade>
         </div>
+        
         <div className="details-container">
           <Slide left>
             <div className="details-left">
@@ -84,6 +85,33 @@ export default function Home() {
                 or a seasoned pro, there's a place for you in the club. Join us
                 and help us build the future!
               </p>
+            </span>
+            <br></br>
+          <span className='card-bullet-points'> 
+          <Typewriter
+            options={{
+              loop: true,
+              delay: 8,
+            }}
+            onInit={(typewriter) => {
+              typewriter.typeString('>We are a community of developers, designers, consultants, and engineers')
+              .pauseFor(2500)
+              .deleteAll(2)
+              typewriter.typeString('>We are Westerns Fastest Growing Tech Club')
+              .pauseFor(2500)
+              .deleteAll(2)
+              typewriter.typeString('>We are club for all students interested in technology')
+              .pauseFor(2500)
+              .deleteAll(2)
+              typewriter.typeString('>We are a collective of students, applying our skills to support our community')
+              .pauseFor(2500)
+              .deleteAll(2)
+              .start();
+            }}
+          />
+            </span>
+          </div>
+          <div className='card-container'>
             </div>
           </Slide>
           <Slide right>
