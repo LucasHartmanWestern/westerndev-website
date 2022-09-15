@@ -1,66 +1,49 @@
-img{
-    width:75px;
-    margin-left:200px;
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  background-color: rgb(255, 253, 244);
 }
 
-.logo{
-    margin-left:100px;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7vw;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
-.logo:hover{
-    opacity: 50%;
-    transition:0.3s
+.navbar-container > div {
+  /* background-color: aqua; */
 }
 
-li{
-    list-style: none;
-}
-ul{
-    display:flex;
-    gap:2rem;
-    margin-right:300px;
+img {
+  width: 75px;
 }
 
-a{
-    text-decoration: none;
-    color:black;
-}
-a:hover{
-    color:gray;
-    transition: 0.3s;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.links-container{
-    margin-right:100px;
+.logo:hover,
+li:hover {
+  opacity: 50%;
+  transition: 0.3s;
 }
 
-.navbar-container{
-    padding-top:50px;
-    display: flex;
-    font-family: 'Red Hat Display', sans-serif;
-    justify-content: space-between;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    align-items:center;
-    position: fixed;
-    background-color: rgb(255, 253, 244);
-    width: 100%;
-    z-index: 1;
+ul {
+  display: flex;
+  gap: 2rem;
 }
 
-@media screen and (max-width: 835px) {
-    img{
-        padding-left:30%;
-    }
-    ul{
-        font-size: 12px;
-        gap:0.5rem;
-        margin-right: 0;
-    }
-    .navbar-container{
-        padding-top: 10%;
-        padding-right: 5%;
-    }
-
+li {
+  list-style: none;
 }

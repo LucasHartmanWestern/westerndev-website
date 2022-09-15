@@ -9,6 +9,7 @@ import Aboutus from "./Pages/AboutUs/Aboutus"
 import JoinUs from "./Pages/JoinUs/joinus"
 import Toolkit from "./Components/Toolkit/toolkit"
 import Events from "./Pages/Events/Events"
+import Aboutus from "./Pages/AboutUs/Aboutus"
 
 function App() {
   return (
