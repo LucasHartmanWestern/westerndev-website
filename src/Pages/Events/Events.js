@@ -22,43 +22,43 @@ function Events() {
     {
       name: 'Virtual Information Night',
       desc: 'Learn more about how to get involved in WDS!',
-      link: '',
+      link: 'TBD',
       time: 'TBD',
     },
     {
       name: 'London Fall Dinner',
       desc: 'Meet our Co-Presidents and VP’s, learn more about how to get involved as a general member and executive!',
-      link: '',
+      link: 'TBD',
       time: 'TBD',
     },
     {
       name: 'Intro to HTML/CSS',
       desc: 'Learn about one of fundamentals of web development.',
-      link: '',
+      link: 'TBD',
       time: 'TBD',
     },
     {
       name: 'Intro to Javascript',
       desc: 'Learn how to add interactivity to your website with Javascript!',
-      link: '',
+      link: 'TBD',
       time: 'TBD',
     },
     {
       name: 'Overhaul: Development and Debugging Case Competition',
       desc: 'A weekend dedicated to debugging, developing features and then pitching changes and improvements. A not miss event for aspiring software professionals.',
-      link: '',
+      link: 'TBD',
       time: 'TBD',
     },
     {
       name: 'Women in Tech Summit',
       desc: 'Career-driven workshops, keynotes and an interview competition to help women navigate the technology world in a safe space.',
-      link: '',
+      link: 'TBD',
       time: 'TBD',
     },
     {
       name: `Western Developer's League`  ,
       desc: 'Compete against teams of developers across the country to showcase your skills, grow as a developer, and claim ultimate bragging rights.',
-      link: '',
+      link: 'TBD',
       time: 'TBD',
     },
   ]
@@ -69,7 +69,7 @@ function Events() {
         <Fade>
           <div className="events-title">Events</div>
           <div className="events-description">
-            Do you want to make a difference in your community? Are you ready to join a community of inspired students?
+            <p className="bold-text">Empowering students</p> through professional development, technical and community events
           </div>
         </Fade>
       </div>
@@ -78,8 +78,6 @@ function Events() {
           { items.map( (item, i) => <Item key={i} item={item}/> ) }
         </Carousel>
       </div>
-      
-
     </div>
   )
 }
@@ -98,7 +96,7 @@ function Item(props) {
         Time: {props.item.time}
       </p>
       <a className='event-link' href={props.item.link}>
-      {props.item.link}
+       Link: {props.item.link}
       </a>
     </Paper>
   )
