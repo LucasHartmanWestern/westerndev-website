@@ -69,7 +69,7 @@ function Events() {
         <Fade>
           <div className="events-title">Events</div>
           <div className="events-description">
-            <p className="bold-text">Empowering students</p> through professional development, technical and community events
+            <b className="bold-text">Empowering students</b> through professional development, technical and community events
           </div>
         </Fade>
       </div>
