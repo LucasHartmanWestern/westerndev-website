@@ -74,7 +74,7 @@ function Events() {
         </Fade>
       </div>
       <div className='events-carousel'>
-        <Carousel>
+        <Carousel className='carousel'>
           { items.map( (item, i) => <Item key={i} item={item}/> ) }
         </Carousel>
       </div>
@@ -85,7 +85,7 @@ function Events() {
 function Item(props) {
 
   return (
-    <Paper>
+    <Paper className='paper'>
       <h2 className='event-name'>
         {props.item.name}
       </h2>
