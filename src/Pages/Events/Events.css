@@ -1,18 +1,20 @@
 .events{
     font-family: 'Red Hat Display', sans-serif;
+    margin-bottom: none;
 }
 
 .events-top-container {
     display: flex;
     flex-direction: column;
     background-color: #846ab1;
-    padding: 250px 350px 200px 350px;
+    padding: 16% 0px 8% 350px;
+
 }
 
 .events-description {
     font-weight: 500;
     padding-right: 5%;
-    font-size: 30px;
+    font-size: 26px;
     width: 60%;
     line-height: 3rem;
     color: rgb(255, 253, 244);
@@ -20,41 +22,57 @@
 
 .events-title {
     color: rgb(255, 253, 244);
-    padding-top: 50px;
     font-weight: 900;
     min-width: 400px;
     font-size: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .event-name {
     font-size: 40px;
     color: #9D62CC;
     font-weight: bolder;
+    margin-left: 20px;
 }
 
 .event-desc {
-    margin: 5px;
+    line-height: 1.8;
     font-size: 20px;
     font-weight: 600;
+    margin-left: 20px;
 }
 
 .event-time {
-    margin: 5px;
+    line-height: 1.8;
+    margin-left: 20px;
     font-weight: 600;
+    font-size: 15px;
 }
 
 .event-link {
+    line-height: 1.8;
     margin-bottom: 15px;
+    margin-left: 20px;
     font-size: 15px;
     font-weight: 600;
     background-color: #9D62CC;
     color: white;
 }
 
+.events-carousel{
+    margin-bottom: 0%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aliceblue;
+    padding-top: 1%;
+}
 
-
-
+.bold-text {
+    font-weight: 1500;
+}
 
 @media screen and (max-width: 835px) {
     .events{
