@@ -97,6 +97,24 @@
   line-height: 1.5rem;
 }
 
+.application{
+  text-align: center;
+  margin-top: 20px;
+}
+
+button{
+  border-radius: 5px;
+  border: none;
+  padding: 13px 13px;
+  background-color: #60468C;
+  color: rgb(255, 253, 244);
+  font-family: 'Red Hat Display';
+  font-size: 17px;
+}
+
+button:hover{
+  cursor: pointer;
+}
 
 .list {
   font-size: 18px;

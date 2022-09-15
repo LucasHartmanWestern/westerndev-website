@@ -3,6 +3,9 @@ import Member from "./Membercards"
 import { EXEC_MEMBERS, DEV_MEMBERS } from "./MembersData"
 import "./Aboutus.css"
 import Fade from "react-reveal/Fade"
+import DeloitteLogo from "./logos/DeloitteLogo.png"
+import MckinseyLogo from "./logos/MckinseyLogo.png"
+
 
 export default function Aboutus() {
   return (
@@ -38,7 +41,7 @@ export default function Aboutus() {
       <div className="sponsorships-container">
         <div className="sponsorships screen">
           <Fade>
-            <div className="title--ye">Sponsorships</div>
+            <div className="partnerships">Partnerships</div>
           </Fade>
           <div className="paragraph">
             <p>
@@ -63,11 +66,12 @@ export default function Aboutus() {
             of them:
           </p>
           <div className="company-container">
-            <div className="company3"></div>
-            <div className="company2"></div>
-            <div className="company1"></div>
+            <div className="company1"><img src={DeloitteLogo} /></div>
+            <div className="company2"><img src={MckinseyLogo} /></div>
+
           </div>
           <div className="flex-row">
+          <Fade>
             <div className="seeking-partnership-with-us">
               <h3>Seeking partnership with us?</h3>
             </div>
@@ -88,6 +92,7 @@ export default function Aboutus() {
               company, and/or through other collaboration formats. This is great
               for recruitment purposes!
             </p>
+            </Fade>
           </div>
         </div>
       </div>
