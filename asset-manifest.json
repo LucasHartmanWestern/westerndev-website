@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/westerndev-website/static/css/main.cf4b126b.css",
+    "main.js": "/westerndev-website/static/js/main.e087468f.js",
+    "static/media/tech.png": "/westerndev-website/static/media/tech.50cc3e335e2ce6464e8e.png",
+    "static/media/Maaz.png": "/westerndev-website/static/media/Maaz.3c23c74f15f48d2fab2b.png",
+    "static/media/Luke.png": "/westerndev-website/static/media/Luke.40eb0edd75dedc15c62f.png",
+    "static/media/Armaan.png": "/westerndev-website/static/media/Armaan.d8aaf621cbe63689dfdd.png",
+    "static/media/Rajah.png": "/westerndev-website/static/media/Rajah.94777f811b3b32f5d7b4.png",
+    "static/media/Justin.png": "/westerndev-website/static/media/Justin.318bb6efd7646cbb0bb9.png",
+    "static/media/Tara.png": "/westerndev-website/static/media/Tara.cc2f607e1a8b40de071b.png",
+    "static/media/Henry.png": "/westerndev-website/static/media/Henry.9e750d969e4154353a10.png",
+    "static/media/Swathi.png": "/westerndev-website/static/media/Swathi.624fcb9523c71dafdb66.png",
+    "static/media/Uzair.png": "/westerndev-website/static/media/Uzair.c33c48217cca54582254.png",
+    "static/media/Arayan.png": "/westerndev-website/static/media/Arayan.a6d3c8cc623fb8ceb50f.png",
+    "static/media/Aidan.png": "/westerndev-website/static/media/Aidan.dc0a4f4ac0cc96a79ab7.png",
+    "static/media/Radin.png": "/westerndev-website/static/media/Radin.a99487332e04c0c68f00.png",
+    "static/media/Alex.png": "/westerndev-website/static/media/Alex.30620f83d10df53847f1.png",
+    "static/media/MckinseyLogo.png": "/westerndev-website/static/media/MckinseyLogo.28228e11dfd1bf43fecb.png",
+    "static/media/1.png": "/westerndev-website/static/media/1.cfa321ed07004b542789.png",
+    "static/media/2.png": "/westerndev-website/static/media/2.2414cb50341015adc232.png",
+    "static/media/5.png": "/westerndev-website/static/media/5.55dd9bfd29151b6a8e1e.png",
+    "static/media/6.png": "/westerndev-website/static/media/6.c593fae627aff5462fd9.png",
+    "static/media/3.png": "/westerndev-website/static/media/3.a3b3098557d453c7e92d.png",
+    "static/media/4.png": "/westerndev-website/static/media/4.66f673bfb4fbd6b7a045.png",
+    "static/media/logo.png": "/westerndev-website/static/media/logo.fcc42c270ce8f2555543.png",
+    "static/media/DeloitteLogo.png": "/westerndev-website/static/media/DeloitteLogo.b25bf8445e54af8405ee.png",
+    "index.html": "/westerndev-website/index.html",
+    "main.cf4b126b.css.map": "/westerndev-website/static/css/main.cf4b126b.css.map",
+    "main.e087468f.js.map": "/westerndev-website/static/js/main.e087468f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf4b126b.css",
+    "static/js/main.e087468f.js"
+  ]
+}
