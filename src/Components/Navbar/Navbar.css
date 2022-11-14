@@ -5,7 +5,7 @@ nav {
   left: 0;
   width: 100vw;
 
-  background-color: rgb(255, 253, 244);
+  background-color: #f4f4f4;
 }
 
 .navbar-container {
@@ -19,7 +19,6 @@ nav {
   text-decoration: none;
   letter-spacing: 0.03em;
 }
-
 
 img {
   width: 75px;
@@ -45,6 +44,6 @@ li {
   list-style: none;
 }
 
-.navbar{
-  width:100%;
+.navbar {
+  width: 100%;
 }
