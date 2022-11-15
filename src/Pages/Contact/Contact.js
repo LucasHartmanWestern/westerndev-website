@@ -11,6 +11,7 @@ function Contact() {
   // const [invalid, setInvalid] = useState(false)
 
   const sendEmail = useCallback(() => {
+    // TODO send email
     console.log(firstName, lastName, email, subject, body)
   }, [body, email, firstName, lastName, subject])
 
@@ -81,52 +82,52 @@ function Contact() {
           >
             <div className="first-last-inputs">
               <div className="input-container firstName">
-                <label htmlFor="firstName">First Name</label>
                 <input
                   type="text"
                   name="firstName"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                   required
+                  placeholder="First Name"
                 />
               </div>
               <div className="input-container lastName">
-                <label htmlFor="lastName">Last Name</label>
                 <input
                   type="text"
                   name="lastName"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                   required
+                  placeholder="Last Name"
                 />
               </div>
             </div>
             <div className="input-container">
-              <label htmlFor="email">Email</label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
                 required
               />
             </div>
             <div className="input-container">
-              <label htmlFor="Subject">Subject</label>
               <input
                 type="text"
                 name="subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
+                placeholder="Subject"
                 required
               />
             </div>
             <div className="input-container">
-              <label htmlFor="body">Body</label>
               <textarea
                 className="body"
                 name="body"
                 value={body}
                 onChange={(e) => setBody(e.target.value)}
+                placeholder="What would you like to say?"
                 required
               />
             </div>
