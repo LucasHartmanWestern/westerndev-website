@@ -15,8 +15,7 @@
 
 .about-top-container {
   width: 90vw;
-  height: 80vh;
-  padding: 0rem 10vw;
+  padding: 10rem 10vw;
 
   display: flex;
   flex-direction: column;
@@ -310,7 +309,7 @@ h1 {
 @media screen and (max-width: 1360px) {
   .about-top-container {
     width: 90vw;
-    padding: 0rem 5vw;
+    padding: 8rem 5vw;
   }
 
   .aboutus-description {
