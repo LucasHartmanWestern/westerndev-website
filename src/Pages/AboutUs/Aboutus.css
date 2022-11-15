@@ -1,7 +1,11 @@
 .aboutus {
-  font-family: "Red Hat Display", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+
   display: flex;
   flex-direction: column;
+
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .about-container {
@@ -259,7 +263,7 @@
 .company-container {
   display: flex;
   flex-direction: row;
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .company1 > img,
@@ -345,13 +349,18 @@ h1 {
     font-size: 25px;
   }
 
+  .company-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .paragraph,
   .paragraph-2 {
-    width: 94vw;
+    width: 90vw;
   }
 
   .flex-row {
-    width: 94vw;
+    width: 90vw;
     flex-direction: column;
   }
 
