@@ -1,19 +1,15 @@
 import React from 'react'
 import './joinus.css'
-// import Fade from "react-reveal/Fade"
 
 export default function JoinUs() {
   return (
     <div className="join-container">
       <div className='join-top-container'>
-        {/* <Fade> */}
           <div className="joinus-title">Join Us</div>
           <div className="joinus-description">
             WDS is proud to host a variety of fun and informative events for everyone!
           </div>
-        {/* </Fade> */}
       </div>
-      {/* <Fade> */}
       <div className="join-container">
         <div className="join-title">How to Join</div>
         <div className="content-container">
@@ -37,7 +33,6 @@ export default function JoinUs() {
         </div>
       </div>
       </div>
-      {/* </Fade> */}
     </div>
   );
 

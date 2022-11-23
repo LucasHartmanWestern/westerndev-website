@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from "react"
 import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
-// import Fade from "react-reveal/Fade"
 import "./Contact.css"
 function Contact() {
   const [firstName, setFirstName] = useState("")
@@ -19,15 +18,12 @@ function Contact() {
   return (
     <div className="Contact-Container">
       <div className="Contact-info">
-        {/* <Fade> */}
           <div className="Contact-1">
             <div className="Contact-Title">Let's Chat!</div>
             <div className="Contact-Description">
               Want to learn more? Want us to build you a beautiful website?
             </div>
           </div>
-        {/* </Fade> */}
-        {/* <Fade> */}
           <div className="Contact-2">
             <div className="Contact-check"> &gt; check out our socials! </div>
             <div className="Contact-Socials">
@@ -62,7 +58,6 @@ function Contact() {
               </div>
             </div>
           </div>
-        {/* </Fade> */}
       </div>
       <div className="Contact-form-container">
         <h3 className="Contact-form-title">
