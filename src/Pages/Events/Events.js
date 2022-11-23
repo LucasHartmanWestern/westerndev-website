@@ -2,7 +2,7 @@ import React from 'react'
 import './Events.css'
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
-import Fade from "react-reveal/Fade"
+// import Fade from "react-reveal/Fade"
 
 function Events() {
   // add events here
@@ -66,12 +66,12 @@ function Events() {
   return (
     <div className='events'>
       <div className='events-top-container'>
-        <Fade>
+        {/* <Fade> */}
           <div className="events-title">Events</div>
           <div className="events-description">
             <b className="bold-text">Empowering students</b> through professional development, technical and community events
           </div>
-        </Fade>
+        {/* </Fade> */}
       </div>
       <div className='events-carousel'>
         <Carousel className='carousel'>

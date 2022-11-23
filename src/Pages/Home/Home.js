@@ -1,6 +1,8 @@
 import React from "react"
 import "./Home.css"
-import { Slide, Fade } from "react-reveal"
+// import { Slide
+//   // ,Fade 
+//   } from "react-reveal"
 import tech from "./tech.png"
 import Toolkit from "../../Components/Toolkit/toolkit"
 import Typewriter from "typewriter-effect"
@@ -15,7 +17,7 @@ const WHAT_IS_WDS_POINTS = [
 export default function Home() {
   return (
     <div className="home-container">
-      <Fade>
+      {/* <Fade> */}
         <section className="hero">
           <div className="hero-container">
               <div className="title">
@@ -34,7 +36,7 @@ export default function Home() {
               </div>
           </div>
       </section>
-      </Fade>
+      {/* </Fade> */}
       
       <section className="about">
 
@@ -65,7 +67,7 @@ export default function Home() {
           />
         </div>
         <div className="details-container">
-          <Slide left>
+          {/* <Slide left> */}
             <div className="details-left">
               <h3>Community First</h3>
               <p>
@@ -82,8 +84,8 @@ export default function Home() {
                 and help us build the future!
               </p>
             </div>
-          </Slide>
-          <Slide right>
+          {/* </Slide> */}
+          {/* <Slide right> */}
             <div className="details-right">
               <h3>Our Services</h3>
               <p>
@@ -98,7 +100,7 @@ export default function Home() {
                 that the final product is of the highest quality.
               </p>
             </div>
-          </Slide>
+          {/* </Slide> */}
         </div>
       </section>
 
