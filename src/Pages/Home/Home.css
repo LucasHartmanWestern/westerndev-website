@@ -17,7 +17,7 @@
 .hero {
   width: 80vw;
   height: 100vh;
-  padding: 0px 10vw;
+  padding: 0 10vw;
 
   display: flex;
   justify-content: space-around;
@@ -100,7 +100,7 @@
 }
 
 .what-is {
-  padding: 2rem 0px;
+  padding: 2rem 0;
 
   font-size: 1.4rem;
 }
@@ -122,7 +122,7 @@
   transition: none;
 }
 .details-container {
-  padding: 1.3rem 0px;
+  padding: 1.3rem 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -233,7 +233,7 @@
 @media screen and (max-width: 1050px) {
   .hero {
     width: 98vw;
-    padding: 0px 1vw;
+    padding: 0 1vw;
 
     flex-direction: column;
     justify-content: center;
@@ -250,7 +250,7 @@
 
   .pic {
     padding-top: 50px;
-    padding-left: 0px;
+    padding-left: 0;
     max-width: 400px;
   }
 

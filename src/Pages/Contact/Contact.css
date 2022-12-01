@@ -19,7 +19,7 @@
 }
 
 .Contact-1 {
-  padding: 2rem 0rem;
+  padding: 2rem 0;
 
   display: grid;
   gap: 1.5rem;
@@ -50,7 +50,7 @@
 
 .Contact-Socials {
   width: 100%;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
 
   display: flex;
   justify-content: space-around;
@@ -58,7 +58,7 @@
 }
 
 .Contact-Socials > div {
-  padding: 0.3rem 0rem;
+  padding: 0.3rem 0;
 }
 
 .Contact-Socials > div > a {
@@ -100,7 +100,7 @@ textarea {
   padding: 0.5rem 1rem;
 
   border-radius: 25px;
-  border-width: 0px;
+  border-width: 0;
 
   font-family: "Red Hat Display", sans-serif;
 }

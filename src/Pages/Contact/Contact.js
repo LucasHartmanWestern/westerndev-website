@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react"
 import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
 import Fade from "react-reveal/Fade"
 import "./Contact.css"
+
 function Contact() {
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
