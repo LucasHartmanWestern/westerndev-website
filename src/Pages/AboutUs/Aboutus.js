@@ -2,7 +2,6 @@ import React from "react"
 import Member from "./Membercards"
 import { EXEC_MEMBERS, DEV_MEMBERS } from "./MembersData"
 import "./Aboutus.css"
-import Fade from "react-reveal/Fade"
 import DeloitteLogo from "./logos/DeloitteLogo.png"
 import MckinseyLogo from "./logos/MckinseyLogo.png"
 
@@ -11,13 +10,11 @@ export default function Aboutus() {
   return (
     <div className="aboutus">
       <div className="about-top-container">
-        <Fade>
           <div className="aboutus-title">About Us</div>
           <div className="aboutus-description">
             At Western Developers Society, we want to give students real life
             development experience. Join us today!
           </div>
-        </Fade>
       </div>
       <div className="team-container">
         <h1 className="team-title">Meet the Team!</h1>
@@ -40,9 +37,7 @@ export default function Aboutus() {
 
       <div className="sponsorships-container">
         <div className="sponsorships screen">
-          <Fade>
             <div className="partnerships">Partnerships</div>
-          </Fade>
           <div className="paragraph">
             <p>
               Our partners empower us to host a myriad of workshops,
@@ -71,7 +66,6 @@ export default function Aboutus() {
 
           </div>
           <div className="flex-row">
-          <Fade>
             <div className="seeking-partnership-with-us">
               <h3>Seeking partnership with us?</h3>
             </div>
@@ -92,7 +86,6 @@ export default function Aboutus() {
               company, and/or through other collaboration formats. This is great
               for recruitment purposes!
             </p>
-            </Fade>
           </div>
         </div>
       </div>
