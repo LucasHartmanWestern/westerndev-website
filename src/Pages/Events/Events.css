@@ -1,13 +1,13 @@
 .events{
     font-family: 'Red Hat Display', sans-serif;
-    margin-bottom: none;
+    margin-bottom: 0;
 }
 
 .events-top-container {
     display: flex;
     flex-direction: column;
     background-color: #846ab1;
-    padding: 16% 0px 8% 350px;
+    padding: 16% 0 8% 350px;
 
 }
 
@@ -18,6 +18,9 @@
     width: 60%;
     line-height: 3rem;
     color: rgb(255, 253, 244);
+}
+.carousel {
+    z-index: 0;
 }
 
 .events-title {
