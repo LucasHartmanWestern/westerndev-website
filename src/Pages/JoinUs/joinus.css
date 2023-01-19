@@ -1,17 +1,15 @@
-.join-container{
+.join-container {
   font-family: "Red Hat Display", sans-serif;
   display: flex;
   flex-direction: column;
-  padding-bottom:5%;
+  padding-bottom: 5%;
 }
-
 .join-top-container {
   display: flex;
   flex-direction: column;
   background-color: #846ab1;
   padding: 250px 350px 200px 350px;
 }
-
 .joinus-description {
   font-weight: 500;
   padding-right: 5%;
@@ -20,7 +18,6 @@
   line-height: 3rem;
   color: rgb(255, 253, 244);
 }
-
 .joinus-title {
   color: rgb(255, 253, 244);
   padding-top: 50px;
@@ -29,61 +26,54 @@
   font-size: 80px;
   padding-bottom: 50px;
 }
-
 .join-title {
   font-weight: 900;
   font-size: 55px;
   align-self: center;
-  color: #60468C;
+  color: #60468c;
   text-align: center;
   margin-bottom: 35px;
   margin-top: 100px;
 }
-
 .subtitle {
   font-weight: 500;
   font-size: 28px;
   align-self: center;
-  color: #60468C;
+  color: #60468c;
   text-align: center;
   margin-bottom: 10px;
 }
-
 .gen-member {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 1%;
 }
-
 .general {
   align-self: center;
   text-align: center;
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
   font-size: 20px;
   margin-bottom: 35px;
   max-width: 30%;
 }
-
 .director,
 .devs {
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
   font-size: 20px;
   text-align: center;
   margin-left: 70px;
   max-width: 70%;
 }
-
 .joinus-descript {
   margin-left: 180px;
   margin-right: 180px;
   margin-top: 5%;
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
   text-align: center;
   font-size: 26px;
-  line-height: 2.0rem;
+  line-height: 2rem;
 }
-
 .exec-dev {
   display: flex;
   flex-direction: row;
@@ -92,30 +82,57 @@
   margin-right: 20%;
   align-items: center;
 }
-
 .join-container {
   line-height: 1.5rem;
 }
-
-.application{
+.application {
   text-align: center;
   margin-top: 20px;
 }
-
-button{
+button {
   border-radius: 5px;
   border: none;
   padding: 13px 13px;
-  background-color: #60468C;
+  background-color: #60468c;
   color: rgb(255, 253, 244);
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
   font-size: 17px;
 }
-
-button:hover{
+button:hover {
   cursor: pointer;
 }
-
 .list {
   font-size: 18px;
+}
+@media screen and (max-width: 1250px) {
+  .join-top-container {
+    padding: 20% 10%;
+  }
+  .joinus-title {
+    font-size: 3.5rem;
+    padding-top: 70px;
+  }
+  .joinus-description {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .general {
+    max-width: 70%;
+  }
+  .exec-dev {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    align-self: center;
+    text-align: center;
+  }
+  .exec,
+  .dev {
+    margin-bottom: 35px;
+  }
+  .joinus-descript {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+  }
 }
