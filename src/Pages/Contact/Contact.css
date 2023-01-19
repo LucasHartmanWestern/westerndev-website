@@ -1,109 +1,114 @@
 .Contact-Container {
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
+
   text-align: left;
   font-family: "Red Hat Display", sans-serif;
-  display: flex;
 }
 
 .Contact-info {
-  display: flex;
-  color: rgb(51, 50, 50);
+  width: 80vw;
+  padding: 8rem 10vw 4rem 10vw;
 
-  padding: 250px 350px;
-}
-
-.Contact-1 {
-  font-size: 60px;
-}
-
-.Contact-Title {
-  display: inline-block;
-  color: #60468c;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-weight: 900;
-  min-width: 400px;
-  font-size: 80px;
-}
-
-.Contact-Description {
-  font-weight: 500;
-  padding-right: 5%;
-  font-size: 40px;
-  line-height: 3rem;
-}
-
-.Contact-2 {
-  font-size: 25px;
-  padding-left: 5%;
-  padding-top: 3%;
-  min-width: 35%;
-  width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+
+  color: rgb(51, 50, 50);
+}
+
+.Contact-1 {
+  padding: 2rem 0;
+
+  display: grid;
+  gap: 1.5rem;
+}
+
+.Contact-Title {
+  color: #60468c;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.Contact-Description {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 2rem;
+}
+
+.Contact-2 {
+  display: grid;
+  gap: 1rem;
+
+  font-size: 20px;
 }
 
 .Contact-check {
-  padding-top: 2%;
-  justify-content: start !important;
-  width: 100%;
+  font-weight: 500;
 }
 
 .Contact-Socials {
+  width: 100%;
+  padding: 0 1rem;
+
   display: flex;
-  flex-direction: column;
-  width: max-content;
-  padding: 7% 0%;
-  justify-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
 }
 
 .Contact-Socials > div {
-  padding: 0.7rem 1.2rem;
+  padding: 0.3rem 0;
 }
 
 .Contact-Socials > div > a {
   display: flex;
-  align-items: center;
 }
 
 .Contact-Socials > div > a > p {
-  padding-left: 0.5rem;
+  padding-left: 0.75rem;
 }
 
 .Contact-form-container {
+  width: 80vw;
+  padding: 4rem 10vw;
+
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 0px 350px 200px 350px;
+
   background-color: #60468c;
   color: rgb(255, 253, 244);
 }
 
 .Contact-form-title {
   font-size: x-large;
-  margin-top: 10%;
-  align-self: flex-start;
-  padding-bottom: 50px;
+  width: 50%;
+  text-align: center;
 }
 
 .Contact-form {
-  width: 80%;
+  max-width: 50%;
+  flex-grow: 1;
 }
-
-/* .Contact-form > label {
-} */
 
 input,
 textarea {
-  padding: 0.5rem;
-  border-radius: 3px;
-  border-width: 0px;
-  min-height: 40px;
+  min-height: 25px;
   margin-top: 10px;
-  border: 1px solid rgb(214, 214, 214);
+  padding: 0.5rem 1rem;
+
+  border-radius: 25px;
+  border-width: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+}
+
+textarea {
+  padding: 1rem 1rem;
+  min-height: 80px;
+  resize: vertical;
 }
 
 .input-container {
@@ -130,11 +135,25 @@ textarea {
   width: 100%;
   padding: 0.75rem 0.5rem;
   margin-top: 0.75rem;
-  border-radius: 2px;
-  border-width: 0px;
+
+  border-radius: 25px;
   cursor: pointer;
+
   background-color: #ffffff;
   color: #9d62cc;
+  font-weight: 800;
+
+  transition: 0.1s ease-in-out;
+}
+
+.send-button:hover {
+  background-color: #9d62cc;
+  color: #ffffff;
+}
+
+.send-button:active {
+  background-color: #621c9b;
+  color: #d096ff;
 }
 
 .body {
@@ -146,10 +165,40 @@ textarea {
   padding-right: 4%;
 } */
 
-@media screen and (max-width: 1300px) {
-  .Contact-Container {
+@media screen and (max-width: 1000px) {
+  .Contact-info {
+    width: 90vw;
+    padding: 8rem 5vw 4rem 5vw;
+  }
+
+  .Contact-Socials {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .Contact-form-container {
+    flex-direction: column;
+    align-items: inherit;
+  }
+
+  .Contact-form-title {
+    width: 100%;
+    padding-bottom: 2rem;
+
+    text-align: start;
+  }
+
+  .Contact-form {
+    max-width: 100%;
+  }
+
+  /* .Contact-Container {
     flex-wrap: wrap;
     display: flex;
+  }
+
+  .Contact-info {
+    flex-direction: column;
   }
 
   .Contact-Socials {
@@ -163,9 +212,7 @@ textarea {
     align-self: center;
     padding-left: 0;
   }
-}
 
-@media screen and (max-width: 800px) {
   .Contact-Container {
     margin-top: 10%;
   }
@@ -182,11 +229,11 @@ textarea {
 
   .Contact-Title {
     font-size: 40px;
-    min-width: 300px;
   }
 
   .Contact-Description {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 2rem;
   }
 
   .Contact-form-title {
@@ -200,7 +247,10 @@ textarea {
   .firstName,
   .lastName {
     margin: 0px;
-  }
+  } */
+}
+
+@media screen and (max-width: 800px) {
 }
 
 /* .Contact-logo {

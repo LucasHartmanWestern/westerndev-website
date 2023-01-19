@@ -1,90 +1,101 @@
-.events{
-    font-family: 'Red Hat Display', sans-serif;
-    margin-bottom: 0;
+.events {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .events-top-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #846ab1;
-    padding: 16% 0 8% 350px;
+  width: 90vw;
+  padding: 10rem 10vw 5rem 10vw;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #846ab1;
 }
 
 .events-description {
-    font-weight: 500;
-    padding-right: 5%;
-    font-size: 26px;
-    width: 60%;
-    line-height: 3rem;
-    color: rgb(255, 253, 244);
+  font-weight: 500;
+  padding-right: 5%;
+  font-size: 26px;
+  width: 60%;
+  line-height: 3rem;
+  color: rgb(255, 253, 244);
+}
+.carousel {
+    z-index: 0;
 }
 .carousel {
     z-index: 0;
 }
 
 .events-title {
-    color: rgb(255, 253, 244);
-    font-weight: 900;
-    min-width: 400px;
-    font-size: 80px;
-    padding-bottom: 10px;
+  color: rgb(255, 253, 244);
+  font-weight: 900;
+  font-size: 40px;
 }
 
 .event-name {
-    font-size: 40px;
-    color: #9D62CC;
-    font-weight: bolder;
-    margin-left: 20px;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  font-weight: bolder;
+  color: #9d62cc;
 }
 
 .event-desc {
-    line-height: 1.8;
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 20px;
+  line-height: 1.25rem;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .event-time {
-    line-height: 1.8;
-    margin-left: 20px;
-    font-weight: 600;
-    font-size: 15px;
+  margin-top: 10px;
+
+  line-height: 1.8;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .event-link {
-    line-height: 1.8;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: #9D62CC;
-    color: white;
+  margin-top: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #9d62cc;
 }
 
-.events-carousel{
-    margin-bottom: 10%;
-    margin-left: 1%;
-    margin-right: 1%;
-    border-radius: 30px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: aliceblue;
-    padding:5% 10%;
+.events-carousel {
+  height: 100%;
+  padding: 5% 10%;
 }
 
-.paper{
-    height:200px;
-    padding:5%;
+.paper {
+  padding: 5%;
 }
 
 .bold-text {
-    font-weight: 1500;
+  font-weight: 1500;
 }
 
 @media screen and (max-width: 835px) {
-    .events{
-        margin-top: 40%;
-        font-size: 50px;
-    }
+  .events-top-container {
+    padding: 10rem 5vw 5rem 5vw;
+  }
+
+  .events {
+    font-size: 50px;
+  }
+  .events-description {
+    width: 90%;
+  }
+
+  .events-carousel {
+    padding: 5% 5%;
+  }
 }

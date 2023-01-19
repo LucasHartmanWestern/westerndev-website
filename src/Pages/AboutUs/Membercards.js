@@ -1,6 +1,5 @@
 import React, { useMemo } from "react"
 import "./Aboutus.css"
-import AidanImg from "./pfps/Aidan.png"
 
 const LinkedIn = () => (
   <svg
@@ -44,7 +43,6 @@ export default function Member({ data }) {
         <img src={image} alt="Profile" />
       </div>
 
-      {/* <div className="profile-pic"></div> */}
       <div className="member-description">
         <h1>{name}</h1>
         <h3>{role}</h3>

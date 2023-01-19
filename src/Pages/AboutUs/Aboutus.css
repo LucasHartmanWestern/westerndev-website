@@ -1,7 +1,11 @@
 .aboutus {
-  font-family: "Red Hat Display", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+
   display: flex;
   flex-direction: column;
+
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .about-container {
@@ -10,10 +14,14 @@
 }
 
 .about-top-container {
+  width: 90vw;
+  padding: 10rem 10vw;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   background-color: #60468c;
-  padding: 250px 350px 200px 350px;
 }
 
 .aboutus-title {
@@ -26,10 +34,11 @@
 }
 
 .aboutus-description {
+  width: 60%;
+
   font-weight: 500;
   padding-right: 5%;
   font-size: 30px;
-  width: 60%;
   line-height: 3rem;
   color: rgb(255, 253, 244);
 }
@@ -73,24 +82,28 @@
   color: #393939;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .card-container {
+  max-width: 80vw;
+
   display: flex;
   flex-wrap: wrap;
-  color: #393939;
-  font-size: large;
   justify-content: center;
+
   font-family: "Red Hat Display", sans-serif;
+  font-size: large;
+  color: #393939;
 }
 
 .memberCard {
+  min-width: 150px;
+  margin: 1rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .profile-pic {
@@ -188,51 +201,38 @@
 }
 
 .sponsorships-container {
+  width: 96vw;
+  padding: 4rem 2vw;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
-  pointer-events: none;
+
   font-family: "Red Hat Display", sans-serif;
-  padding: 0% 50px 0% 50px;
 }
 
 .sponsorships {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 1024px;
-  padding: 104px 357px;
-  width: 1416px;
-  margin: 100px;
 }
 
 .partnerships {
   color: #60468c;
-  font-family: "Red Hat Display";
   font-size: var(--font-size-xxxxl);
-  font-weight: 400;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
 .paragraph {
+  width: 80vw;
   color: rgb(67, 67, 67);
   font-family: "Red Hat Display";
   font-size: x-large;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
-  margin-left: 19px;
-  min-height: 141px;
-  text-align: center;
+  text-align: left;
   line-height: 1.8rem;
-}
-
-.divider {
-  display: flex;
-  align-self: flex-end;
-  height: 4px;
-  margin-top: 38px;
-  width: 681px;
 }
 
 .title-2 {
@@ -247,50 +247,49 @@
 }
 
 .paragraph-2 {
+  width: 80vw;
+
   color: rgb(67, 67, 67);
-  font-family: "Red Hat Display";
   font-size: large;
   line-height: 1.9rem;
   font-weight: 400;
   letter-spacing: 0;
   margin-left: 10px;
   min-height: 15px;
-  text-align: center;
+  text-align: left;
 }
 
-.company-container{
+.company-container {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  padding: 3rem;
 }
 
-.company1 > img, .company2 > img{
+.company1 > img,
+.company2 > img {
   min-width: 250px;
 }
 
 .flex-row {
-  align-items: flex-start;
+  width: 80vw;
+
   display: flex;
-  height: 192px;
-  margin-left: 38px;
-  margin-top: 49px;
-  min-width: 614px;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .seeking-partnership-with-us {
-  align-self: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 400px;
+  display: grid;
+  place-content: center;
+
   color: #60468c;
+
   font-family: "Red Hat Display";
   font-size: var(--font-size-xxxl);
   font-weight: 800;
   letter-spacing: 1px;
-  min-height: 144px;
   text-align: center;
-
 }
 
 .paragraphs-3 {
@@ -300,8 +299,6 @@
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.5rem;
-  margin-left: 61px;
-  min-height: 93px;
 }
 
 h1 {
@@ -310,6 +307,15 @@ h1 {
 }
 
 @media screen and (max-width: 1360px) {
+  .about-top-container {
+    width: 90vw;
+    padding: 8rem 5vw;
+  }
+
+  .aboutus-description {
+    width: 100%;
+  }
+
   .about-info {
     flex-wrap: wrap;
     justify-content: center;
@@ -334,6 +340,29 @@ h1 {
 }
 
 @media screen and (max-width: 830px) {
+  .aboutus-title {
+    font-size: 50px;
+  }
+
+  .aboutus-description {
+    font-size: 25px;
+  }
+
+  .company-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .paragraph,
+  .paragraph-2 {
+    width: 90vw;
+  }
+
+  .flex-row {
+    width: 90vw;
+    flex-direction: column;
+  }
+
   .headline {
     font-size: 30px;
     width: 80%;

@@ -1,4 +1,8 @@
 #main {
-    height: 100vh;
-    padding: 0px 24px;
+  height: 100vh;
+  padding: 0px 24px;
+}
+
+.App-container {
+  background-color: #f4f4f4;
 }
