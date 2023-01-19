@@ -123,6 +123,10 @@ textarea {
   margin-left: 2px;
 }
 
+.first-last-inputs .input-container {
+  width: 50%;
+}
+
 .firstName {
   margin-right: 0.65%;
 }
