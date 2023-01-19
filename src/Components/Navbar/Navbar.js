@@ -1,21 +1,13 @@
-import React from "react"
-import "./Navbar.css"
-import { Link } from "react-router-dom"
-import logo from "./logo.png"
+import React, { useState } from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
+import logo from "./logo.png";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
 
   function toggleMobileNav() {
-    let linksContainer = document.querySelector('.links-container');
-    let hamburger = document.querySelector('.hamburger');
-    let currentClass = linksContainer.getAttribute('class');
-    if (currentClass.includes('active')) {
-      linksContainer.setAttribute('class', 'links-container');
-      hamburger.setAttribute('class', 'hamburger');
-    } else {
-      linksContainer.setAttribute('class', 'links-container active');
-      hamburger.setAttribute('class', 'hamburger active');
-    }
+    setOpen((prev) => !prev)
   }
 
   return (
@@ -26,8 +18,11 @@ function Navbar() {
             <img src={logo} alt="Dev Society Logo"></img>
           </Link>
         </div>
-        <button className="hamburger" onClick={toggleMobileNav}></button>
-        <div className="links-container">
+        <button
+          className={`hamburger ${open && "active"}`}
+          onClick={toggleMobileNav}
+        ></button>
+        <div className={`links-container ${open && "active"}`}>
           <ul>
             <li onClick={toggleMobileNav}>
               <Link to="/Contact">contact us</Link>
@@ -48,7 +43,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
