@@ -1,70 +1,65 @@
-import React, { useCallback, useState } from "react"
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
-import Fade from "react-reveal/Fade"
-import "./Contact.css"
+import React, { useCallback, useState } from "react";
+import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import "./Contact.css";
 
 function Contact() {
-  const [firstName, setFirstName] = useState("")
-  const [lastName, setLastName] = useState("")
-  const [email, setEmail] = useState("")
-  const [subject, setSubject] = useState("")
-  const [body, setBody] = useState("")
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [body, setBody] = useState("");
   // const [invalid, setInvalid] = useState(false)
 
   const sendEmail = useCallback(() => {
     // TODO send email
-    console.log(firstName, lastName, email, subject, body)
-  }, [body, email, firstName, lastName, subject])
+    console.log(firstName, lastName, email, subject, body);
+  }, [body, email, firstName, lastName, subject]);
 
-  const promptInvalid = useCallback(() => {}, [])
+  const promptInvalid = useCallback(() => {}, []);
 
   return (
     <div className="Contact-Container">
       <div className="Contact-info">
-        <Fade>
-          <div className="Contact-1">
-            <div className="Contact-Title">Let's Chat!</div>
-            <div className="Contact-Description">
-              Want to learn more? Want us to build you a beautiful website?
+        <div className="Contact-1">
+          <div className="Contact-Title">Let's Chat!</div>
+          <div className="Contact-Description">
+            Want to learn more? Want us to build you a beautiful website?
+          </div>
+        </div>
+        <div className="Contact-2">
+          <div className="Contact-check"> &gt; check out our socials! </div>
+          <div className="Contact-Socials">
+            <div className="Contact-linkedin">
+              {" "}
+              <a
+                href="https://www.linkedin.com/company/western-dev-society/?originalSubdomain=ca"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin /> <p>Western Developer's Society</p>
+              </a>
+            </div>
+            <div className="Contact-insta">
+              <a
+                href="https://www.instagram.com/westerndevsociety/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram /> <p>@westerndevsociety</p>
+              </a>
+            </div>
+            <div className="Contact-facebook">
+              {" "}
+              <a
+                href="https://www.facebook.com/westerndevsociety/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebookSquare /> <p>@westerndevsociety</p>
+              </a>
             </div>
           </div>
-        </Fade>
-        <Fade>
-          <div className="Contact-2">
-            <div className="Contact-check"> &gt; check out our socials! </div>
-            <div className="Contact-Socials">
-              <div className="Contact-linkedin">
-                {" "}
-                <a
-                  href="https://www.linkedin.com/company/western-dev-society/?originalSubdomain=ca"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaLinkedin /> <p>Western Developer's Society</p>
-                </a>
-              </div>
-              <div className="Contact-insta">
-                <a
-                  href="https://www.instagram.com/westerndevsociety/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaInstagram /> <p>@westerndevsociety</p>
-                </a>
-              </div>
-              <div className="Contact-facebook">
-                {" "}
-                <a
-                  href="https://www.facebook.com/westerndevsociety/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaFacebookSquare /> <p>@westerndevsociety</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </Fade>
+        </div>
       </div>
       <div className="Contact-form-container">
         <h3 className="Contact-form-title">
@@ -73,12 +68,12 @@ function Contact() {
         <div className="Contact-form">
           <form
             onSubmit={(e) => {
-              e.preventDefault()
-              sendEmail()
+              e.preventDefault();
+              sendEmail();
             }}
             onInvalid={(e) => {
-              e.preventDefault()
-              promptInvalid()
+              e.preventDefault();
+              promptInvalid();
             }}
           >
             <div className="first-last-inputs">
@@ -139,6 +134,6 @@ function Contact() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-export default Contact
+export default Contact;

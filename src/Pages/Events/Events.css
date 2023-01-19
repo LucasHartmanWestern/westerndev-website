@@ -28,6 +28,9 @@
   line-height: 3rem;
   color: rgb(255, 253, 244);
 }
+.carousel {
+    z-index: 0;
+}
 
 .events-title {
   color: rgb(255, 253, 244);
