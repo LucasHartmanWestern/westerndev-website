@@ -1,6 +1,4 @@
 {
-  "homepage": "http://tarazoelee.github.io/westerndev-website",
-  "name": "westerndev-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
