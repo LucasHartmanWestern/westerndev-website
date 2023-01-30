@@ -2,7 +2,6 @@ import AidanImg from "./pfps/Aidan.png"
 import AlexImg from "./pfps/Alex.png"
 import ArayanImg from "./pfps/Arayan.png"
 import ArmaanImg from "./pfps/Armaan.png"
-import JustinImg from "./pfps/Justin.png"
 import LukeImg from "./pfps/Luke.png"
 import RajahImg from "./pfps/Rajah.png"
 import TaraImg from "./pfps/Tara.png"
@@ -17,6 +16,10 @@ import ClaireMcGuiganImg from "./pfps/ClaireMcGuigan.png";
 import LeenAlJalladImg from "./pfps/LeenAl-Jallad.png";
 import RoninWilliamsYoungImg from "./pfps/RoninWilliams-Young.png";
 import TeddyNgoImg from "./pfps/TeddyN'go.png";
+import DivijaBhargavaImg from "./pfps/DivijaBhargava.png";
+import JustinTsangImg from "./pfps/JustinTsang.png";
+import TaggLeeImg from "./pfps/TaggLee.png";
+import JaxWangImg from "./pfps/JaxWang.png";
 
 // NOTE: Imported images must be 250px by 250px
 
@@ -87,10 +90,11 @@ const INTERNAL = [
   {
     name: "Justin Tsang",
     role: "VP Internal",
-    image: JustinImg,
+    image: JustinTsangImg,
     socials: {
       linkedin: "https://www.linkedin.com/in/justint-sang",
-      email: "mailto:jtsang87@uwo.ca",
+      email: "mailto:justinhltzemail@gmail.com",
+      github: "https://github.com/JustinTsangg"
     },
   },
   {
@@ -126,6 +130,14 @@ const FINANCE = [
       email: "mailto:asand24@uwo.ca",
     },
   },
+  {
+    name: "Tagg Lee",
+    role: "Director Finance",
+    image: TaggLeeImg,
+    socials: {
+      email: "mailto:tlee429@uwo.ca"
+    }
+  }
 ];
 
 const CAREERS = [
@@ -221,6 +233,26 @@ const DEVELOPMENT = [
       github: "https://github.com/uzairsalim02",
     },
   },
+  {
+    name: "Jax Wang",
+    role: "Team Lead",
+    image: JaxWangImg,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/jax-wang/",
+      email: "mailto:jaxwang1010@gmail.com",
+      github: "https://github.com/Jaxz102",
+    },
+  },
+  {
+    name: "Divija Bhargava",
+    role: "UX/UI Designer",
+    image: DivijaBhargavaImg,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/divija-bhargava/",
+      email: "mailto:dbharga@uwo.ca",
+      github: "https://github.com/Divija1967",
+    },
+  }
 ];
 
 export {PRESIDENTS, MARKETING, INTERNAL, EXTERNAL, FINANCE, CAREERS, DEVELOPMENT }
