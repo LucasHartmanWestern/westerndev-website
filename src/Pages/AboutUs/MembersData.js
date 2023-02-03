@@ -20,6 +20,10 @@ import DivijaBhargavaImg from "./pfps/DivijaBhargava.png";
 import JustinTsangImg from "./pfps/JustinTsang.png";
 import TaggLeeImg from "./pfps/TaggLee.png";
 import JaxWangImg from "./pfps/JaxWang.png";
+import KaitlynMooreImg from "./pfps/KaitlynMoore.png";
+import ChristopherOjoImg from "./pfps/ChristopherOjo.png";
+import LucasHartmanImg from "./pfps/LucasHartman.png";
+import SehajNaangalImg from "./pfps/SehajNaangal.png";
 
 // NOTE: Imported images must be 250px by 250px
 
@@ -104,6 +108,16 @@ const INTERNAL = [
     socials: {
       linkedin: "https://www.linkedin.com/in/swathi-thushiyandan",
       email: "mailto:sthushi2@uwo.ca",
+    },
+  },
+  {
+    name: "Kaitlyn Moore",
+    role: "Director Internal",
+    image: KaitlynMooreImg,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/kaitlyn-moore-",
+      email: "mailto:kaitlynontherun@gmail.com",
+      github: "https://github.com/kmoor48"
     },
   },
 ];
@@ -194,6 +208,26 @@ const DEVELOPMENT = [
     },
   },
   {
+    name: "Christopher Ojo",
+    role: "Tech Lead",
+    image: ChristopherOjoImg,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/christopher-ojo/",
+      github: "https://github.com/christopherojo",
+      email: "mailto:cojo@uwo.ca",
+    },
+  },
+  {
+    name: "Lucas Hartman",
+    role: "Tech Lead",
+    image: LucasHartmanImg,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/lucas-hartman-2a2b25171/",
+      github: "https://github.com/LucasHartmanWestern",
+      email: "mailto:lhartma8@uwo.ca",
+    },
+  },
+  {
     name: "Brayden Thompson",
     role: "Team Lead",
     image: BraydenThompsonImg,
@@ -211,6 +245,16 @@ const DEVELOPMENT = [
       linkedin: "https://www.linkedin.com/in/claire-mcguigan/",
       github: "https://github.com/cmcguigan1",
       email: "mailto:mcguigan.claire@outlook.com",
+    },
+  },
+  {
+    name: "Sehaj Naangal",
+    role: "Team Lead",
+    image: SehajNaangalImg,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/sehajnaangal/",
+      github: "https://github.com/sehaj1408",
+      email: "mailto:sehajnaangal@gmail.com",
     },
   },
   {
