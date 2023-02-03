@@ -1,6 +1,6 @@
 import React from "react";
 import Member from "./Membercards";
-import { EXEC_MEMBERS, DEV_MEMBERS } from "./MembersData";
+import { EXEC_MEMBERS, DEV_MEMBERS, PRESIDENTS, MARKETING, INTERNAL, EXTERNAL, FINANCE, CAREERS, DEVELOPMENT } from "./MembersData";
 import "./Aboutus.css";
 import DeloitteLogo from "./logos/DeloitteLogo.png";
 import MckinseyLogo from "./logos/MckinseyLogo.png";
@@ -23,15 +23,58 @@ export default function Aboutus() {
       <div className="team-container">
         <h1 className="team-title">Meet the Team!</h1>
         <div>
-          <div className="card-container">
-            {EXEC_MEMBERS.map((item, idx) => (
-              <Member key={idx + item.name} data={item} />
-            ))}
+          <div>
+            <h2 className="devs-title">Presidents</h2>
+            <div className="card-container">
+              {PRESIDENTS.map((item, idx) => (
+                <Member key={idx + item.name} data={item} />
+              ))}
+            </div>
           </div>
           <div>
-            <h2 className="devs-title">Our Developers</h2>
+            <h2 className="devs-title">Development</h2>
             <div className="card-container">
-              {DEV_MEMBERS.map((item, idx) => (
+              {DEVELOPMENT.map((item, idx) => (
+                <Member key={idx + item.name} data={item} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="devs-title">Marketing</h2>
+            <div className="card-container">
+              {MARKETING.map((item, idx) => (
+                <Member key={idx + item.name} data={item} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="devs-title">Internal</h2>
+            <div className="card-container">
+              {INTERNAL.map((item, idx) => (
+                <Member key={idx + item.name} data={item} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="devs-title">External</h2>
+            <div className="card-container">
+              {EXTERNAL.map((item, idx) => (
+                <Member key={idx + item.name} data={item} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="devs-title">Careers</h2>
+            <div className="card-container">
+              {CAREERS.map((item, idx) => (
+                <Member key={idx + item.name} data={item} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="devs-title">Finance</h2>
+            <div className="card-container">
+              {FINANCE.map((item, idx) => (
                 <Member key={idx + item.name} data={item} />
               ))}
             </div>
