@@ -3,6 +3,8 @@ import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
 import "./Contact.css"
 import axios from "axios"
 
+const RECIEVER_EMAIL = "lblommes@uwo.ca"
+
 function Contact() {
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
@@ -21,14 +23,14 @@ function Contact() {
     setEmail("")
     setSubject("")
     setBody("")
-  })
+  }, [])
 
   const handleSubmit = (event) => {
     event.preventDefault()
     sendEmail()
     axios.defaults.headers.post["Content-Type"] = "application/json"
     axios
-      .post("https://formsubmit.co/ajax/cojo@uwo.ca", {
+      .post(`https://formsubmit.co/ajax/${RECIEVER_EMAIL}`, {
         name: firstName + " " + lastName,
         email: email,
         subject: subject,
