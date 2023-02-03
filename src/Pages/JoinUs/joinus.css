@@ -5,26 +5,35 @@
   padding-bottom: 5%;
 }
 .join-top-container {
+  width: 90vw;
+  padding: 10rem 10vw;
+
   display: flex;
   flex-direction: column;
-  background-color: #846ab1;
-  padding: 250px 350px 200px 350px;
+  justify-content: center;
+
+  background-color: #3d1f6d;
 }
-.joinus-description {
-  font-weight: 500;
-  padding-right: 5%;
-  font-size: 30px;
-  width: 60%;
-  line-height: 3rem;
-  color: rgb(255, 253, 244);
-}
+
 .joinus-title {
   color: rgb(255, 253, 244);
   padding-top: 50px;
   font-weight: 900;
+  min-width: 400px;
   font-size: 80px;
   padding-bottom: 50px;
 }
+
+.joinus-description {
+  width: 60%;
+
+  font-weight: 500;
+  padding-right: 5%;
+  font-size: 30px;
+  line-height: 3rem;
+  color: rgb(255, 253, 244);
+}
+
 .join-title {
   font-weight: 900;
   font-size: 55px;
