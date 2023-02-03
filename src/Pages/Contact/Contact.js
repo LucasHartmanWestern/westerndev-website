@@ -1,21 +1,43 @@
-import React, { useCallback, useState } from "react";
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
-import "./Contact.css";
+import React, { useCallback, useState } from "react"
+import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
+import "./Contact.css"
+import axios from "axios"
 
 function Contact() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [body, setBody] = useState("");
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [body, setBody] = useState("")
   // const [invalid, setInvalid] = useState(false)
 
   const sendEmail = useCallback(() => {
-    // TODO send email
-    console.log(firstName, lastName, email, subject, body);
-  }, [body, email, firstName, lastName, subject]);
+    console.log(firstName, lastName, email, subject, body)
+  }, [body, email, firstName, lastName, subject])
 
-  const promptInvalid = useCallback(() => {}, []);
+  const resetFields = useCallback(() => {
+    setFirstName("")
+    setLastName("")
+    setEmail("")
+    setSubject("")
+    setBody("")
+  })
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    sendEmail()
+    axios.defaults.headers.post["Content-Type"] = "application/json"
+    axios
+      .post("https://formsubmit.co/ajax/cojo@uwo.ca", {
+        name: firstName + " " + lastName,
+        email: email,
+        subject: subject,
+        message: body,
+      })
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error))
+    resetFields()
+  }
 
   return (
     <div className="Contact-Container">
@@ -66,21 +88,13 @@ function Contact() {
           &gt; or write to us here directly!
         </h3>
         <div className="Contact-form">
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              sendEmail();
-            }}
-            onInvalid={(e) => {
-              e.preventDefault();
-              promptInvalid();
-            }}
-          >
+          <form onSubmit={handleSubmit}>
+            <input type="hidden" name="_captcha" value="false"></input>
             <div className="first-last-inputs">
               <div className="input-container firstName">
                 <input
                   type="text"
-                  name="firstName"
+                  name="name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                   required
@@ -101,6 +115,7 @@ function Contact() {
             <div className="input-container">
               <input
                 type="email"
+                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
@@ -134,6 +149,6 @@ function Contact() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-export default Contact;
+export default Contact
