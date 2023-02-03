@@ -1,19 +1,19 @@
-import React, { useCallback, useState } from "react";
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
-import "./Contact.css";
-import axios from 'axios';
+import React, { useCallback, useState } from "react"
+import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
+import "./Contact.css"
+import axios from "axios"
 
 function Contact() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [body, setBody] = useState("");
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [body, setBody] = useState("")
   // const [invalid, setInvalid] = useState(false)
 
   const sendEmail = useCallback(() => {
-    console.log(firstName, lastName, email, subject, body);
-  }, [body, email, firstName, lastName, subject]);
+    console.log(firstName, lastName, email, subject, body)
+  }, [body, email, firstName, lastName, subject])
 
   const resetFields = useCallback(() => {
     setFirstName("")
@@ -21,21 +21,22 @@ function Contact() {
     setEmail("")
     setSubject("")
     setBody("")
-  });
+  })
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    sendEmail();
-    axios.defaults.headers.post['Content-Type'] = 'application/json';
-    axios.post('https://formsubmit.co/ajax/cojo@uwo.ca', {
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    sendEmail()
+    axios.defaults.headers.post["Content-Type"] = "application/json"
+    axios
+      .post("https://formsubmit.co/ajax/cojo@uwo.ca", {
         name: firstName + " " + lastName,
         email: email,
         subject: subject,
-        message: body
-    })
-    .then(response => console.log(response))
-    .catch(error => console.log(error));
-    resetFields();
+        message: body,
+      })
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error))
+    resetFields()
   }
 
   return (
@@ -90,7 +91,7 @@ function Contact() {
           <form onSubmit={handleSubmit}>
             <input type="hidden" name="_captcha" value="false"></input>
             <div className="first-last-inputs">
-              <div>
+              <div className="input-container firstName">
                 <input
                   type="text"
                   name="name"
@@ -111,7 +112,7 @@ function Contact() {
                 />
               </div>
             </div>
-            <div>
+            <div className="input-container">
               <input
                 type="email"
                 name="email"
@@ -148,6 +149,6 @@ function Contact() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-export default Contact;
+export default Contact
