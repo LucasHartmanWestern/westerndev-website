@@ -1,7 +1,7 @@
 :root {
   --black: rgba(0, 0, 0, 1);
-  --alto: rgba(217, 217, 217, 1);
-  --white: rgba(255, 255, 255, 1);
+  --alto: rgb(245, 245, 245);
+  --white: rgb(255, 255, 255);
 
   --font-size-m: 8px;
   --font-size-l: 10px;
@@ -11,17 +11,14 @@
 .home-container {
   font-family: "Red Hat Display", sans-serif;
   color: rgb(51, 50, 50);
-  overflow-x: hidden;
 }
 
 .hero {
-  width: 80vw;
-  height: 100vh;
-  padding: 0 10vw;
-
+  padding:250px 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap:3rem;
 }
 
 .home-info {
@@ -47,26 +44,21 @@
 .line1,
 .line2,
 .line3 {
-  transition: 0.3s ease;
+  transition: 0.4s ease;
+  padding: 15px 0px;
 }
-
+/*
 .line1:hover,
 .line2:hover,
 .line3:hover {
   position: relative;
-  font-size: calc(20px + 4vw + 1vw);
+  font-size: 100px;
 }
+*/
 
-.pic {
-  max-width: 550px;
-  padding-left: 50px;
-
-  display: grid;
+.pic img{
+  width: 550px;
   place-items: center;
-}
-
-.pic > img {
-  width: 100%;
 }
 
 .text {
@@ -91,12 +83,11 @@
 }
 
 .about {
-  width: 80vw;
-  padding: 10px 10vw;
+  padding: 100px 200px;
 
   font-size: 18px;
   color: rgb(51, 50, 50);
-  background-color: #eeeeee;
+  background-color: #fdfdfd;
 }
 
 .what-is {
