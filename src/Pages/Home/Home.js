@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
-import tech from "./tech.png";
-import Toolkit from "../../Components/Toolkit/toolkit";
+import balance from "./balance.png";
 import Typewriter from "typewriter-effect";
+import Footer from "../../Components/Footer/Footer";
 
 const WHAT_IS_WDS_POINTS = [
   "We are a community of developers, designers, consultants, and engineers",
@@ -16,18 +16,14 @@ export default function Home() {
     <div className="home-container">
       <section className="hero">
         <div className="title">
-          <span className="line1" style={{ color: "#9D62CC" }}>
+          <div className="heading">
             Western
-          </span>
-          <span className="line2" style={{ color: "#60468C" }}>
-            Developers
-          </span>
-          <span className="line3" style={{ color: "#303030" }}>
+            Developers <br/>
             Society
-          </span>
-        </div>
-        <div className="pic">
-          <img src={tech} alt="Dev society hero"></img>
+          </div>
+          <div className="subheading">
+            Building community, one line of code at a time.
+          </div>
         </div>
       </section>
 
@@ -103,13 +99,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className="footer">
-        <Toolkit />
-        <div className="copyright">
-          <small>&copy; 2022 Western Developers Society.</small>
-        </div>
-      </section>
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,24 +1,14 @@
-:root {
-  --black: rgba(0, 0, 0, 1);
-  --alto: rgb(245, 245, 245);
-  --white: rgb(255, 255, 255);
-
-  --font-size-m: 8px;
-  --font-size-l: 10px;
-  --font-size-xl: 20px;
-}
 
 .home-container {
-  font-family: "Red Hat Display", sans-serif;
-  color: rgb(51, 50, 50);
+font-family: 'Poppins', sans-serif;  color: rgb(51, 50, 50);
 }
 
 .hero {
-  padding:250px 200px;
+  padding:300px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:3rem;
+  gap:13rem;
 }
 
 .home-info {
@@ -31,34 +21,26 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
-  font-weight: 900;
-  font-size: calc(20px + 4vw);
-  text-align: left;
-  letter-spacing: 0.03em;
-  line-height: calc(3.5rem - 0.5vw);
-
-  cursor: default;
 }
 
-.line1,
-.line2,
-.line3 {
-  transition: 0.4s ease;
-  padding: 15px 0px;
+.heading{
+    font-weight: 900;
+    font-size: 80px;
+    letter-spacing: 0.03em;
+    line-height: 70px;
+    color: #46083d;
+    text-align: center;
 }
-/*
-.line1:hover,
-.line2:hover,
-.line3:hover {
-  position: relative;
-  font-size: 100px;
+
+.subheading{
+  margin-top:10px;
+  font-size: 24px;
+  color:#A1533C;
+  text-align: center;
 }
-*/
 
 .pic img{
-  width: 550px;
-  place-items: center;
+  width: 350px;
 }
 
 .text {
@@ -75,11 +57,6 @@
 
   transition: 0.3s ease;
   cursor: default;
-}
-
-.text:hover {
-  color: #60468c;
-  font-size: 1.75rem;
 }
 
 .about {
@@ -101,7 +78,6 @@
 
   font-size: 1.6rem;
   font-weight: 800;
-  color: #60468c;
 }
 
 .what-is-body {
@@ -112,18 +88,19 @@
   font-weight: 600;
   transition: none;
 }
+
 .details-container {
-  padding: 1.3rem 0;
-  width: 100%;
+  padding: 100px 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap:5rem;
 }
 
-.details-container > div {
-  max-width: 42%;
-  padding: 1.75rem;
-
-  background-color: #f9fafb;
+.details-left, .details-right {
+  width:70%;
+  padding: 20px 50px;
+  background-color: #D78846;
+  color:white;
   border-radius: 15px;
   filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
     drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
@@ -139,24 +116,11 @@
 
   font-size: 1.35rem;
   font-weight: 700;
-  color: #9d62cc;
 }
 
 .details-container > div > p {
   font-size: 1.2rem;
   font-weight: 300;
-}
-
-.footer {
-  width: 100%;
-  padding: 2rem 0rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  color: rgb(51, 50, 50);
 }
 
 /* here to about-title main*/
@@ -198,10 +162,6 @@
   justify-content: space-between;
 }
 
-.copyright {
-  align-items: center;
-  text-align: center;
-}
 
 @media screen and (max-width: 750px) {
   .line1:hover,
