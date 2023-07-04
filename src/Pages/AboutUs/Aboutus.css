@@ -14,33 +14,29 @@
 }
 
 .about-top-container {
-  width: 90vw;
-  padding: 10rem 10vw;
-
+  padding:275px 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  background-color: #60468c;
+  font-size: 35px;
+  gap:120px;
 }
 
-.aboutus-title {
-  color: rgb(255, 253, 244);
-  padding-top: 50px;
-  font-weight: 900;
-  min-width: 400px;
-  font-size: 80px;
-  padding-bottom: 50px;
+.about-item{
+  width: 55%;
+  display: flex;
+  gap: 30px;
 }
 
-.aboutus-description {
-  width: 60%;
+.about-item2{
+  width: 55%;
+  align-self: flex-end;
+  display: flex;
+  gap:30px;
+}
 
-  font-weight: 500;
-  padding-right: 5%;
-  font-size: 30px;
-  line-height: 3rem;
-  color: rgb(255, 253, 244);
+.about-top-container img{
+  width:85px;
 }
 
 .headline {

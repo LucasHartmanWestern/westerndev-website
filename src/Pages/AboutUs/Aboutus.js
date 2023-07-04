@@ -4,6 +4,9 @@ import { EXEC_MEMBERS, DEV_MEMBERS, PRESIDENTS, MARKETING, INTERNAL, EXTERNAL, F
 import "./Aboutus.css";
 import DeloitteLogo from "./logos/DeloitteLogo.png";
 import MckinseyLogo from "./logos/MckinseyLogo.png";
+import monitor from "./monitor.png"
+import settings from "./settings.png"
+import unity from "./unity.png"
 
 const aboutWDS = [
   "Western dev society plans on holding both in person and online events for the upcoming 2022-2023 school year. Running live events for the WDS and Western communities comes at a very high cost. Therefore, WDS highly appreaciates and welcomes any financial or in-kind sponsorships",
@@ -14,10 +17,29 @@ export default function Aboutus() {
   return (
     <div className="aboutus">
       <div className="about-top-container">
-        <div className="aboutus-title">About Us</div>
-        <div className="aboutus-description">
-          At Western Developers Society, we want to give students real life
-          development experience. Join us today!
+        <div className="about-item">
+          <div>
+            We believe everyone deserves equal opportunity to break into the tech world. 
+          </div>
+          <div className="about-img">
+            <img src={monitor}></img>
+          </div>
+        </div>
+        <div className="about-item2">
+          <div className="about-img">
+            <img src={settings}></img>
+          </div>
+          <div>
+            We also believe that everyone deserves equal access to great technology.  
+          </div>
+        </div>
+        <div className="about-item">
+          <div>
+            By providing students with a space to learn, network, and own their work, we empower individuals while supporting our community. 
+          </div>
+          <div className="about-img">
+            <img src={unity}></img>
+          </div>
         </div>
       </div>
       <div className="team-container">
