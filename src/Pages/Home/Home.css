@@ -26,6 +26,25 @@
 
 .subheading{
   margin-top:10px;
+  border:1px solid black;
+  border-radius: 15px;
+  width:100px;
+  text-align: center;
+  padding:15px;
+  transition:0.2s;
+}
+
+.subheading a{
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.subheading:hover{
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.subheading a:hover {
+    color:rgb(133, 133, 133);
 }
 
 .home-pic img{
@@ -64,6 +83,22 @@
   width:220px;
 
   word-wrap: break-word;
+}
+
+.home-mission{
+  background: #00296B;
+  padding:150px 300px;
+  color:white;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.mission-title{
+  font-size: 60px;
+}
+
+.mission-descript{
+  width:1000px;
 }
 
 

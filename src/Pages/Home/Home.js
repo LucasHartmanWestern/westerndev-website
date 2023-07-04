@@ -22,7 +22,7 @@ export default function Home() {
             Building <br/>community,<br/> one line of code<br/> at a time.
           </div>
           <div className="subheading">
-            join now
+            <a href='/JoinUs'>join now</a>
           </div>
         </div>
         <div className="home-pic">
@@ -65,6 +65,13 @@ export default function Home() {
             alsdkfjlasjdflaskfjkldsjfkjaslkjflasjdlkfj;lkadsjf
           </div>
         </div>
+      </div>
+
+      <div className="home-mission">
+        <div className="mission-descript">
+        <span className="mission-title">Our Mission </span>is to empower students through technology, 
+      by providing them with tangible skills to succeed in their careers.
+        </div> 
       </div>
 
 
