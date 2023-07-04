@@ -15,6 +15,10 @@
   font-weight: 800;
 }
 
+.toolkit img{
+  width: 70px;
+}
+
 .toolkit:hover {
   color: black;
   filter: grayscale(0%);

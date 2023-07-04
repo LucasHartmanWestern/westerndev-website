@@ -1,0 +1,16 @@
+.copyright {
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    padding: 2rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(51, 50, 50);
+}

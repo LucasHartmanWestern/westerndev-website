@@ -10,13 +10,21 @@ function Navbar() {
     setOpen((prev) => !prev)
   }
 
+    /*
+          <div>
+          <Link to="/">
+            <img src={logo} alt="Dev Society Logo"></img>
+          </Link>
+          </div>
+          */
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          <Link to="/">
-            <img src={logo} alt="Dev Society Logo"></img>
-          </Link>
+          <div>
+            Western Developers Society
+          </div>
         </div>
         <button
           className={`hamburger ${open && "active"}`}
