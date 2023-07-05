@@ -7,10 +7,10 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   function toggleMobileNav() {
-    setOpen((prev) => !prev)
+    setOpen((prev) => !prev);
   }
 
-    /*
+  /*
           <div>
           <Link to="/">
             <img src={logo} alt="Dev Society Logo"></img>
@@ -22,9 +22,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          <div>
-            Western Developers Society
-          </div>
+          <div>Western Developers Society</div>
         </div>
         <button
           className={`hamburger ${open && "active"}`}
@@ -33,6 +31,9 @@ function Navbar() {
         <div className={`links-container ${open && "active"}`}>
           <ul>
             <li onClick={toggleMobileNav}>
+              <Link to="/">home</Link>
+            </li>
+            <li onClick={toggleMobileNav}>
               <Link to="/Contact">contact us</Link>
             </li>
             <li onClick={toggleMobileNav}>
@@ -40,6 +41,9 @@ function Navbar() {
             </li>
             <li onClick={toggleMobileNav}>
               <Link to="/AboutUs">about us</Link>
+            </li>
+            <li onClick={toggleMobileNav}>
+              <Link to="/Portfolio">portfolio</Link>
             </li>
             <li onClick={toggleMobileNav}>
               <Link to="/Events">events</Link>
