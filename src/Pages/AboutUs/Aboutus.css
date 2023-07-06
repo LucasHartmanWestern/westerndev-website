@@ -39,109 +39,46 @@
   width:85px;
 }
 
-.headline {
-  align-self: center;
-  font-size: 45px;
-  letter-spacing: 0.03rem;
-  font-weight: 700;
-  width: 650px;
+.about-what-container{
+  background-color: white;
+  padding:100px 200px; 
+}
+
+.about-what-title{
+  font-size: 50px;
+}
+
+.about-what-item-container{
+  padding:50px 120px;
+  display: flex;
+  flex-direction: column;
+  gap:5rem;
+}
+
+.about-what-item{
+  display: flex;
+  gap:5rem;
+}
+
+.about-what-item img{
+  width: 80px;
+}
+
+.about-what-info{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  width:55%;
+  line-height: 30px;
+}
+
+.about-what-btn{
+  border: 1px solid black;
+  border-radius: 20px;
+  width:125px;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: #60468c;
-  border-bottom: 1px solid grey;
-}
-
-.team-title {
-  font-weight: 700;
-  font-size: 45px;
-  align-self: center;
-  color: #60468c;
-  margin-bottom: 3rem;
-}
-
-.devs-title {
-  font-weight: 700;
-  font-size: 2rem;
-  display: grid;
-  place-items: center;
-  padding-top: 2rem;
-  color: #60468c;
-  margin-bottom: 3rem;
-}
-
-.team-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-self: center;
-  color: #393939;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-}
-
-.card-container {
-  max-width: 80vw;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  font-family: "Red Hat Display", sans-serif;
-  font-size: large;
-  color: #393939;
-}
-
-.memberCard {
-  min-width: 150px;
-  margin: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.profile-pic {
-  width: max-content;
-  height: max-content;
-  scale: 2;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
-}
-
-.member-description {
-  display: grid;
-  place-items: center;
-}
-
-.member-description > h1 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  padding-bottom: 0.35rem;
-}
-
-.member-description > h3 {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.member-socials-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.75rem;
-}
-
-.member-social {
-  padding: 0.2rem 0.25rem;
-  min-width: fit-content;
-  opacity: 40%;
-  scale: 85%;
-}
-
-.member-social:hover {
-  opacity: 1;
+  padding:5px 0px;
 }
 
 @media screen and (max-width: 1360px) {

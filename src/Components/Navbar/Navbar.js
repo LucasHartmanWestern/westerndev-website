@@ -23,7 +23,9 @@ function Navbar() {
       <div className="navbar-container">
         <div className="logo">
           <div>
+            <a href="/">
             Western Developers Society
+            </a>
           </div>
         </div>
         <button
