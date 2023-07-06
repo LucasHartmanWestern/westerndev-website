@@ -41,11 +41,12 @@
 
 .about-what-container{
   background-color: white;
-  padding:100px 200px; 
+  padding:100px 180px; 
 }
 
 .about-what-title{
   font-size: 50px;
+  margin-bottom: 50px;
 }
 
 .about-what-item-container{
@@ -79,6 +80,19 @@
   width:125px;
   text-align: center;
   padding:5px 0px;
+  transition: 0.3s;
+}
+
+.about-what-btn:hover{
+  border: 1px solid rgb(139, 139, 139);
+}
+
+.about-what-btn a{
+  transition: 0.3s;
+}
+
+.about-what-btn a:hover{
+  color:rgb(139, 139, 139);
 }
 
 @media screen and (max-width: 1360px) {

@@ -10,6 +10,7 @@ import unity from "./unity.png"
 import leader from "./leader.png"
 import event from "./calendar.png"
 import site from "./coding.png"
+import Footer from "../../Components/Footer/Footer";
 
 const aboutWDS = [
   "Western dev society plans on holding both in person and online events for the upcoming 2022-2023 school year. Running live events for the WDS and Western communities comes at a very high cost. Therefore, WDS highly appreaciates and welcomes any financial or in-kind sponsorships",
@@ -45,6 +46,8 @@ export default function Aboutus() {
           </div>
         </div>
       </div>
+
+       {/**------ABOUT WHAT WE DO SECTION----------*/}
       <div className="about-what-container">
         <div className="about-what-title">What We Do</div>
         <div className="about-what-item-container">
@@ -59,7 +62,7 @@ export default function Aboutus() {
               and organizations with free websites! 
             </div>
             <div className="about-what-btn">
-              Portfolio
+              <a href="/Portfolio">Portfolio</a>
             </div>
           </div>
         </div>
@@ -72,7 +75,7 @@ export default function Aboutus() {
               We organize hackathons and similar spaces for students to gain experience in a fun and social environment
             </div>
             <div className="about-what-btn">
-              Events
+              <a href="/Events">Events</a>
             </div>
           </div>
         </div>
@@ -85,18 +88,16 @@ export default function Aboutus() {
               We provide the opportunity to gain leadership experience across numerous areas within our student led club! 
             </div>
             <div className="about-what-btn">
-              Join
+              <a href="/JoinUs">Join</a>
             </div>
           </div>
         </div>
          </div>
-
       </div>
-      
 
-      <div className="sponsorships-container">
-        
-      </div>
+      {/**------SPONSORSHIPS SECTIONS----------*/}
+
+      <Footer></Footer>
     </div>
   );
 }
