@@ -95,7 +95,20 @@ export default function Aboutus() {
          </div>
       </div>
 
-      {/**------SPONSORSHIPS SECTIONS----------*/}
+      {/**------COMPANIES SECTIONS----------*/}
+      <div className="company-container">
+        <div className="company-title">
+          Companies We Work With
+        </div>
+        <div className="company-imgs">
+          London Bridges
+          tangible
+          Test 
+          
+          
+        </div>
+
+      </div>
 
       <Footer></Footer>
     </div>
