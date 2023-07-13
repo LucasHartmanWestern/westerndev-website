@@ -23,7 +23,9 @@ function Navbar() {
       <div className="navbar-container">
         <div className="logo">
           <div>
+            <a href="/">
             Western Developers Society
+            </a>
           </div>
         </div>
         <button
@@ -32,14 +34,14 @@ function Navbar() {
         ></button>
         <div className={`links-container ${open && "active"}`}>
           <ul>
+             <li onClick={toggleMobileNav}>
+              <Link to="/AboutUs">about</Link>
+            </li>
             <li onClick={toggleMobileNav}>
               <Link to="/Contact">contact us</Link>
             </li>
             <li onClick={toggleMobileNav}>
               <Link to="/JoinUs">join us</Link>
-            </li>
-            <li onClick={toggleMobileNav}>
-              <Link to="/AboutUs">about us</Link>
             </li>
             <li onClick={toggleMobileNav}>
               <Link to="/Events">events</Link>

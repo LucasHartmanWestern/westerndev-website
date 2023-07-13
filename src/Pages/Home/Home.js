@@ -67,6 +67,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/**MISSION SECTION*/}
       <div className="home-mission">
         <div className="mission-descript">
         <span className="mission-title">Our Mission </span>is to empower students through technology, 
@@ -74,6 +75,7 @@ export default function Home() {
         </div> 
       </div>
 
+      {/**EVENTS*/}
 
       <Footer></Footer>
     </div>
