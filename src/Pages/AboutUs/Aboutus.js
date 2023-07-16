@@ -4,6 +4,13 @@ import { EXEC_MEMBERS, DEV_MEMBERS, PRESIDENTS, MARKETING, INTERNAL, EXTERNAL, F
 import "./Aboutus.css";
 import DeloitteLogo from "./logos/DeloitteLogo.png";
 import MckinseyLogo from "./logos/MckinseyLogo.png";
+import monitor from "./monitor.png"
+import settings from "./settings.png"
+import unity from "./unity.png"
+import leader from "./leader.png"
+import event from "./calendar.png"
+import site from "./coding.png"
+import Footer from "../../Components/Footer/Footer";
 
 const aboutWDS = [
   "Western dev society plans on holding both in person and online events for the upcoming 2022-2023 school year. Running live events for the WDS and Western communities comes at a very high cost. Therefore, WDS highly appreaciates and welcomes any financial or in-kind sponsorships",
@@ -14,16 +21,102 @@ export default function Aboutus() {
   return (
     <div className="aboutus">
       <div className="about-top-container">
-        <div className="aboutus-title">About Us</div>
-        <div className="aboutus-description">
-          At Western Developers Society, we want to give students real life
-          development experience. Join us today!
+        <div className="about-item">
+          <div>
+            We believe everyone deserves equal opportunity to break into the tech world. 
+          </div>
+          <div className="about-img">
+            <img src={monitor}></img>
+          </div>
+        </div>
+        <div className="about-item2">
+          <div className="about-img">
+            <img src={settings}></img>
+          </div>
+          <div>
+            We also believe that everyone deserves equal access to great technology.  
+          </div>
+        </div>
+        <div className="about-item">
+          <div>
+            By providing students with a space to learn, network, and own their work, we empower individuals while supporting our community. 
+          </div>
+          <div className="about-img">
+            <img src={unity}></img>
+          </div>
         </div>
       </div>
-      <div className="team-container">
-        <h1 className="team-title">Meet the Team!</h1>
-        <div>
-          <div>
+
+       {/**------ABOUT WHAT WE DO SECTION----------*/}
+      <div className="about-what-container">
+        <div className="about-what-title">What We Do</div>
+        <div className="about-what-item-container">
+        <div className="about-what-item">
+          <div className="about-what-img">
+            <img src={site}></img>
+          </div>
+          <div className="about-what-info">
+            <div >
+              We build websites for our local community. 
+              Providing students (of all skill levels) with real world experience, 
+              and organizations with free websites! 
+            </div>
+            <div className="about-what-btn">
+              <a href="/Portfolio">Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <div className="about-what-item">
+          <div className="about-what-img">
+            <img src={event}></img>
+          </div>
+          <div className="about-what-info">
+            <div>
+              We organize hackathons and similar spaces for students to gain experience in a fun and social environment
+            </div>
+            <div className="about-what-btn">
+              <a href="/Events">Events</a>
+            </div>
+          </div>
+        </div>
+        <div className="about-what-item">
+          <div className="about-what-img">
+            <img src={leader}></img>
+          </div>
+          <div className="about-what-info">
+            <div>
+              We provide the opportunity to gain leadership experience across numerous areas within our student led club! 
+            </div>
+            <div className="about-what-btn">
+              <a href="/JoinUs">Join</a>
+            </div>
+          </div>
+        </div>
+         </div>
+      </div>
+
+      {/**------COMPANIES SECTIONS----------*/}
+      <div className="company-container">
+        <div className="company-title">
+          Companies We Work With
+        </div>
+        <div className="company-imgs">
+          London Bridges
+          tangible
+          Test 
+          
+          
+        </div>
+
+      </div>
+
+      <Footer></Footer>
+    </div>
+  );
+}
+
+{/**
+<div>
             <h2 className="devs-title">Presidents</h2>
             <div className="card-container">
               {PRESIDENTS.map((item, idx) => (
@@ -38,89 +131,4 @@ export default function Aboutus() {
                 <Member key={idx + item.name} data={item} />
               ))}
             </div>
-          </div>
-          <div>
-            <h2 className="devs-title">Marketing</h2>
-            <div className="card-container">
-              {MARKETING.map((item, idx) => (
-                <Member key={idx + item.name} data={item} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 className="devs-title">Internal</h2>
-            <div className="card-container">
-              {INTERNAL.map((item, idx) => (
-                <Member key={idx + item.name} data={item} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 className="devs-title">External</h2>
-            <div className="card-container">
-              {EXTERNAL.map((item, idx) => (
-                <Member key={idx + item.name} data={item} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 className="devs-title">Careers</h2>
-            <div className="card-container">
-              {CAREERS.map((item, idx) => (
-                <Member key={idx + item.name} data={item} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 className="devs-title">Finance</h2>
-            <div className="card-container">
-              {FINANCE.map((item, idx) => (
-                <Member key={idx + item.name} data={item} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="sponsorships-container">
-        <div className="sponsorships screen">
-          <div className="partnerships">Partnerships</div>
-          <div className="paragraph">
-            <p>
-              Our partners empower us to host a myriad of workshops,
-              competitions and events for the western community. Interested in
-              partnering with us? Contact us at westerndevsociety@gmail.com to
-              find out how you can partner with one of western's fastest growing
-              clubs!
-            </p>
-          </div>
-          <h3 className="title-2">Our Partners</h3>
-          <p className="paragraph-2">
-            Through our projects, we've had the honour of collaborating with a
-            wide range of incredible businesses and institutions. Here are a few
-            of them:
-          </p>
-          <div className="company-container">
-            <div className="company1">
-              <img src={DeloitteLogo} />
-            </div>
-            <div className="company2">
-              <img src={MckinseyLogo} />
-            </div>
-          </div>
-          <div className="flex-row">
-            <div className="seeking-partnership-with-us">
-              <h3>Seeking partnership with us?</h3>
-            </div>
-            <p className="paragraphs-3">
-              {aboutWDS[0]}
-              <br />
-              <br />
-              {aboutWDS[1]}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+          </div> */}

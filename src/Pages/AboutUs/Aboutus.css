@@ -14,357 +14,90 @@
 }
 
 .about-top-container {
-  width: 90vw;
-  padding: 10rem 10vw;
-
+  padding:275px 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  background-color: #60468c;
+  font-size: 35px;
+  gap:120px;
 }
 
-.aboutus-title {
-  color: rgb(255, 253, 244);
-  padding-top: 50px;
-  font-weight: 900;
-  min-width: 400px;
-  font-size: 80px;
-  padding-bottom: 50px;
+.about-item{
+  width: 55%;
+  display: flex;
+  gap: 30px;
 }
 
-.aboutus-description {
-  width: 60%;
-
-  font-weight: 500;
-  padding-right: 5%;
-  font-size: 30px;
-  line-height: 3rem;
-  color: rgb(255, 253, 244);
+.about-item2{
+  width: 55%;
+  align-self: flex-end;
+  display: flex;
+  gap:30px;
 }
 
-.headline {
-  align-self: center;
-  font-size: 45px;
-  letter-spacing: 0.03rem;
-  font-weight: 700;
-  width: 650px;
+.about-top-container img{
+  width:85px;
+}
+
+.about-what-container{
+  background-color: white;
+  padding:100px 180px; 
+}
+
+.about-what-title{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.about-what-item-container{
+  padding:50px 120px;
+  display: flex;
+  flex-direction: column;
+  gap:5rem;
+}
+
+.about-what-item{
+  display: flex;
+  gap:5rem;
+}
+
+.about-what-item img{
+  width: 80px;
+}
+
+.about-what-info{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  width:55%;
+  line-height: 30px;
+}
+
+.about-what-btn{
+  border: 1px solid black;
+  border-radius: 20px;
+  width:125px;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: #60468c;
-  border-bottom: 1px solid grey;
+  padding:5px 0px;
+  transition: 0.3s;
 }
 
-.team-title {
-  font-weight: 700;
-  font-size: 45px;
-  align-self: center;
-  color: #60468c;
-  margin-bottom: 3rem;
+.about-what-btn:hover{
+  border: 1px solid rgb(139, 139, 139);
 }
 
-.devs-title {
-  font-weight: 700;
-  font-size: 2rem;
-  display: grid;
-  place-items: center;
-  padding-top: 2rem;
-  color: #60468c;
-  margin-bottom: 3rem;
+.about-what-btn a{
+  transition: 0.3s;
 }
 
-.team-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-self: center;
-  color: #393939;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
+.about-what-btn a:hover{
+  color:rgb(139, 139, 139);
 }
 
-.card-container {
-  max-width: 80vw;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.company-container{
+    background-color: #3F66B1;
+    padding:100px 50px;
 
-  font-family: "Red Hat Display", sans-serif;
-  font-size: large;
-  color: #393939;
-}
-
-.memberCard {
-  min-width: 150px;
-  margin: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.profile-pic {
-  width: max-content;
-  height: max-content;
-  scale: 2;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
-}
-
-.member-description {
-  display: grid;
-  place-items: center;
-}
-
-.member-description > h1 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  padding-bottom: 0.35rem;
-}
-
-.member-description > h3 {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.member-socials-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.75rem;
-}
-
-.member-social {
-  padding: 0.2rem 0.25rem;
-  min-width: fit-content;
-  opacity: 40%;
-  scale: 85%;
-}
-
-.member-social:hover {
-  opacity: 1;
-}
-
-@media screen and (max-width: 1360px) {
-  .about-info {
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 100px;
-    font-size: 14px;
-  }
-
-  .about-left {
-    line-height: 1.5rem;
-    height: auto;
-    min-width: 150px;
-    padding: 7% 15%;
-  }
-
-  .about-right {
-    margin-top: 10%;
-    line-height: 1.5rem;
-    height: auto;
-    padding: 7% 15%;
-    min-width: 150px;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .headline {
-    font-size: 30px;
-    width: 80%;
-  }
-}
-
-:root {
-  --black: rgba(0, 0, 0, 1);
-  --alto: rgba(217, 217, 217, 1);
-
-  --font-size-m: 12px;
-  --font-size-l: 16px;
-  --font-size-xl: 20px;
-  --font-size-xxl: 32px;
-  --font-size-xxxl: 36px;
-  --font-size-xxxxl: 64px;
-}
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-
-@import url("https://fonts.googleapis.com/css?family=Inter:400");
-
-.screen a {
-  display: contents;
-  text-decoration: none;
-}
-
-.sponsorships-container {
-  width: 96vw;
-  padding: 4rem 2vw;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  font-family: "Red Hat Display", sans-serif;
-}
-
-.sponsorships {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.partnerships {
-  color: #60468c;
-  font-size: var(--font-size-xxxxl);
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.paragraph {
-  width: 80vw;
-  color: rgb(67, 67, 67);
-  font-family: "Red Hat Display";
-  font-size: x-large;
-  font-weight: 300;
-  letter-spacing: 0;
-  text-align: left;
-  line-height: 1.8rem;
-}
-
-.title-2 {
-  color: #60468c;
-  font-family: "Red Hat Display";
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: 0;
-  margin-left: 10px;
-  margin-top: 32px;
-  min-height: 72px;
-}
-
-.paragraph-2 {
-  width: 80vw;
-
-  color: rgb(67, 67, 67);
-  font-size: large;
-  line-height: 1.9rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  margin-left: 10px;
-  min-height: 15px;
-  text-align: left;
-}
-
-.company-container {
-  display: flex;
-  flex-direction: row;
-  padding: 3rem;
-}
-
-.company1 > img,
-.company2 > img {
-  min-width: 250px;
-}
-
-.flex-row {
-  width: 80vw;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.seeking-partnership-with-us {
-  display: grid;
-  place-content: center;
-
-  color: #60468c;
-
-  font-family: "Red Hat Display";
-  font-size: var(--font-size-xxxl);
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.paragraphs-3 {
-  color: rgb(67, 67, 67);
-  font-family: var(--font-family-inter);
-  font-size: large;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-@media screen and (max-width: 1360px) {
-  .about-top-container {
-    width: 90vw;
-    padding: 8rem 5vw;
-  }
-
-  .aboutus-description {
-    width: 100%;
-  }
-
-  .about-info {
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 100px;
-    font-size: 14px;
-  }
-
-  .about-left {
-    line-height: 1.5rem;
-    height: auto;
-    min-width: 150px;
-    padding: 7% 15%;
-  }
-
-  .about-right {
-    margin-top: 10%;
-    line-height: 1.5rem;
-    height: auto;
-    padding: 7% 15%;
-    min-width: 150px;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .aboutus-title {
-    font-size: 50px;
-  }
-
-  .aboutus-description {
-    font-size: 25px;
-  }
-
-  .company-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .paragraph,
-  .paragraph-2 {
-    width: 90vw;
-  }
-
-  .flex-row {
-    width: 90vw;
-    flex-direction: column;
-  }
-
-  .headline {
-    font-size: 30px;
-    width: 80%;
-  }
 }
