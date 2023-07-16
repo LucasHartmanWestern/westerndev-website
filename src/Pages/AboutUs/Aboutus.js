@@ -1,15 +1,25 @@
 import React from "react";
 import Member from "./Membercards";
-import { EXEC_MEMBERS, DEV_MEMBERS, PRESIDENTS, MARKETING, INTERNAL, EXTERNAL, FINANCE, CAREERS, DEVELOPMENT } from "./MembersData";
+import {
+  EXEC_MEMBERS,
+  DEV_MEMBERS,
+  PRESIDENTS,
+  MARKETING,
+  INTERNAL,
+  EXTERNAL,
+  FINANCE,
+  CAREERS,
+  DEVELOPMENT,
+} from "./MembersData";
 import "./Aboutus.css";
 import DeloitteLogo from "./logos/DeloitteLogo.png";
 import MckinseyLogo from "./logos/MckinseyLogo.png";
-import monitor from "./monitor.png"
-import settings from "./settings.png"
-import unity from "./unity.png"
-import leader from "./leader.png"
-import event from "./calendar.png"
-import site from "./coding.png"
+import monitor from "./monitor.png";
+import settings from "./settings.png";
+import unity from "./unity.png";
+import leader from "./leader.png";
+import event from "./calendar.png";
+import site from "./coding.png";
 import Footer from "../../Components/Footer/Footer";
 
 const aboutWDS = [
@@ -23,7 +33,8 @@ export default function Aboutus() {
       <div className="about-top-container">
         <div className="about-item">
           <div>
-            We believe everyone deserves equal opportunity to break into the tech world. 
+            We believe everyone deserves equal opportunity to break into the
+            tech world.
           </div>
           <div className="about-img">
             <img src={monitor}></img>
@@ -34,12 +45,14 @@ export default function Aboutus() {
             <img src={settings}></img>
           </div>
           <div>
-            We also believe that everyone deserves equal access to great technology.  
+            We also believe that everyone deserves equal access to great
+            technology.
           </div>
         </div>
         <div className="about-item">
           <div>
-            By providing students with a space to learn, network, and own their work, we empower individuals while supporting our community. 
+            By providing students with a space to learn, network, and own their
+            work, we empower individuals while supporting our community.
           </div>
           <div className="about-img">
             <img src={unity}></img>
@@ -47,67 +60,60 @@ export default function Aboutus() {
         </div>
       </div>
 
-       {/**------ABOUT WHAT WE DO SECTION----------*/}
+      {/**------ABOUT WHAT WE DO SECTION----------*/}
       <div className="about-what-container">
         <div className="about-what-title">What We Do</div>
         <div className="about-what-item-container">
-        <div className="about-what-item">
-          <div className="about-what-img">
-            <img src={site}></img>
-          </div>
-          <div className="about-what-info">
-            <div >
-              We build websites for our local community. 
-              Providing students (of all skill levels) with real world experience, 
-              and organizations with free websites! 
+          <div className="about-what-item">
+            <div className="about-what-img">
+              <img src={site}></img>
             </div>
-            <div className="about-what-btn">
-              <a href="/Portfolio">Portfolio</a>
+            <div className="about-what-info">
+              <div>
+                We build websites for our local community. Providing students
+                (of all skill levels) with real world experience, and
+                organizations with free websites!
+              </div>
+              <div className="about-what-btn">
+                <a href="/Portfolio">Portfolio</a>
+              </div>
+            </div>
+          </div>
+          <div className="about-what-item">
+            <div className="about-what-img">
+              <img src={event}></img>
+            </div>
+            <div className="about-what-info">
+              <div>
+                We organize hackathons and similar spaces for students to gain
+                experience in a fun and social environment
+              </div>
+              <div className="about-what-btn">
+                <a href="/Events">Events</a>
+              </div>
+            </div>
+          </div>
+          <div className="about-what-item">
+            <div className="about-what-img">
+              <img src={leader}></img>
+            </div>
+            <div className="about-what-info">
+              <div>
+                We provide the opportunity to gain leadership experience across
+                numerous areas within our student led club!
+              </div>
+              <div className="about-what-btn">
+                <a href="/JoinUs">Join</a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="about-what-item">
-          <div className="about-what-img">
-            <img src={event}></img>
-          </div>
-          <div className="about-what-info">
-            <div>
-              We organize hackathons and similar spaces for students to gain experience in a fun and social environment
-            </div>
-            <div className="about-what-btn">
-              <a href="/Events">Events</a>
-            </div>
-          </div>
-        </div>
-        <div className="about-what-item">
-          <div className="about-what-img">
-            <img src={leader}></img>
-          </div>
-          <div className="about-what-info">
-            <div>
-              We provide the opportunity to gain leadership experience across numerous areas within our student led club! 
-            </div>
-            <div className="about-what-btn">
-              <a href="/JoinUs">Join</a>
-            </div>
-          </div>
-        </div>
-         </div>
       </div>
 
       {/**------COMPANIES SECTIONS----------*/}
       <div className="company-container">
-        <div className="company-title">
-          Companies We Work With
-        </div>
-        <div className="company-imgs">
-          London Bridges
-          tangible
-          Test 
-          
-          
-        </div>
-
+        <div className="company-title">Companies We Work With</div>
+        <div className="company-imgs">London Bridges tangible Test</div>
       </div>
 
       <Footer></Footer>
@@ -115,7 +121,8 @@ export default function Aboutus() {
   );
 }
 
-{/**
+{
+  /**
 <div>
             <h2 className="devs-title">Presidents</h2>
             <div className="card-container">
@@ -131,4 +138,5 @@ export default function Aboutus() {
                 <Member key={idx + item.name} data={item} />
               ))}
             </div>
-          </div> */}
+          </div> */
+}

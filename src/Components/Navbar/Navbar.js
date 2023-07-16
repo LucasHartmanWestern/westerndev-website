@@ -42,11 +42,18 @@ function Navbar() {
               <Link to="/Contact">contact us</Link>
             </li>
             <li onClick={toggleMobileNav}>
-              <Link to="/JoinUs">join us</Link>
+              <Link to="/Team">team</Link>
             </li>
             <li onClick={toggleMobileNav}>
               <Link to="/Events">events</Link>
             </li>
+            <li onClick={toggleMobileNav}>
+              <Link to="/Portfolio">portfolio</Link>
+            </li>
+            <li onClick={toggleMobileNav}>
+              <Link to="/Join">join</Link>
+            </li>
+
             {/**<li>
                 <Link to="/Portfolio">portfolio</Link>
             </li> */}
