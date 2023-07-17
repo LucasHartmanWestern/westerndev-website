@@ -11,6 +11,7 @@ import leader from "./leader.png"
 import event from "./calendar.png"
 import site from "./coding.png"
 import Footer from "../../Components/Footer/Footer";
+import Contact from "../Contact/Contact";
 
 const aboutWDS = [
   "Western dev society plans on holding both in person and online events for the upcoming 2022-2023 school year. Running live events for the WDS and Western communities comes at a very high cost. Therefore, WDS highly appreaciates and welcomes any financial or in-kind sponsorships",
@@ -98,16 +99,46 @@ export default function Aboutus() {
       {/**------COMPANIES SECTIONS----------*/}
       <div className="company-container">
         <div className="company-title">
-          Companies We Work With
+          Companies We've Worked With
         </div>
         <div className="company-imgs">
           London Bridges
           tangible
           Test 
           
-          
+        </div>
+        <div className="company-portfolio-btn">
+          <a href="/Portfolio">Portfolio</a>
         </div>
 
+      </div>
+
+      {/**------PARTNERS SECTIONS----------*/}
+      <div className="partners-container">
+        <div className="partners-title">
+          Our Partners
+        </div>
+        <div className="partners-imgs">
+          <div> <img src={DeloitteLogo}></img></div>
+          <div>
+          <img src={MckinseyLogo}></img>
+          </div>
+        </div>
+       
+      </div>
+
+
+      {/**------PARTNERS SECTIONS----------*/}
+      <div className="become-partner-container">
+        <div className="become-partner-title">
+          Become A Partner
+        </div>
+        <div className="become-partner-subtitle">
+          Want to support Western’s fastest growing tech community? Reach out to learn more. 
+        </div>
+
+        <Contact></Contact>
+       
       </div>
 
       <Footer></Footer>

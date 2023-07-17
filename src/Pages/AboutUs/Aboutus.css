@@ -98,6 +98,64 @@
 
 .company-container{
     background-color: #3F66B1;
-    padding:100px 50px;
+    padding:100px 100px;
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+}
 
+.company-title{
+  font-size: 50px;
+  color:white;
+}
+
+.company-portfolio-btn{
+  border:1px solid white;
+  padding:15px;
+  width:100px;
+  text-align: center;
+  color:white;
+  border-radius: 15px;
+}
+
+.company-portfolio-btn a{
+  color:white;
+}
+
+.partners-container{
+  padding:100px;
+}
+
+.partners-title{
+  font-size:50px;
+}
+
+.partners-imgs{
+  margin-top:70px;
+  display: flex;
+  gap:8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-imgs img{
+  width:300px;
+}
+
+.become-partner-container{
+  padding:100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.become-partner-title{
+  font-size: 50px;
+}
+
+.become-partner-subtitle {
+  font-size: 20px;
+  margin: 10px;
 }
