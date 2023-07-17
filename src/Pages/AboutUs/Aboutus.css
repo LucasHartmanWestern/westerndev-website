@@ -98,7 +98,7 @@
 
 .company-container{
     background-color: #3F66B1;
-    padding:100px 100px;
+    padding:100px 175px;
   display: flex;
   flex-direction: column;
   gap:3rem;
@@ -123,7 +123,7 @@
 }
 
 .partners-container{
-  padding:100px;
+  padding:100px 175px;
 }
 
 .partners-title{
