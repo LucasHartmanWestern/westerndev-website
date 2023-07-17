@@ -99,7 +99,7 @@ export default function Aboutus() {
       {/**------COMPANIES SECTIONS----------*/}
       <div className="company-container">
         <div className="company-title">
-          Companies We've Worked With
+          Companies we've worked with
         </div>
         <div className="company-imgs">
           London Bridges
@@ -116,7 +116,7 @@ export default function Aboutus() {
       {/**------PARTNERS SECTIONS----------*/}
       <div className="partners-container">
         <div className="partners-title">
-          Our Partners
+          Our partners
         </div>
         <div className="partners-imgs">
           <div> <img src={DeloitteLogo}></img></div>
@@ -131,7 +131,7 @@ export default function Aboutus() {
       {/**------PARTNERS SECTIONS----------*/}
       <div className="become-partner-container">
         <div className="become-partner-title">
-          Become A Partner
+          Become a partner
         </div>
         <div className="become-partner-subtitle">
           Want to support Western’s fastest growing tech community? Reach out to learn more. 

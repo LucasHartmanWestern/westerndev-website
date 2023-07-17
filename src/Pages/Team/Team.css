@@ -1,0 +1,15 @@
+.team-container{
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.team-title{
+    padding: 200px 150px 50px 150px;
+    font-size: 40px;
+}
+
+.team-member-container{
+    padding:50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+}
