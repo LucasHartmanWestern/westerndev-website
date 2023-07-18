@@ -3,7 +3,9 @@ import Member from "./Membercards";
 import { EXEC_MEMBERS, DEV_MEMBERS, PRESIDENTS, MARKETING, INTERNAL, EXTERNAL, FINANCE, CAREERS, DEVELOPMENT } from "./MembersData";
 import "./Aboutus.css";
 import DeloitteLogo from "./logos/DeloitteLogo.png";
-import MckinseyLogo from "./logos/MckinseyLogo.png";
+import MckinseyLogo from "./logos/mckinsey.png";
+import SeniorsLogo from "./logos/seniorsinit.png"
+import LondonLogo from "./logos/londonBridges.jpeg"
 import monitor from "./monitor.png"
 import settings from "./settings.png"
 import unity from "./unity.png"
@@ -96,22 +98,27 @@ export default function Aboutus() {
          </div>
       </div>
 
-      {/**------COMPANIES SECTIONS----------*/}
+      {/**------COMPANIES SECTIONS---------- //COMMENTING OUT UNTIL HAVE ALL LOGOS
       <div className="company-container">
         <div className="company-title">
           Companies we've worked with
         </div>
         <div className="company-imgs">
-          London Bridges
-          tangible
-          Test 
-          
+          <div className="company-img-container">
+            <img src={SeniorsLogo}></img>
+            <div className="company-name">Seniors in IT</div>
+          </div>
+           <div className="company-img-container">
+            <img src={LondonLogo}></img>
+          </div>
+        
         </div>
         <div className="company-portfolio-btn">
           <a href="/Portfolio">Portfolio</a>
         </div>
 
       </div>
+      */}
 
       {/**------PARTNERS SECTIONS----------*/}
       <div className="partners-container">
@@ -119,9 +126,11 @@ export default function Aboutus() {
           Our partners
         </div>
         <div className="partners-imgs">
-          <div> <img src={DeloitteLogo}></img></div>
+          <div> 
+            <a href="https://www2.deloitte.com/ca/en/pages/about-deloitte/articles/home.html" target="_blank"><img src={DeloitteLogo} ></img></a>
+          </div>
           <div>
-          <img src={MckinseyLogo}></img>
+            <a href="https://www.mckinsey.com/" target="_blank"><img src={MckinseyLogo}></img></a>
           </div>
         </div>
        

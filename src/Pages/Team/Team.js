@@ -16,18 +16,14 @@ import RoseGaoImg from "./pfps/RoseGao.png";
 import ElaineLinImg from "./pfps/ElaineLin.png";
 import ArnavGoyalImg from "./pfps/ArnavGoyal.png";
 import BraydenThompsonImg from "./pfps/BraydenThompson.png";
-import ClaireMcGuiganImg from "./pfps/ClaireMcGuigan.png";
 import LeenAlJalladImg from "./pfps/LeenAl-Jallad.png";
-import RoninWilliamsYoungImg from "./pfps/RoninWilliams-Young.png";
-import TeddyNgoImg from "./pfps/TeddyN'go.png";
 import DivijaBhargavaImg from "./pfps/DivijaBhargava.png";
 import JustinTsangImg from "./pfps/JustinTsang.png";
 import TaggLeeImg from "./pfps/TaggLee.png";
 import JaxWangImg from "./pfps/JaxWang.png";
-import KaitlynMooreImg from "./pfps/KaitlynMoore.png";
-import ChristopherOjoImg from "./pfps/ChristopherOjo.png";
 import LucasHartmanImg from "./pfps/LucasHartman.png";
 import SehajNaangalImg from "./pfps/SehajNaangal.png";
+import SharafImg from "./pfps/Sharaf.png";
 
 function Team() {
   return (
@@ -51,6 +47,27 @@ function Team() {
             name='Brayden Thompson'
             title='VP Development'
             />
+            <MemberCard
+            img={SharafImg}
+            name='Sharaf Sayed'
+            title='VP External'
+            />
+            <MemberCard
+            img={LucasHartmanImg}
+            name='Lucas Hartman'
+            title='VP Technology'
+            />
+        </div>
+        <div className='join-team-container'>
+          <div className='join-team-title'>
+            Want to join our team? 
+          </div>
+          <div className='join-team-info'>
+            We offer a variety of roles across multiple teams. Whether you come from a business, engineering, humanities, or any other background, there is a position for you! 
+          </div>
+          <div className='join-team-btn'>
+            <a>Join Now!</a>
+          </div>
         </div>
         <Footer></Footer>
     </div>
