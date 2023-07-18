@@ -1,0 +1,56 @@
+.team-container{
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.team-title{
+    padding: 200px 150px 50px 150px;
+    font-size: 40px;
+}
+
+.team-member-container{
+    padding:50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:5rem;
+}
+
+.join-team-container{
+    background-color: #003F88;
+    color:white;
+    padding:100px 150px;
+    margin-top:200px;
+}
+
+.join-team-title{
+    font-size: 45px;
+}
+
+.join-team-info {
+    padding-top:30px;
+    font-size: 30px;
+}
+
+.join-team-btn{
+    border: 1px solid white;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin-top:50px;
+    cursor: pointer;
+}
+
+.join-team-btn a{
+    color:white;
+    transition: 0.2s;
+}
+
+.join-team-btn:hover {
+    border: 1px solid rgb(208, 208, 208);
+}
+
+.join-team-btn a:hover {
+    color: rgb(208, 208, 208);
+}

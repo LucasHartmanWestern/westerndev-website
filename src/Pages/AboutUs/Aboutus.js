@@ -3,7 +3,9 @@ import Member from "./Membercards";
 import { EXEC_MEMBERS, DEV_MEMBERS, PRESIDENTS, MARKETING, INTERNAL, EXTERNAL, FINANCE, CAREERS, DEVELOPMENT } from "./MembersData";
 import "./Aboutus.css";
 import DeloitteLogo from "./logos/DeloitteLogo.png";
-import MckinseyLogo from "./logos/MckinseyLogo.png";
+import MckinseyLogo from "./logos/mckinsey.png";
+import SeniorsLogo from "./logos/seniorsinit.png"
+import LondonLogo from "./logos/londonBridges.jpeg"
 import monitor from "./monitor.png"
 import settings from "./settings.png"
 import unity from "./unity.png"
@@ -11,6 +13,7 @@ import leader from "./leader.png"
 import event from "./calendar.png"
 import site from "./coding.png"
 import Footer from "../../Components/Footer/Footer";
+import Contact from "../Contact/Contact";
 
 const aboutWDS = [
   "Western dev society plans on holding both in person and online events for the upcoming 2022-2023 school year. Running live events for the WDS and Western communities comes at a very high cost. Therefore, WDS highly appreaciates and welcomes any financial or in-kind sponsorships",
@@ -95,19 +98,56 @@ export default function Aboutus() {
          </div>
       </div>
 
-      {/**------COMPANIES SECTIONS----------*/}
+      {/**------COMPANIES SECTIONS---------- //COMMENTING OUT UNTIL HAVE ALL LOGOS
       <div className="company-container">
         <div className="company-title">
-          Companies We Work With
+          Companies we've worked with
         </div>
         <div className="company-imgs">
-          London Bridges
-          tangible
-          Test 
-          
-          
+          <div className="company-img-container">
+            <img src={SeniorsLogo}></img>
+            <div className="company-name">Seniors in IT</div>
+          </div>
+           <div className="company-img-container">
+            <img src={LondonLogo}></img>
+          </div>
+        
+        </div>
+        <div className="company-portfolio-btn">
+          <a href="/Portfolio">Portfolio</a>
         </div>
 
+      </div>
+      */}
+
+      {/**------PARTNERS SECTIONS----------*/}
+      <div className="partners-container">
+        <div className="partners-title">
+          Our partners
+        </div>
+        <div className="partners-imgs">
+          <div> 
+            <a href="https://www2.deloitte.com/ca/en/pages/about-deloitte/articles/home.html" target="_blank"><img src={DeloitteLogo} ></img></a>
+          </div>
+          <div>
+            <a href="https://www.mckinsey.com/" target="_blank"><img src={MckinseyLogo}></img></a>
+          </div>
+        </div>
+       
+      </div>
+
+
+      {/**------PARTNERS SECTIONS----------*/}
+      <div className="become-partner-container">
+        <div className="become-partner-title">
+          Become a partner
+        </div>
+        <div className="become-partner-subtitle">
+          Want to support Western’s fastest growing tech community? Reach out to learn more. 
+        </div>
+
+        <Contact></Contact>
+       
       </div>
 
       <Footer></Footer>

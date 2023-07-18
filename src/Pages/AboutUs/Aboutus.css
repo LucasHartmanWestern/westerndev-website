@@ -98,6 +98,94 @@
 
 .company-container{
     background-color: #3F66B1;
-    padding:100px 50px;
+    padding:100px 175px;
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+  color:white;
+}
 
+.company-title{
+  font-size: 50px;
+}
+
+.company-portfolio-btn{
+  border:1px solid white;
+  padding:15px;
+  width:100px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.company-portfolio-btn:hover{
+  border: 1px solid rgb(208, 208, 208);
+}
+
+.company-portfolio-btn a{
+    color: white;
+    transition: 0.2s;
+}
+.company-portfolio-btn a:hover{
+  color: rgb(208, 208, 208);
+}
+
+.company-imgs{
+  display: flex;
+  padding: 0px 100px;
+  gap:5rem;
+}
+
+.company-img-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-imgs img{
+  width:200px;
+}
+
+.company-name{
+  color:white;
+  font-weight: bold;
+}
+
+.partners-container{
+  padding:100px 175px;
+}
+
+.partners-title{
+  font-size:50px;
+}
+
+.partners-imgs{
+  margin-top:70px;
+  display: flex;
+  gap:8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-imgs img{
+  width:300px;
+}
+
+.become-partner-container{
+  padding:100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.become-partner-title{
+  font-size: 50px;
+}
+
+.become-partner-subtitle {
+  font-size: 20px;
+  margin: 10px;
 }
