@@ -3,15 +3,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.hero {
-  padding:250px 300px;
+.home-hero {
+  padding:250px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap:10%;
+  width:100vw;
 }
 
-.title {
+.home-title {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -53,11 +54,12 @@
 
 .home-pillars{
   background-color: white;
-  padding:150px 30px;
+  padding:150px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:200px;
+  gap:10%;
+  max-width: 100%;
 }
 
 .pillar-container{
@@ -80,7 +82,7 @@
 
 .pillar-descript{
   text-align: center;
-  width:220px;
+  width:70%;
 
   word-wrap: break-word;
 }
@@ -91,6 +93,8 @@
   color:white;
   font-size: 40px;
   line-height: 60px;
+  max-width: 100%;
+
 }
 
 .mission-title{
@@ -99,24 +103,4 @@
 
 .mission-descript{
   width:1000px;
-}
-
-
-@media screen and (max-width: 1050px) {
-  .hero {
-    width: 98vw;
-    padding: 0 1vw;
-
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .title {
-    width: 75vw;
-    align-items: center;
-    margin-top: 60px;
-
-    font-size: 60px;
-    line-height: 3rem;
-  }
 }

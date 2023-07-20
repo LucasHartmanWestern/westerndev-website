@@ -16,8 +16,8 @@ const WHAT_IS_WDS_POINTS = [
 export default function Home() {
   return (
     <div className="home-container">
-      <section className="hero">
-        <div className="title">
+      <div className="home-hero">
+        <div className="home-title">
           <div className="heading">
             Building <br/>community,<br/> one line of code<br/> at a time.
           </div>
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="home-pic">
           <img src={balance}></img>
         </div>
-      </section>
+      </div>
 
       {/**OUR PILLARS SECTIONS */}
       <div className="home-pillars">
