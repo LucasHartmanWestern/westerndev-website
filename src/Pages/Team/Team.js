@@ -36,26 +36,31 @@ function Team() {
             img={LukeImg}
             name='Luke Blommysten'
             title='President'
+            link='https://www.linkedin.com/in/lukeblommesteyn/'
             />
             <MemberCard
             img={TaraImg}
             name='Tara Lee'
             title='VP Development'
+            link='https://www.linkedin.com/in/tara-zoe-lee/'
             />
             <MemberCard
             img={BraydenThompsonImg}
             name='Brayden Thompson'
             title='VP Development'
+            link='https://www.linkedin.com/in/brayden-thompson/'
             />
             <MemberCard
             img={SharafImg}
             name='Sharaf Sayed'
             title='VP External'
+            link='https://www.linkedin.com/in/sharaf-syed-005744221/'
             />
             <MemberCard
             img={LucasHartmanImg}
             name='Lucas Hartman'
             title='VP Technology'
+            link='https://www.linkedin.com/in/lucas-hartman-2a2b25171/'
             />
         </div>
         <div className='join-team-container'>
@@ -66,7 +71,7 @@ function Team() {
             We offer a variety of roles across multiple teams. Whether you come from a business, engineering, humanities, or any other background, there is a position for you! 
           </div>
           <div className='join-team-btn'>
-            <a>Join Now!</a>
+            <a href="/JoinUs">Join Now!</a>
           </div>
         </div>
         <Footer></Footer>

@@ -16,4 +16,9 @@
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.member-img img:hover{
+    opacity: 75%;
 }
