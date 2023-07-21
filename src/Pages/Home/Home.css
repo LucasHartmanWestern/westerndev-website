@@ -4,12 +4,11 @@
 }
 
 .home-hero {
-  padding:250px 100px;
+  padding:250px 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap:10%;
-  width:100vw;
 }
 
 .home-title {
@@ -18,11 +17,11 @@
   gap: 1rem;
 }
 
-.heading{
-    font-size: 80px;
-    letter-spacing: 0.03em;
-    line-height: 90px;
-    color: #000000;
+.home-heading{
+  font-size: 80px;
+  letter-spacing: 0.03em;
+  line-height: 90px;
+  color: #000000;
 }
 
 .subheading{
@@ -58,8 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:10%;
-  max-width: 100%;
+  gap:5%;
 }
 
 .pillar-container{
@@ -82,25 +80,44 @@
 
 .pillar-descript{
   text-align: center;
-  width:70%;
-
-  word-wrap: break-word;
+  width: 90%;
 }
 
 .home-mission{
   background: #00296B;
-  padding:150px 300px;
+  padding:150px 15%;
   color:white;
   font-size: 40px;
   line-height: 60px;
-  max-width: 100%;
-
 }
 
 .mission-title{
   font-size: 60px;
 }
 
-.mission-descript{
-  width:1000px;
+@media screen and (max-width:1100px) {
+.home-pillars {
+    background-color: white;
+    padding: 150px 5%;
+    gap:1%;
+  }
+    .pillar-title {
+      font-size: 20px;
+    }
+  .pillar-container {
+    max-width:300px;
+  }
+
+  .home-heading {
+    font-size: 50px;
+    letter-spacing: 0.03em;
+    line-height: 50px;
+    color: #000000;
+  }
+    .mission-title {
+      font-size: 40px;
+    }
+    .mission-descript{
+      font-size: 30px;
+    }
 }
