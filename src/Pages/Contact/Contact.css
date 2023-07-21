@@ -75,29 +75,14 @@ textarea {
 }
 
 @media screen and (max-width: 1000px) {
-  .Contact-info {
-    width: 90vw;
-    padding: 8rem 5vw 4rem 5vw;
-  }
+  input {
+      min-width: 200px;
+    }
+  
+}
 
-  .Contact-Socials {
-    display: grid;
-    gap: 0.5rem;
-  }
-
-  .Contact-form-container {
-    flex-direction: column;
-    align-items: inherit;
-  }
-
-  .Contact-form-title {
-    width: 100%;
-    padding-bottom: 2rem;
-
-    text-align: start;
-  }
-
-  .Contact-form {
-    max-width: 100%;
+@media screen and (max-width: 600px) {
+  input {
+    min-width: 100px;
   }
 }

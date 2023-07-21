@@ -1,31 +1,23 @@
 .aboutus {
-  width: 100vw;
-  overflow-x: hidden;
-
   display: flex;
   flex-direction: column;
-
   font-family: "Red Hat Display", sans-serif;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .about-top-container {
-  padding:275px 200px;
+  padding:275px 12%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 35px;
-  gap:120px;
+  gap:8rem;
 }
 
 .about-item{
   width: 55%;
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
 .about-item2{
@@ -33,6 +25,7 @@
   align-self: flex-end;
   display: flex;
   gap:30px;
+  align-items: center;
 }
 
 .about-top-container img{
@@ -41,7 +34,7 @@
 
 .about-what-container{
   background-color: white;
-  padding:100px 180px; 
+  padding:100px 12%; 
 }
 
 .about-what-title{
@@ -50,7 +43,7 @@
 }
 
 .about-what-item-container{
-  padding:50px 120px;
+  padding:50px 8%;
   display: flex;
   flex-direction: column;
   gap:5rem;
@@ -95,10 +88,9 @@
   color:rgb(139, 139, 139);
 }
 
-
 .company-container{
-    background-color: #3F66B1;
-    padding:100px 175px;
+  background-color: #3F66B1;
+  padding:100px 12%;
   display: flex;
   flex-direction: column;
   gap:3rem;
@@ -153,7 +145,7 @@
 }
 
 .partners-container{
-  padding:100px 175px;
+  padding:100px 12%;
 }
 
 .partners-title{
@@ -163,7 +155,7 @@
 .partners-imgs{
   margin-top:70px;
   display: flex;
-  gap:8rem;
+  gap:10%;
   justify-content: center;
   align-items: center;
 }
@@ -173,7 +165,7 @@
 }
 
 .become-partner-container{
-  padding:100px;
+  padding:100px 5%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -188,4 +180,49 @@
 .become-partner-subtitle {
   font-size: 20px;
   margin: 10px;
+}
+
+@media screen and (max-width:900px){
+  .about-top-container {
+      padding: 200px 12%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 24px;
+      gap:4rem;
+    }
+    .about-item {
+      width: 70%;
+      display: flex;
+      gap: 10px;
+    }
+  
+    .about-item2 {
+      width: 70%;
+      align-self: flex-end;
+      display: flex;
+      gap: 10px;
+    }
+
+  .partners-title {
+      font-size: 30px;
+    }
+
+  .partners-imgs{
+      margin-top: 40px;
+  }
+    .partners-imgs img {
+      width: 200px;
+    }
+  
+
+}
+
+@media screen and (max-width:600px){
+  .become-partner-title {
+      font-size: 30px;
+    }
+  .become-partner-subtitle{
+    font-size: 20px;
+  }
 }

@@ -16,9 +16,9 @@ const WHAT_IS_WDS_POINTS = [
 export default function Home() {
   return (
     <div className="home-container">
-      <section className="hero">
-        <div className="title">
-          <div className="heading">
+      <div className="home-hero">
+        <div className="home-title">
+          <div className="home-heading">
             Building <br/>community,<br/> one line of code<br/> at a time.
           </div>
           <div className="subheading">
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="home-pic">
           <img src={balance}></img>
         </div>
-      </section>
+      </div>
 
       {/**OUR PILLARS SECTIONS */}
       <div className="home-pillars">
@@ -40,7 +40,7 @@ export default function Home() {
             Community Outreach
           </div>
           <div className="pillar-descript">
-            alsdkfjlasjdflaskfjkldsjfkjaslkjflasjdlkfj;lkadsjf
+            Bridging the digital divide and empowering our local communities through technology.
           </div>
         </div>
         <div className="pillar-container">
@@ -51,7 +51,7 @@ export default function Home() {
             Student Engagement
           </div>
           <div className="pillar-descript">
-            alsdkfjlasjdflaskfjkldsjfkjaslkjflasjdlkfj;lkadsjf
+            Inspiring students to excel in technology through hands-on experiences and collaborative learning.
           </div>
         </div>
         <div className="pillar-container">
@@ -62,7 +62,7 @@ export default function Home() {
             Building Networks
           </div>
           <div className="pillar-descript">
-            alsdkfjlasjdflaskfjkldsjfkjaslkjflasjdlkfj;lkadsjf
+            Connecting tech enthusiasts with industry professionals for valuable relationships and exciting opportunities.
           </div>
         </div>
       </div>

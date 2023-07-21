@@ -13,9 +13,8 @@ import Team from "./Pages/Team/Team"
 
 function App() {
   return (
-    <div>
+    <div className="App-container">
       <Router>
-        <div className="App-container">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -26,7 +25,7 @@ function App() {
             <Route path="/Events" element={<Events />} />
             <Route path="/Team" element={<Team></Team>} />
           </Routes>
-        </div>
+
       </Router>
     </div>
   )
