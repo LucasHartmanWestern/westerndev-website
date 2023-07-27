@@ -1,127 +1,49 @@
-.Contact-Container {
-  width: 100vw;
-  overflow-x: hidden;
-
-  text-align: left;
-  font-family: "Red Hat Display", sans-serif;
-}
-
-.Contact-info {
-  width: 80vw;
-  padding: 8rem 10vw 4rem 10vw;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  color: rgb(51, 50, 50);
-}
-
-.Contact-1 {
-  padding: 2rem 0;
-  display: grid;
-  gap: 1.5rem;
-}
-
-.Contact-Title {
-  color: #00296b;
-  font-weight: 900;
-  font-size: 50px;
-}
-
-.Contact-Description {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 2rem;
-}
-
-.Contact-2 {
-  display: grid;
-  gap: 1rem;
-
-  font-size: 20px;
-}
-
-.Contact-check {
-  font-weight: 500;
-}
-
-.Contact-Socials {
-  width: 100%;
-  padding: 0 1rem;
-
-  display: flex;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-.Contact-Socials > div {
-  padding: 0.3rem 0;
-}
-
-.Contact-Socials > div > a {
-  display: flex;
-}
-
-.Contact-Socials > div > a > p {
-  padding-left: 0.75rem;
-}
 
 .Contact-form-container {
-  width: 80vw;
-  padding: 4rem 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #00296b;
-  color: rgb(255, 253, 244);
+
+  align-content: center;
+  margin-top:15px;
 }
 
-.Contact-form-title {
-  font-size: 40px;
-  text-align: center;
-  letter-spacing: 1px;
-}
+input{
+  min-width:350px;
+  color: white;
 
-.Contact-form {
-  width: 75%;
-  flex-grow: 1;
 }
 
 input,
 textarea {
-  min-height: 25px;
-  margin-top: 10px;
+  height:35px;
+  margin-top:2px;
   padding: 0.5rem 1rem;
 
   border-radius: 25px;
-  border-width: 0;
+  border:none;
 
   font-family: "Red Hat Display", sans-serif;
+  background-color: #FAC144;
+  color:white;
 }
 
 textarea {
   padding: 1rem 1rem;
-  min-height: 80px;
   resize: vertical;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
-  padding: 0.5% 0%;
-  width: 100%;
+  justify-content: center;
+  padding: 5px 0%;
 }
 
 .first-last-inputs {
   display: flex;
-  margin-left: 2px;
-}
-
-.first-last-inputs .input-container {
-  width: 50%;
+ gap:3rem;
 }
 
 .firstName {
@@ -133,49 +55,28 @@ textarea {
 }
 
 .send-button {
-  width: 100%;
+  width: 150px;
   padding: 0.75rem 0.5rem;
-  margin-top: 0.75rem;
-
   border-radius: 25px;
   cursor: pointer;
 
-  background-color: #ffffff;
-  color: #00296b;
-  font-weight: 800;
+
+  background-color: #FAC144;
+  color:white;
 
   transition: 0.1s ease-in-out;
+  align-self: center;
 }
 
 .send-button:hover {
-  background-color: #9d62cc;
+  background-color: #e1ac39;
   color: #ffffff;
 }
 
-.send-button:active {
-  background-color: #621c9b;
-  color: #d096ff;
-}
-
 .body {
-  min-height: 200px;
+  height: 100px;
 }
 
 @media screen and (max-width: 1000px) {
-  .Contact-info {
-    width: 90vw;
-    padding: 8rem 5vw 4rem 5vw;
-  }
 
-  .Contact-Socials {
-    display: grid;
-    gap: 0.5rem;
-  }
-
-  .Contact-form {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 800px) {
 }

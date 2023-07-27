@@ -42,51 +42,9 @@ function Contact() {
   };
 
   return (
-    <div className="Contact-Container">
-      <div className="Contact-info">
-        <div className="Contact-1">
-          <div className="Contact-Title">Our Partners</div>
-          <div className="Contact-Description">
-            longggggdhjagfadhjsagjdhgasjhdghjasgdhjasghjdgsahj here
-          </div>
-        </div>
-        <div className="Contact-2">
-          <div className="Contact-Socials">
-            <div className="Contact-linkedin">
-              {" "}
-              <a
-                href="https://www.linkedin.com/company/western-dev-society/?originalSubdomain=ca"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedin /> <p>Western Developer's Society</p>
-              </a>
-            </div>
-            <div className="Contact-insta">
-              <a
-                href="https://www.instagram.com/westerndevsociety/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaInstagram /> <p>@westerndevsociety</p>
-              </a>
-            </div>
-            <div className="Contact-facebook">
-              {" "}
-              <a
-                href="https://www.facebook.com/westerndevsociety/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaFacebookSquare /> <p>@westerndevsociety</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="Contact-form-container">
-        <h3 className="Contact-form-title">Email Us</h3>
-        <div className="Contact-form">
+
+    
+             
           <form onSubmit={handleSubmit}>
             <input type="hidden" name="_captcha" value="false"></input>
             <div className="first-last-inputs">
@@ -141,13 +99,14 @@ function Contact() {
                 required
               />
             </div>
-            <button type="submit" className="send-button">
-              <strong>Send</strong>
-            </button>
+            <div className="input-container">
+              <button type="submit" className="send-button">
+                <strong>Send</strong>
+              </button>
+            </div>
           </form>
-        </div>
       </div>
-    </div>
-  );
+
+  )
 }
 export default Contact;

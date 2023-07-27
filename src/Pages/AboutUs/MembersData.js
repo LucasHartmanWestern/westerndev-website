@@ -1,3 +1,4 @@
+/*
 import AidanImg from "./pfps/Aidan.png"
 import AlexImg from "./pfps/Alex.png"
 import ArayanImg from "./pfps/Arayan.png"
@@ -300,3 +301,5 @@ const DEVELOPMENT = [
 ];
 
 export {PRESIDENTS, MARKETING, INTERNAL, EXTERNAL, FINANCE, CAREERS, DEVELOPMENT }
+
+*/

@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./App.css";
 import Home from "./Pages/Home/Home";
@@ -11,16 +12,15 @@ import Events from "./Pages/Events/Events";
 import Aboutus from "./Pages/AboutUs/Aboutus";
 import JoinUs from "./Pages/JoinUs/joinus";
 
+
 function App() {
   return (
-    <div>
+    <div className="App-container">
       <Router>
-        <div className="App-container">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Toolkit" element={<Toolkit />} />
-            <Route path="/Contact" element={<Contact></Contact>} />
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/AboutUs" element={<Aboutus />} />
             <Route path="/Team" element={<Team />} />
@@ -28,7 +28,7 @@ function App() {
             <Route path="/Join" element={<JoinUs />} />
             <Route path="/Portfolio" element={<Portfolio />} />
           </Routes>
-        </div>
+
       </Router>
     </div>
   );

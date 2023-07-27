@@ -1,44 +1,74 @@
-.team {
-  width: 100vw;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  font-family: "Red Hat Display", sans-serif;
+
+.team-container{
+    font-family: "Red Hat Display", sans-serif;
 }
 
-.team-top-container {
-  padding: 275px 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 35px;
-  gap: 120px;
+.team-title{
+    padding: 200px 150px 50px 150px;
+    font-size: 40px;
 }
 
-.team-images-container {
-  background-color: white;
-  padding: 100px 180px;
-  display: flex;
-  flex-direction: column;
+.team-member-container{
+    padding:50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:5rem;
 }
 
-.group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  flex-wrap: wrap;
+.join-team-container{
+    background-color: #003F88;
+    color:white;
+    padding:100px 150px;
+    margin-top:200px;
 }
 
-.join-us {
-  background-color: #00296b;
-  padding: 100px 50px;
+.join-team-title{
+    font-size: 45px;
 }
 
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: red;
+.join-team-info {
+    padding-top:30px;
+    font-size: 30px;
+}
+
+.join-team-btn{
+    border: 1px solid white;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin-top:50px;
+    cursor: pointer;
+}
+
+.join-team-btn a{
+    color:white;
+    transition: 0.2s;
+}
+
+.join-team-btn:hover {
+    border: 1px solid rgb(208, 208, 208);
+}
+
+.join-team-btn a:hover {
+    color: rgb(208, 208, 208);
+}
+
+@media screen and (max-width: 1100px) {
+    .team-member-container {
+        padding: 50px 100px;
+     }
+}
+
+@media screen and (max-width: 800px){
+.join-team-title {
+        font-size: 24px;
+    }
+
+    .join-team-info {
+        font-size: 17px;
+    }
+
 }

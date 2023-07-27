@@ -10,14 +10,6 @@ function Navbar() {
     setOpen((prev) => !prev);
   }
 
-  /*
-          <div>
-          <Link to="/">
-            <img src={logo} alt="Dev Society Logo"></img>
-          </Link>
-          </div>
-          */
-
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -36,6 +28,7 @@ function Navbar() {
               <Link to="/AboutUs">about</Link>
             </li>
             <li onClick={toggleMobileNav}>
+
               <Link to="/">home</Link>
             </li>
             <li onClick={toggleMobileNav}>
@@ -53,6 +46,7 @@ function Navbar() {
             <li onClick={toggleMobileNav}>
               <Link to="/Join">join</Link>
             </li>
+
 
             {/**<li>
                 <Link to="/Portfolio">portfolio</Link>
