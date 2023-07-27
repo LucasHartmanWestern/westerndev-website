@@ -1,16 +1,29 @@
-.coming-soon{
-    text-align: center;
-    letter-spacing: 0.2rem;
-    padding-top:400px;
-    font-weight:bolder;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size:65px;
-    color: #9D62CC;
+.page {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding-top: 400px;
+  font-weight: bolder;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 65px;
+  color: #9d62cc;
+}
+
+.carousel {
+  z-index: 0;
+}
+
+.proj-carousel {
+  height: 100%;
+  padding: 5% 10%;
+}
+
+.paper {
+  padding: 5%;
 }
 
 @media screen and (max-width: 835px) {
-    .coming-soon{
-        margin-top: 40%;
-        font-size: 50px;
-    }
+  .coming-soon {
+    margin-top: 40%;
+    font-size: 50px;
+  }
 }
