@@ -57,6 +57,7 @@
 .about-what-item {
   display: flex;
   gap: 5rem;
+  padding: 50px 8%;
 }
 
 .about-what-item img {
