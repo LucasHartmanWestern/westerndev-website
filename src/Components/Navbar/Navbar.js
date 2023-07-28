@@ -28,13 +28,6 @@ function Navbar() {
               <Link to="/AboutUs">about</Link>
             </li>
             <li onClick={toggleMobileNav}>
-
-              <Link to="/">home</Link>
-            </li>
-            <li onClick={toggleMobileNav}>
-              <Link to="/Contact">contact us</Link>
-            </li>
-            <li onClick={toggleMobileNav}>
               <Link to="/Team">team</Link>
             </li>
             <li onClick={toggleMobileNav}>
