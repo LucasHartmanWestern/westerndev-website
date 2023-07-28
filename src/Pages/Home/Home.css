@@ -96,6 +96,9 @@
 }
 
 @media screen and (max-width:1100px) {
+  .home-hero{
+      gap: 5%;
+  }
 .home-pillars {
     background-color: white;
     padding: 150px 5%;
@@ -115,9 +118,9 @@
     color: #000000;
   }
     .mission-title {
-      font-size: 40px;
+      font-size: 50px;
     }
     .mission-descript{
-      font-size: 30px;
+      font-size: 35px;
     }
 }

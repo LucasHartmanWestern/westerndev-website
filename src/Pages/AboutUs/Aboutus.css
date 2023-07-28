@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   font-size: 35px;
-  gap:8rem;
+  gap:7rem;
 }
 
 .about-item{
@@ -182,23 +182,20 @@
   margin: 10px;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1100px){
   .about-top-container {
       padding: 200px 12%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       font-size: 24px;
       gap:4rem;
     }
-    .about-item {
-      width: 70%;
-      display: flex;
-      gap: 10px;
-    }
+  .about-item {
+    width: 80%;
+    display: flex;
+    gap: 10px;
+  }
   
     .about-item2 {
-      width: 70%;
+      width: 80%;
       align-self: flex-end;
       display: flex;
       gap: 10px;
@@ -214,15 +211,12 @@
     .partners-imgs img {
       width: 200px;
     }
-  
-
-}
-
-@media screen and (max-width:600px){
-  .become-partner-title {
+    .become-partner-title {
       font-size: 30px;
     }
-  .become-partner-subtitle{
-    font-size: 20px;
-  }
+  
+    .become-partner-subtitle {
+      font-size: 20px;
+    }
 }
+
