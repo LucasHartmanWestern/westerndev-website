@@ -105,8 +105,6 @@ function Contact() {
               </button>
             </div>
           </form>
-      </div>
-
   )
 }
 export default Contact;
