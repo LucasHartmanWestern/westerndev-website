@@ -65,6 +65,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width:30%;
+  height:350px;
+  border-radius:15px;
+}
+
+#pillar-1{
+    box-shadow: #df88acb1 0px 3px 8px;
+}
+
+#pillar-2 {
+  box-shadow: #88abdfb1 0px 3px 8px;
+}
+
+#pillar-3 {
+  box-shadow: #dfcf88b1 0px 3px 8px;
 }
 
 .pillar-title{

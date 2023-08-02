@@ -1,5 +1,6 @@
 import React from "react";
 import Member from "./Membercards";
+import Toolkit from "../../Components/Toolkit/toolkit";
 import {
   EXEC_MEMBERS,
   DEV_MEMBERS,
@@ -166,7 +167,7 @@ export default function Aboutus() {
         <Contact></Contact>
        
       </div>
-
+      <Toolkit></Toolkit>
       <Footer></Footer>
     </div>
   );

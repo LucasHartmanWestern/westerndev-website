@@ -70,8 +70,8 @@ function Events() {
           Empowering students through professional development, technical and community events
         </div>
       </div>
-      <div>Upcoming events coming soon...</div>
       <div className="events-carousel">
+          <div>Upcoming events coming soon...</div>
 
         {/**
          * 
