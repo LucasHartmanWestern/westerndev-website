@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   align-content: center;
   margin-top:15px;
 }
@@ -11,6 +12,7 @@
 input{
   min-width:350px;
   color: white;
+
 }
 
 input,
@@ -58,6 +60,7 @@ textarea {
   border-radius: 25px;
   cursor: pointer;
 
+
   background-color: #FAC144;
   color:white;
 
@@ -75,14 +78,5 @@ textarea {
 }
 
 @media screen and (max-width: 1000px) {
-  input {
-      min-width: 200px;
-    }
-  
-}
 
-@media screen and (max-width: 600px) {
-  input {
-    min-width: 100px;
-  }
 }
