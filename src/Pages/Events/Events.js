@@ -67,8 +67,7 @@ function Events() {
       <div className="events-top-container">
         <div className="events-title">Events</div>
         <div className="events-description">
-          <b className="bold-text">Empowering students</b> through professional
-          development, technical and community events
+          Empowering students through professional development, technical and community events
         </div>
       </div>
       <div className="events-carousel">

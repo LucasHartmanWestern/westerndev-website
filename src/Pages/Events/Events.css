@@ -1,44 +1,29 @@
 .events {
-  width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
-
-  display: flex;
-  flex-direction: column;
-
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  padding:200px 150px;
 }
 
 .events-top-container {
-  width: 90vw;
-  padding: 10rem 10vw 5rem 10vw;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  background-color: #846ab1;
-}
-
-.events-description {
-  font-weight: 500;
-  padding-right: 5%;
-  font-size: 26px;
-  width: 60%;
-  line-height: 3rem;
-  color: rgb(255, 253, 244);
-}
-.carousel {
-    z-index: 0;
-}
-.carousel {
-    z-index: 0;
 }
 
 .events-title {
-  color: rgb(255, 253, 244);
-  font-weight: 900;
-  font-size: 40px;
+  font-size: 50px;
+}
+
+.events-description {
+  padding-top:18px;
+  font-size: 22px;
+  width: 60%;
+
+}
+.carousel {
+    z-index: 0;
+}
+.carousel {
+    z-index: 0;
 }
 
 .event-name {
@@ -51,7 +36,6 @@
 
 .event-desc {
   line-height: 1.25rem;
-  font-size: 15px;
   font-weight: 600;
 }
 
