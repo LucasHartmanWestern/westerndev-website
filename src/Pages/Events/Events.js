@@ -2,9 +2,9 @@ import React from "react";
 import "./Events.css";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@mui/material";
+import Footer from "../../Components/Footer/Footer";
 
 function Events() {
-  // add events here
   const items = [
     {
       name: "Party Games Tournament",
@@ -70,14 +70,24 @@ function Events() {
           Empowering students through professional development, technical and community events
         </div>
       </div>
+      <div>Upcoming events coming soon...</div>
       <div className="events-carousel">
-        <Carousel className="carousel">
+
+        {/**
+         * 
+         * <Carousel className="carousel">
           {items.map((item, i) => (
             <Item key={i} item={item} />
           ))}
         </Carousel>
+         */}
       </div>
+      <div className="past-events">
+        
+      </div>
+  <Footer></Footer>
     </div>
+    
   );
 }
 

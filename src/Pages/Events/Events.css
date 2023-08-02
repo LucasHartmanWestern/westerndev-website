@@ -1,12 +1,13 @@
 .events {
   font-family: 'Poppins', sans-serif;
-  padding:200px 150px;
+  padding:0px 12%;
 }
 
 .events-top-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding:200px 0px 50px 0px;
 }
 
 .events-title {
@@ -14,9 +15,9 @@
 }
 
 .events-description {
-  padding-top:18px;
-  font-size: 22px;
-  width: 60%;
+  padding-top:10px;
+  font-size: 26px;
+  width: 50%;
 
 }
 .carousel {
@@ -55,8 +56,9 @@
 }
 
 .events-carousel {
-  height: 100%;
-  padding: 5% 10%;
+display: flex;
+justify-content: center;
+text-align: center;
 }
 
 .paper {
