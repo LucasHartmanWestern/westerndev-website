@@ -3,115 +3,31 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 5%;
+  min-height: 100vh;
 }
 .join-top-container {
-  width: 90vw;
-  padding: 10rem 10vw;
-
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+}
+.join-bottom-container {
+  background-color: #3f66b1;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  background-color: #3d1f6d;
-}
-
-.joinus-title {
-  color: rgb(255, 253, 244);
-  padding-top: 50px;
-  font-weight: 900;
-  min-width: 400px;
-  font-size: 80px;
-  padding-bottom: 50px;
-}
-
-.joinus-description {
-  width: 60%;
-
-  font-weight: 500;
-  padding-right: 5%;
-  font-size: 30px;
-  line-height: 3rem;
-  color: rgb(255, 253, 244);
+  align-items: center;
+  flex-grow: 1;
 }
 
 .join-title {
-  font-weight: 900;
-  font-size: 55px;
-  align-self: center;
-  color: #60468c;
-  text-align: center;
-  margin-bottom: 35px;
-  margin-top: 100px;
+  padding: 200px 150px 50px 150px;
+  font-size: 40px;
+  align-self: flex-start;
 }
-.subtitle {
-  font-weight: 500;
-  font-size: 28px;
-  align-self: center;
-  color: #60468c;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.gen-member {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 1%;
-}
-.general {
-  align-self: center;
-  text-align: center;
-  font-family: "Red Hat Display";
-  font-size: 20px;
-  margin-bottom: 35px;
-  max-width: 30%;
-}
-.director,
-.devs {
-  font-family: "Red Hat Display";
-  font-size: 20px;
-  text-align: center;
-  margin-left: 70px;
-  max-width: 70%;
-}
-.joinus-descript {
-  margin-left: 180px;
-  margin-right: 180px;
-  margin-top: 5%;
-  font-family: "Red Hat Display";
-  text-align: center;
-  font-size: 26px;
-  line-height: 2rem;
-}
-.exec-dev {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 20%;
-  margin-right: 20%;
-  align-items: center;
-}
-.join-container {
-  line-height: 1.5rem;
-}
-.application {
-  text-align: center;
-  margin-top: 20px;
-}
-button {
-  border-radius: 5px;
-  border: none;
-  padding: 13px 13px;
-  background-color: #60468c;
-  color: rgb(255, 253, 244);
-  font-family: "Red Hat Display";
-  font-size: 17px;
-}
-button:hover {
-  cursor: pointer;
-}
-.list {
-  font-size: 18px;
-}
-@media screen and (max-width: 1250px) {
 
+.dev-timeline-title {
+  padding-top: 5%;
+  color: white;
+  margin-bottom: 5%;
 }

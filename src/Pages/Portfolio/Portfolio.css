@@ -4,35 +4,37 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  min-height: 100vh;
 }
 
 .port-title {
   padding: 200px 150px 50px 150px;
   font-size: 40px;
+  align-self: flex-start;
 }
 
 .grid-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5%;
   justify-content: center;
   align-items: center;
 }
 
 .grid-row {
   display: flex;
-  justify-content: space-between;
-  gap: 10%;
+  justify-content: space-around;
+  gap: 5%;
   width: 80%;
   padding-bottom: 5%;
 }
 
 .grid-item {
-  flex-basis: 85%; /* Take up 85% of the available space in the row */
+  flex-basis: 90%; /* Take up 85% of the available space in the row */
   max-width: 500px; /* Limit the width of the grid items */
   height: 250px;
   background-color: red;
-  padding: 20px;
+  padding: 3%;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -41,6 +43,7 @@
   cursor: pointer;
   overflow: hidden;
   transition: transform 0.5s ease;
+  border-radius: 3%;
 }
 
 .grid-item::before {
@@ -68,7 +71,22 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .port-title {
+    align-self: center;
+  }
+
   .port-container {
     padding: 50px 100px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .grid-item {
+    max-width: 750px;
+    height: 375px;
+  }
+
+  .port-title {
+    font-size: 80px;
   }
 }
