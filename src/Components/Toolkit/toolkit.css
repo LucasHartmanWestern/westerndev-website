@@ -2,13 +2,17 @@
   display: grid;
   place-content: center;
 
-  color: rgb(173, 173, 173);
-  filter: grayscale(100%);
+  color: black;
   transition: 0.3s ease;
+  padding:50px;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .toolkit > h4 {
   padding: 0rem 0rem 0.7rem 0rem;
+
+  font-size: 24px;
 
   place-self: center;
 
@@ -16,13 +20,9 @@
 }
 
 .toolkit img{
-  width: 70px;
+  width: 100px;
 }
 
-.toolkit:hover {
-  color: black;
-  filter: grayscale(0%);
-}
 
 .tools {
   display: flex;

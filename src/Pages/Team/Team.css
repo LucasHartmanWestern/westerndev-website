@@ -1,26 +1,26 @@
-.team-container {
-  font-family: "Red Hat Display", sans-serif;
-  min-height: 100vh;
+
+.team-container{
+font-family: 'Poppins', sans-serif;
 }
 
-.team-title {
-  padding: 200px 150px 50px 150px;
-  font-size: 40px;
+.team-title{
+    padding: 200px 12% 50px 12%;
+    font-size: 50px;
 }
 
-.team-member-container {
-  padding: 50px 200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5rem;
+.team-member-container{
+    padding:50px 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:5rem;
 }
 
-.join-team-container {
-  background-color: #003f88;
-  color: white;
-  padding: 100px 150px;
-  margin-top: 200px;
+.join-team-container{
+    background-color: #003F88;
+    color:white;
+    padding:100px 12%;
+    margin-top:50px;
 }
 
 .join-team-title {

@@ -1,16 +1,12 @@
-.copyright {
-    align-items: center;
-    text-align: center;
+.info{
+    text-align: end;
 }
 
 .footer {
-    width: 100%;
-    padding: 2rem 0rem;
-
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    font-size: 14px;
+    justify-content: space-between;
+    padding:50px 100px;
     color: rgb(51, 50, 50);
 }

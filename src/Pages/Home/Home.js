@@ -32,7 +32,7 @@ export default function Home() {
 
       {/**OUR PILLARS SECTIONS */}
       <div className="home-pillars">
-        <div className="pillar-container">
+        <div className="pillar-container" id='pillar-1'>
           <div className="pillar-img">
             <img src={house}></img>
           </div>
@@ -43,7 +43,7 @@ export default function Home() {
             Bridging the digital divide and empowering our local communities through technology.
           </div>
         </div>
-        <div className="pillar-container">
+        <div className="pillar-container" id='pillar-2'>
           <div className="pillar-img">
              <img src={student}></img>
           </div>
@@ -54,7 +54,7 @@ export default function Home() {
             Inspiring students to excel in technology through hands-on experiences and collaborative learning.
           </div>
         </div>
-        <div className="pillar-container">
+        <div className="pillar-container" id='pillar-3'>
           <div className="pillar-img">
               <img src={network}></img>
           </div>

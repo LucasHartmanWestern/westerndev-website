@@ -5,7 +5,7 @@ import "./toolkit.css"
 export default function Toolkit() {
   return (
     <div className="toolkit">
-      <h4>Built with</h4>
+      <h4>This site was built with</h4>
       <div className="tools">
         {TOOLS.map((tool) => (
           <img src={tool} alt="" />
