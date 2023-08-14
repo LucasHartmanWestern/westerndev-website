@@ -23,52 +23,51 @@ font-family: 'Poppins', sans-serif;
     margin-top:50px;
 }
 
-.join-team-title{
-    font-size: 45px;
+.join-team-title {
+  font-size: 45px;
 }
 
 .join-team-info {
-    padding-top:30px;
-    font-size: 30px;
+  padding-top: 30px;
+  font-size: 30px;
 }
 
-.join-team-btn{
-    border: 1px solid white;
-    padding: 15px;
-    width: 100px;
-    text-align: center;
-    border-radius: 15px;
-    transition: 0.2s;
-    margin-top:50px;
-    cursor: pointer;
+.join-team-btn {
+  border: 1px solid white;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.2s;
+  margin-top: 50px;
+  cursor: pointer;
 }
 
-.join-team-btn a{
-    color:white;
-    transition: 0.2s;
+.join-team-btn a {
+  color: white;
+  transition: 0.2s;
 }
 
 .join-team-btn:hover {
-    border: 1px solid rgb(208, 208, 208);
+  border: 1px solid rgb(208, 208, 208);
 }
 
 .join-team-btn a:hover {
-    color: rgb(208, 208, 208);
+  color: rgb(208, 208, 208);
 }
 
 @media screen and (max-width: 1100px) {
-    .team-member-container {
-        padding: 50px 100px;
-     }
+  .team-member-container {
+    padding: 50px 100px;
+  }
 }
 
-@media screen and (max-width: 800px){
-.join-team-title {
-        font-size: 24px;
-    }
+@media screen and (max-width: 800px) {
+  .join-team-title {
+    font-size: 24px;
+  }
 
-    .join-team-info {
-        font-size: 17px;
-    }
-
+  .join-team-info {
+    font-size: 17px;
+  }
 }
