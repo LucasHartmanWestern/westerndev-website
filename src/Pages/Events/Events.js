@@ -3,6 +3,7 @@ import "./Events.css";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@mui/material";
 import Footer from "../../Components/Footer/Footer";
+import UpcomingEvent from "./UpcomingEvent/UpcomingEvent";
 
 function Events() {
   const items = [
@@ -67,11 +68,10 @@ function Events() {
       <div className="events-top-container">
         <div className="events-title">Events</div>
         <div className="events-description">
-          Empowering students through professional development, technical and community events
+          Empowering students through professional development, technical, and community events
         </div>
       </div>
       <div className="events-carousel">
-          <div>Upcoming events coming soon...</div>
 
         {/**
          * 
@@ -81,6 +81,25 @@ function Events() {
           ))}
         </Carousel>
          */}
+      </div>
+      <div className="upcoming-events-container">
+        <div className="up-event-title">
+          Upcoming Events
+        </div>
+         <div className="upcoming-events">
+          <UpcomingEvent 
+            name='Summer Dinner'
+            date='August 17th'
+            descript='Are you interested in technology and meeting like-minded individuals? If so, attend our 2023 Virtual Summer Dinner! '
+            link='https://www.linkedin.com/feed/update/urn:li:activity:7096260546081001472/'
+          />
+          <UpcomingEvent 
+            name='Coming soon...'
+          />
+          <UpcomingEvent 
+            name='Coming soon...'
+          />
+        </div>
       </div>
       <div className="past-events">
         

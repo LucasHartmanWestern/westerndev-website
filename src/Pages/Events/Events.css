@@ -4,21 +4,40 @@
 
 .events-top-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding:200px 12% 50px 12%;
+  align-items: center;
+  gap:15%;
+  padding:250px 12% 200px 12%;
 }
 
 .events-title {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .events-description {
   padding-top:10px;
   font-size: 26px;
   width: 50%;
+}
+
+.upcoming-events-container{
+  background-color: #F5CA6C;
+  padding:100px 15%;
+}
+
+.upcoming-events{
+  display: flex;
+  gap:5%;
+  justify-content: center;
 
 }
+
+.up-event-title{
+  font-weight: bold;
+  color:white;
+  font-size: 20px;
+}
+
 .carousel {
     z-index: 0;
 }
@@ -69,19 +88,10 @@ padding:0px 12%;
   font-weight: 1500;
 }
 
-@media screen and (max-width: 835px) {
-  .events-top-container {
-    padding: 10rem 5vw 5rem 5vw;
+@media screen and (max-width: 1200px) {
+  .upcoming-events-container {
+      background-color: #F5CA6C;
+      padding: 100px 9%;
   }
 
-  .events {
-    font-size: 50px;
-  }
-  .events-description {
-    width: 90%;
-  }
-
-  .events-carousel {
-    padding: 5% 5%;
-  }
 }
