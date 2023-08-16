@@ -10,3 +10,8 @@
     padding:50px 100px;
     color: rgb(51, 50, 50);
 }
+
+.socials{
+    display: flex;
+    gap:5px;
+}

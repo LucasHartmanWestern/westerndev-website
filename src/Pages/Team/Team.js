@@ -5,7 +5,6 @@ import Footer from '../../Components/Footer/Footer'
 import MemberCard from './MemberCard/MemberCard'
 import AidanImg from "./pfps/Aidan.png"
 import AlexImg from "./pfps/Alex.png"
-import ArayanImg from "./pfps/Arayan.png"
 import ArmaanImg from "./pfps/Armaan.png"
 import LukeImg from "./pfps/Luke.png"
 import RajahImg from "./pfps/Rajah.png"
@@ -27,6 +26,8 @@ import ZiWei from "./pfps/ZiWei.jpg"
 import Tagg from "./pfps/Tagg.jpg"
 import Andrew from "./pfps/Andrew.jpeg"
 import Pranav from "./pfps/Pranav.png"
+import Ariba from "./pfps/ariba.jpeg"
+import Aryan from "./pfps/Aryan.jpeg"
 
 
 function Team() {
@@ -41,6 +42,12 @@ function Team() {
             name='Luke Blommysten'
             title='Co-President'
             link='https://www.linkedin.com/in/lukeblommesteyn/'
+            />
+            <MemberCard
+            img={Aryan}
+            name='Aryan Khurana'
+            title='Co-President'
+            link='https://www.linkedin.com/in/aryan-khurana/'
             />
             <MemberCard
             img={TaraImg}
@@ -77,6 +84,12 @@ function Team() {
             name='Zi Li'
             title='VP Careers'
             link='https://www.linkedin.com/in/zi-wei-li/'
+            />
+            <MemberCard
+            img={Ariba}
+            name='Ariba Akhtar'
+            title='VP Careers'
+            link='http://www.linkedin.com/in/aribaakhtar'
             />
             <MemberCard
             img={Tagg}
