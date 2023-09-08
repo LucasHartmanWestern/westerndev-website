@@ -15,7 +15,7 @@ function Footer() {
         </div>
         <div className="info">
             <strong>Western Developers Society </strong><br/>
-            wds@uwo.ca <br/>
+            westerndevsociety@gmail.com <br/>
             1170 Richmond St. London, ON <br/>
             &copy; 2023 Western Developers Society.
         </div>
