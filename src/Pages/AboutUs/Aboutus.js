@@ -108,7 +108,7 @@ export default function Aboutus() {
                 numerous areas within our student led club!
               </div>
               <div className="about-what-btn">
-                <a href="/JoinUs">Join</a>
+                <a href="/Join">Join</a>
               </div>
             </div>
           </div>

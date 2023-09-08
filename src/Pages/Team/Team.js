@@ -124,7 +124,7 @@ function Team() {
             We offer a variety of roles across multiple teams. Whether you come from a business, engineering, humanities, or any other background, there is a position for you! 
           </div>
           <div className='join-team-btn'>
-            <a href="/JoinUs">Join Now!</a>
+            <a href="/Join">Join Now!</a>
           </div>
         </div>
         <Footer></Footer>
