@@ -38,10 +38,9 @@ export default function JoinUs() {
   return (
     <div className="join-container">
       <div className="join-top-container">
-        <h1 className="join-title"> Join Us</h1>
+        <div className="join-title"> Join Us</div>
         <div className="join-btn-div">
-          {" "}
-          <label for="join-btn">Interested in Joining</label>
+          <label for="join-btn">Interested in Joining?</label>
           <button id="join-btn" className="join-btn">
             Coming Soon
           </button>

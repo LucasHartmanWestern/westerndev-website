@@ -3,19 +3,18 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 5%;
-  min-height: 100vh;
 }
 
 .join-top-container {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   height: 45vh;
   padding-bottom: 12%;
-  .join-title {
-    padding: 150px 12% 50px 12%;
-    font-size: 50px;
-  }
+}
+
+.join-title {
+  padding: 200px 12% 50px 12%;
+  font-size: 50px;
 }
 .team-text {
   display: flex;
@@ -26,16 +25,28 @@
 
 .join-btn-div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 3rem;
   justify-content: center;
+  align-items: center;
   padding-bottom: 100px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .join-btn {
-  width: 250px;
-  font-size: 25px;
+  font-size: 15px;
+  padding:20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #3f66b1;
+  color:white;
+  max-width:150px;
+  transition: 0.3s;
+}
+
+.join-btn:hover{
+    background-color: #5385e4;
+    cursor: pointer;
 }
 
 .team-header {
