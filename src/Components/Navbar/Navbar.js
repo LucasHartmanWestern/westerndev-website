@@ -33,9 +33,9 @@ function Navbar() {
             <li onClick={toggleMobileNav}>
               <Link to="/Events">events</Link>
             </li>
-            <li onClick={toggleMobileNav}>
+            {/* <li onClick={toggleMobileNav}>
               <Link to="/Portfolio">portfolio</Link>
-            </li>
+            </li> */}
             <li onClick={toggleMobileNav}>
               <Link to="/Join">join</Link>
             </li>

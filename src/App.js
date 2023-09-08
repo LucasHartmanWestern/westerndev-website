@@ -26,12 +26,13 @@ function App() {
             <Route path="/Team" element={<Team />} />
             <Route path="/Events" element={<Events />} />
             <Route path="/Join" element={<JoinUs />} />
-            <Route path="/Portfolio" element={<Portfolio />} />
           </Routes>
 
       </Router>
     </div>
   );
 }
+{/**
+     <Route path="/Portfolio" element={<Portfolio />} /> */}
 
 export default App;

@@ -22,7 +22,7 @@ export default function Home() {
             Building <br/>community,<br/> one line of code<br/> at a time.
           </div>
           <div className="subheading">
-            <a href='/JoinUs'>join now</a>
+            <a href='/Join'>join now</a>
           </div>
         </div>
         <div className="home-pic">
