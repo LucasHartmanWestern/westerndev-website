@@ -7,32 +7,32 @@ import { Button } from "@mui/material";
 export default function JoinUs() {
   const items = [
     {
-      title: "Early September 2023",
-      cardTitle: "hiring for development team roles opens",
+      title: "September 18th 2023",
+      cardTitle: "Hiring for Development Portfolio opens",
     },
     {
       title: "End of September 2023",
-      cardTitle: "hiring completed and development teams created",
+      cardTitle: "Hiring completed",
     },
     {
       title: "October 2023",
-      cardTitle: "initial team and client meetings",
+      cardTitle: "Initial team and client meetings",
     },
     {
-      title: "Novemeber 2023",
-      cardTitle: "site design and developer onboarding",
+      title: "November 2023",
+      cardTitle: "Site design and developer onboarding",
     },
     {
       title: "December 2023",
-      cardTitle: "exams",
+      cardTitle: "Exams",
     },
     {
-      title: "Janary to Early February 2023",
-      cardTitle: "development of first website prototype",
+      title: "January to Early February 2024",
+      cardTitle: "Development of first website prototype",
     },
     {
       title: "Mid February to late March 2024",
-      cardTitle: "projects are completed and delivered to clients",
+      cardTitle: "Projects are completed and delivered to clients",
     },
   ];
   return (
@@ -40,33 +40,33 @@ export default function JoinUs() {
       <div className="join-top-container">
         <div className="join-title"> Join Us</div>
         <div className="join-btn-div">
-          <label for="join-btn">Interested in Joining?</label>
+          <div for="join-btn">Interested in Joining?</div>
           <button id="join-btn" className="join-btn">
             Coming Soon
           </button>
         </div>
         <div className="join-top-text">
-          <text className="team-header">Our Teams: </text>
+          <div className="team-header">Our Portfolios</div>
+          <div>Join one of our many portfolios that best fits your skillset and interests!</div>
           <div className="team-text">
-            <text className="team">Internal</text>
-            <text className="team">External</text>
-            <text className="team">Development</text>
-            <text className="team">Marketing</text>
-            <text className="team">Finance</text>
-            <text className="team">Technology</text>
-            <text className="team">Careers</text>
+            <div className="team">Internal</div>
+            <div className="team">External</div>
+            <div className="team">Development</div>
+            <div className="team">Marketing</div>
+            <div className="team">Finance</div>
+            <div className="team">Technology</div>
+            <div className="team">Careers</div>
           </div>
         </div>
       </div>
       <div className="join-bottom-container">
-        <h1 className="dev-timeline-title">Development Project Timeline</h1>
+        <div className="dev-timeline-title">Development Project Timeline</div>
         <div>
           <Chrono
             items={items}
             cardHeight={100}
             hideControls={true}
             lineWidth={5}
-            timelinePointShape={"square"}
             theme={{
               primary: "#FAC144",
               secondary: "#FAC144",
@@ -75,8 +75,8 @@ export default function JoinUs() {
               titleColorActive: "white",
             }}
             fontSizes={{
-              cardTitle: "1.5rem",
-              title: "1.25rem",
+              cardTitle: "1rem",
+              title: "1rem",
             }}
             mode="VERTICAL_ALTERNATING"
           />

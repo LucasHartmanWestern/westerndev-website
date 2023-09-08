@@ -1,26 +1,18 @@
 .join-container {
   font-family: "Poppins", sans-serif;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 5%;
 }
 
 .join-top-container {
   display: flex;
   flex-direction: column;
-  height: 45vh;
-  padding-bottom: 12%;
 }
 
 .join-title {
   padding: 200px 12% 50px 12%;
   font-size: 50px;
-}
-.team-text {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .join-btn-div {
@@ -51,31 +43,44 @@
 
 .team-header {
   align-self: center;
-  padding-bottom: 2%;
+  font-size: 30px;
+}
+
+.team-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:1rem;
+  padding-top:5%;
 }
 
 .team {
   background-color: #fac144;
-  padding: 3px;
+  padding: 30px 50px;
+  width:100px;
   margin-top: 7px;
+  border-radius: 15px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .join-top-text {
   display: flex;
   flex-direction: column;
-  font-size: 35px;
+  padding: 7% 12%;
+  align-items: center;
+  background-color: white;
 }
 .join-bottom-container {
   background-color: #3f66b1;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
+  padding:5%;
 }
-
 .dev-timeline-title {
-  padding-top: 5%;
   color: white;
   margin-bottom: 5%;
+  font-size: 30px;
 }
