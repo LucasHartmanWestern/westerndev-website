@@ -1,124 +1,64 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Events.css";
 import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
+import { Paper } from "@mui/material";
 import Footer from "../../Components/Footer/Footer";
 import UpcomingEvent from "./UpcomingEvent/UpcomingEvent";
 
 function Events() {
-  const items = [
-    {
-      name: "Party Games Tournament",
-      desc: "WDS is hosting a party games tournament on our discord server, come out to meet new people and have loads of fun!",
-      link: "https://www.instagram.com/p/CgHXZNxpE3d/?hl=en",
-      time: "July 19, 8:00-9:30PM",
-    },
-    {
-      name: "Toronto Summer Dinner",
-      desc: "Meet our Co-Presidents and VP’s, learn more about how to get involved as a general member and executive, and enjoy some FREE pizza.",
-      link: "https://www.instagram.com/p/ChVFERGJy5E/?hl=en",
-      time: "August 21, 6:30-9:30PM",
-    },
-    {
-      name: "Virtual Information Night",
-      desc: "Learn more about how to get involved in WDS!",
-      link: "TBD",
-      time: "TBD",
-    },
-    {
-      name: "London Fall Dinner",
-      desc: "Meet our Co-Presidents and VP’s, learn more about how to get involved as a general member and executive!",
-      link: "TBD",
-      time: "TBD",
-    },
-    {
-      name: "Intro to HTML/CSS",
-      desc: "Learn about one of fundamentals of web development.",
-      link: "TBD",
-      time: "TBD",
-    },
-    {
-      name: "Intro to Javascript",
-      desc: "Learn how to add interactivity to your website with Javascript!",
-      link: "TBD",
-      time: "TBD",
-    },
-    {
-      name: "Overhaul: Development and Debugging Case Competition",
-      desc: "A weekend dedicated to debugging, developing features and then pitching changes and improvements. A not miss event for aspiring software professionals.",
-      link: "TBD",
-      time: "TBD",
-    },
-    {
-      name: "Women in Tech Summit",
-      desc: "Career-driven workshops, keynotes and an interview competition to help women navigate the technology world in a safe space.",
-      link: "TBD",
-      time: "TBD",
-    },
-    {
-      name: `Western Developer's League`,
-      desc: "Compete against teams of developers across the country to showcase your skills, grow as a developer, and claim ultimate bragging rights.",
-      link: "TBD",
-      time: "TBD",
-    },
-  ];
+  const [carouselItems, setCarouselItems] = useState([]);
+  const [upcomingEvents, setUpcomingEvents] = useState([]);
+
+  useEffect(() => {
+    //REPLACE API ENDPOINT WITH WHATEVER IS NEEDED
+    fetch('API_ENDPOINT_FOR_CAROUSEL_ITEMS')
+      .then(response => response.json())
+      .then(data => setCarouselItems(data))
+      .catch(error => console.error('Error fetching carousel items:', error));
+
+    //REPLACE API ENDPOINT WITH WHATEVER IS NEEDED
+    fetch('API_ENDPOINT_FOR_UPCOMING_EVENTS')
+      .then(response => response.json())
+      .then(data => setUpcomingEvents(data))
+      .catch(error => console.error('Error fetching upcoming events:', error));
+  }, []);
 
   return (
     <div className="events">
       <div className="events-top-container">
-        <div className="events-title">Events</div>
-        <div className="events-description">
-          Empowering students through professional development, technical, and community events
-        </div>
       </div>
       <div className="events-carousel">
-
-        {/**
-         * 
-         * <Carousel className="carousel">
-          {items.map((item, i) => (
+        <Carousel className="carousel">
+          {carouselItems.map((item, i) => (
             <Item key={i} item={item} />
           ))}
         </Carousel>
-         */}
       </div>
+      
       <div className="upcoming-events-container">
-        <div className="up-event-title">
-          Upcoming Events
-        </div>
-         <div className="upcoming-events">
-          <UpcomingEvent 
-            name='Summer Dinner'
-            date='August 17th'
-            descript='Are you interested in technology and meeting like-minded individuals? If so, attend our 2023 Virtual Summer Dinner! '
-            link='https://www.linkedin.com/feed/update/urn:li:activity:7096260546081001472/'
-          />
-          <UpcomingEvent 
-            name='Coming soon...'
-          />
-          <UpcomingEvent 
-            name='Coming soon...'
-          />
+        <div className="upcoming-events">
+          {upcomingEvents.map((event, i) => (
+            <UpcomingEvent 
+            //REPLACE IDENTIFIERS AS NEEDED
+              key={i}
+              name={event.name}
+              date={event.date}
+              descript={event.descript}
+              link={event.link}
+            />
+          ))}
         </div>
       </div>
       <div className="past-events">
-        
       </div>
-  <Footer></Footer>
+      <Footer></Footer>
     </div>
-    
   );
 }
 
 function Item(props) {
   return (
     <Paper className="paper">
-      <h2 className="event-name">{props.item.name}</h2>
-      <p className="event-desc">{props.item.desc}</p>
-      <p className="event-time">Time: {props.item.time}</p>
-      <a className="event-link" href={props.item.link}>
-        Link: {props.item.link}
-      </a>
     </Paper>
   );
 }

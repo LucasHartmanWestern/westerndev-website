@@ -23,7 +23,7 @@ function Team() {
       <div className='team-member-container'>
         {teamMembers.map(member => (
           <MemberCard     
-          //replace identifiers as needed
+          //REPLACE IDENTIFIERS AS NEEDED
             key={member.id} 
             img={member.imageUrl} 
             name={member.name} 
